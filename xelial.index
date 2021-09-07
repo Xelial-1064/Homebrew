@@ -6,7 +6,7 @@
 		</update>
 	</info>
 	<files>  
-    <!--<file name="class-dragonknight-variant" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-dragonknight-variant.xml" />
+    <file name="class-dragonknight-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-dragonknight-variant.xml" />
     <file name="class-hermeticist.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
     <file name="class-monk-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-monk-variant.xml" />
     <file name="class-sorcerer-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-sorcerer-variant.xml" />
@@ -15,6 +15,5 @@
     <file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/warlock-elder-tempest.xml" />
     <file name="archetype-champion-reborn.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/archetype-champion-reborn.xml" />
     <file name="multiclass-variants.xml" url="https://github.com/Xelial-1064/Homebrew/blob/main/multiclass-variants.xml" />
--->
 	</files>
 </index>

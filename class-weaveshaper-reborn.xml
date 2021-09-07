@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="class-weaveshaper.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/genuine-fantasy-press/class-weaveshaper.xml" />
+		</update>
+	</info>
+	<element name="Weaveshaper Reborn" type="Class" source="Player’s Handbook" id="ID_CLASS_WEAVESHAPER_REBORN">
+		<description>
+			<p><em>An elf chants in an ancient library, listening to the whispers of the story stones around him. His body thrums with arcane energy as he pours magical power into himself, strengthening his body with raw mystical force and sharpening his focus in preparation for battle.</em></p>
+			<p><em>A human woman clad in red and black faces a massive golem of cloth and necromantic magic. She summons a strange sword to her hands while calling to the entity bound within her magicaloutfit. In a flash of light the outfit transforms into a suit of fantastical armor covered in blades. With incredible speed, she launches forward and lashes out at the nightmare with a barrage of attacks.</em></p>
+			<p><em>A dwarf gestures, weaving a massive mace from arcane thread. She grinds her teeth, narrows her eyes, and swings as an orc approaches. The mace pulses with power, breaking her ancestral foe and sending it flying down the mountain.</em></p>
+			<p><em>A tiefling cloaked in darkness spins a web between his hands. As a brawl begins, he stands and demands that the violent patrons take their fight elsewhere, lacing his words with magic. Eyes glazed, the combatants peacefully exit, never seeing the tiefling’s bladed cloak twitch ominously.</em></p>
+			<p>These are weaveshapers: warriors who pursue magical and martial perfection by creating powerful weapons called threadblades. By infusing their bodies with countless fragments of arcane energy from every school of magic, they strive for perfection through cunning and study rather than meditation or exploration of the traditional arcane arts.</p>
+			<h4>WOVEN BLADES</h4>
+			<p>There is a certain power in harmony and unity between the arcane disciplines. Weaveshapers seek to harness this unity and instill within themselves the same eerie perfection. Thus, they train their bodies and minds to work in unison, learning to weave threads from arcane energy. </p>
+			<p class="indent">The first act that defines the weaveshaper is the creation of a threadblade. By memorizing the complex gestures and mental states required to invoke arcane thread from each school of magic, the weaveshaper can create powerful weapons with strange and majestic forms. These weapons are known as threadblades, as they appear to be woven from strings of magic. These sharpened edges and eerie blades are crafted by conjuring thin panes of raw force around compressed thread, leading to colorful and powerful expressions of each weaveshaper’s personal style.</p>
+			<h4>SKIN AND SKEIN</h4>
+			<p>Once a weaveshaper masters the creation of their threadblade, the next step is the creation of an arcane infusion. By weaving arcane energy into their clothing and bodies, these magical warriors begin to ascend to a higher physical and mental state. The most common manifestation of this power is a set of remarkable garb, which layers over the weaveshaper, providing strength and durability through magical enhancement. Unlike monks, who harness the natural power of Ki within themselves, weaveshapers rely on arcane mastery and knowledge to empower their bodies to the peak of perfection.</p>
+			<h4>DIVIDED GUILDS</h4>
+			<p>Each weaveshaper chooses two schools of magic to specialize in, enabling them to create a unique magical substance that combines both into their infusion. Once a weaveshaper chooses their specialization, they are often inducted into a guild of like-minded practitioners and arcanists. Called couturiers – clothing makers – each guild’s activities are relatively isolated from one another, though feuds and rivalries are not uncommon.</p>
+			<h4>UNIFIED PATTERNS</h4>
+			<p>These arcane warriors are most famed for the unique and exotic weapons they create. These special weapons are called arcane patterns, and instruction in the creation of newer and greater patterns is perpetually sought by novices and masters alike. Despite this, the various guilds rarely manage to keep a newly-found pattern secret for long, as any others watching them fight often catch on fairly quickly. Each arcane pattern can be used to perform a special series of attacks and actions, called a pattern attack, requiring the weaveshaper to pour even more magical power into their threadblade.</p>
+			<h4>CREATING A WEAVESHAPER</h4>
+			<p>When creating a weaveshaper, consider how they came to adopt this rare skill. Most weaveshapers are trained under tutors, learn in academies dedicated to the arcane arts, or are taught by entities bound to them due to the strange whims of fate. Why did you choose to continue down this path instead of learning traditional magic, which you obviously have the aptitude for? Is it due to restrictions place upon you by your culture or your family? Is it by personal choice, seeing the mundane arcane arts as beneath you, or beyond your grasp? Do you endeavor to study both, and have merely started your journey here in order to survive? Regardless, the path you’ve chosen is one that must be tread with careful consideration.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a weaveshaper quickly by following these suggestions. First, decide if you’d like to wield larger weapons using Strength, or lighter and ranged weapons using Dexterity, and make that your highest ability score. Then, select the Red String arcane pattern. Next, make sure you have a high Intelligence score, since it is essential when using your arcane pattern attacks and when casting the spells you gain later. Finally, choose a background that would present you with an opportunity to study the arcane arts.</p>
+			<h2>CLASS FEATURES</h2>
+			<p>As a weaveshaper, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per weaveshaper level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 8) + your Constitution modifier per weaveshaper level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+				<li><strong>Tools:</strong> Weaver’s tools and one stringed musical instrument</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity and Intelligence</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, Deception, Insight, and Sleight of Hand</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+				<li>a set of fine clothes</li>
+				<li>a set of weaver’s tools</li>
+			</ul>
+			<h5 class="caption">THE WEAVESHAPER</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-20">Patterns Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Threadblade, Infusion, Arcane Pattern </td><td>1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Weaveshaper Guild</td><td>1</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 3rd</td><td class="left">Renissance Regular</td><td>2</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td class="left">Extra Attack </td><td>3</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td class="left">Guild Feature, Razor Thread </td><td>3</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td class="left">Arcane Discretion</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td class="left">Shuttle Step</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td class="left">Guild Feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td class="left">Fraying Blade</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td class="left">Cunning Recovery</td><td>7</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>14th</td><td class="left">Guild Feature</td><td>7</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+				<tr><td>15th</td><td class="left">Ribbon Shears</td><td>8</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>8</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+				<tr><td>17th</td><td class="left"></td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td class="left">Arcane Discretion Improvement</td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td class="left">Perfect Patterns</td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_THREADBLADE" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_INFUSION" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_ARCANE_PATTERN" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_WEAVESHAPER_GUILD" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_RENAISSANCE_REGULAR" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_EXTRA_ATTACK" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_RAZOR_THREAD" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_ARCANE_DISCRETION" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_SHUTTLE_STEP" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_FRAYING_BLADE" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_CUNNING_RECOVERY" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_RIBBON_SHEARS" />
+			<div element="ID_CLASS_WEAVESHAPER_REBORN_PERFECT_PATTERNS" />
+		</description>
+		<setters>
+			<set name="hd">d8</set>
+			<set name="short">A warrior who pursue magical and martial perfection by creating powerful weapons called threadblades.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+			<select type="Proficiency" name="Stringed Musical Instrument, Weaveshaper" supports="Musical Instrument" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<select type="Proficiency" name="Skill Proficiency, Weaveshaper" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="2" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_THREADBLADE" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_INFUSION" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_ARCANE_PATTERN" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_WEAVESHAPER_GUILD" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_RENAISSANCE_REGULAR" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_EXTRA_ATTACK" level="5" />
+            <grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_RAZOR_THREAD" level="6" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_ARCANE_DISCRETION" level="7" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_SHUTTLE_STEP" level="9" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_FRAYING_BLADE" level="11" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_CUNNING_RECOVERY" level="13" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_RIBBON_SHEARS" level="15" />
+			<grant type="Class Feature" id="ID_CLASS_WEAVESHAPER_REBORN_PERFECT_PATTERNS" level="20" />
+		</rules>
+		<!-- no multiclassing support provided for this class -->
+	</element>
+	<element name="Threadblade" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_THREADBLADE">
+		<description>
+			<p>Starting at 1st level, you learn to create a weapon, called a threadblade, by spinning it into existence using your bonus action. You can create any simple or martial weapon using this feature. If a threadblade leaves your hand, it vanishes at the end of your turn. You can create two threadblades using the same bonus action, and they can be in different forms. If your threadblade is a ranged weapon that uses ammunition, the ammunition instantly appears when the weapon is used. Your threadblade is also an arcane focus.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Create a threadblade by instantly spinning it into existence using your bonus action.
+			 You can create two threadblades using the same bonus action, and they can be in different forms. </description>
+		</sheet>
+	</element>
+    	<element name="Arcane Pattern" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_ARCANE_PATTERN">
+		<description>
+			<p>At 1st level, you learn to develop your arcane talents on your path to creating a unified art. This differs from ordinary magic, as spellcasting is merely a byproduct of your studies. Instead, your arcana is channeled through your martial skill using unique weapons you create using your threadblade.</p>
+			<h5>SPELL SLOTS</h5>
+			<p>At 1st level, you have two 1st-level spell slots. As you gain weaveshaper levels, you gain additional spell slots according to the Weaveshaper table. You can use these spell slots to activate your Pattern Attacks and to cast spells. You recover all expended spell slots when you finish a long rest.</p>
+			<h5>ARCANE PATTERNS AND PATTERN ATTACKS</h5>
+			<p>When you create your threadblade, you can choose to shape it into a special weapon form called an arcane pattern. Each arcane pattern has a unique Pattern Attack associated with it.</p>
+			<p class="indent">At 1st level, choose one arcane pattern available to you. You learn this pattern and can shape your threadblade into that special weapon. </p>
+			<p class="indent">You learn one additional arcane pattern at 3rd, 5th, 7th, 9th, 11th, 13th, 15th, and 17th level. Whenever you gain a level in this class, you can replace one of your arcane patterns with a different one that you meet the prerequisites for.</p>
+			<p class="indent">While your threadblade is in an arcane pattern, you can choose to begin the associated Pattern Attack whenever you take the Attack action during your turn and attack with your threadblade. Each Pattern Attack consists of three phases: the opening, the assault, and the finisher. You can expend spell slots in order to perform or empower each phase of the attack, as indicated in the details of the Pattern Attack. Each phase must be performed in order. You cannot benefit from both the opening and finisher during the same turn; you must choose at the start of your turn if you’d like to perform the opening again instead of the finisher. Creating your threadblade as a different weapon disrupts your Pattern Attack.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your weaveshaper spells and Pattern Attacks, since your control over magic comes from careful study and practice. You use your Intelligence whenever a spell or Pattern Attack refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a weaveshaper spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell &amp; Pattern Attack save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your weaveshaper spells.</p>
+		</description>
+		<spellcasting name="Weaveshaper" ability="Intelligence">
+			<list>GFP_Weaveshaper</list>
+		</spellcasting>
+		<rules>
+			<stat name="weaveshaper:spellcasting:slots:1" value="2" level="1" />
+			<stat name="weaveshaper:spellcasting:slots:1" value="1" level="2" />
+			<stat name="weaveshaper:spellcasting:slots:1" value="1" level="3" />
+
+			<stat name="weaveshaper:spellcasting:slots:2" value="2" level="3" />
+			<stat name="weaveshaper:spellcasting:slots:2" value="1" level="4" />
+			<stat name="weaveshaper:spellcasting:slots:3" value="2" level="5" />
+			<stat name="weaveshaper:spellcasting:slots:3" value="1" level="6" />
+			<stat name="weaveshaper:spellcasting:slots:4" value="1" level="7" />
+			<stat name="weaveshaper:spellcasting:slots:4" value="1" level="8" />
+			<stat name="weaveshaper:spellcasting:slots:4" value="1" level="9" />
+			<stat name="weaveshaper:spellcasting:slots:5" value="1" level="9" />
+			<stat name="weaveshaper:spellcasting:slots:5" value="1" level="10" />
+			<stat name="weaveshaper:spellcasting:slots:5" value="1" level="18" />
+			<stat name="weaveshaper:spellcasting:slots:6" value="1" level="11" />
+			<stat name="weaveshaper:spellcasting:slots:6" value="1" level="19" />
+			<stat name="weaveshaper:spellcasting:slots:7" value="1" level="13" />
+			<stat name="weaveshaper:spellcasting:slots:7" value="1" level="20" />
+			<stat name="weaveshaper:spellcasting:slots:8" value="1" level="15" />
+			<stat name="weaveshaper:spellcasting:slots:9" value="1" level="17" />
+
+			<stat name="weaveshaper:patterns known" value="1" bonus="base" level="1"/>
+			<stat name="weaveshaper:patterns known" value="2" bonus="base" level="3"/>
+			<stat name="weaveshaper:patterns known" value="3" bonus="base" level="5"/>
+			<stat name="weaveshaper:patterns known" value="4" bonus="base" level="7"/>
+			<stat name="weaveshaper:patterns known" value="5" bonus="base" level="9"/>
+			<stat name="weaveshaper:patterns known" value="6" bonus="base" level="11"/>
+			<stat name="weaveshaper:patterns known" value="7" bonus="base" level="13"/>
+			<stat name="weaveshaper:patterns known" value="8" bonus="base" level="15"/>
+			<stat name="weaveshaper:patterns known" value="9" bonus="base" level="17"/>
+			<select type="Class Feature" name="Patterns Known" supports="Arcane Patterns" />
+			<select type="Class Feature" name="Patterns Known, 3rd-level" supports="Arcane Patterns" number="1" level="3" />
+			<select type="Class Feature" name="Patterns Known, 5th-level" supports="Arcane Patterns" number="1" level="5" />
+			<select type="Class Feature" name="Patterns Known, 7th-level" supports="Arcane Patterns" number="1" level="7" />
+			<select type="Class Feature" name="Patterns Known, 9th-level" supports="Arcane Patterns" number="1" level="9" />
+			<select type="Class Feature" name="Patterns Known, 11th-level" supports="Arcane Patterns" number="1" level="11" />
+			<select type="Class Feature" name="Patterns Known, 13th-level" supports="Arcane Patterns" number="1" level="13" />
+			<select type="Class Feature" name="Patterns Known, 15th-level" supports="Arcane Patterns" number="1" level="15" />
+			<select type="Class Feature" name="Patterns Known, 17th-level" supports="Arcane Patterns" number="1" level="17" />
+		</rules>
+	</element>
+	<element name="Infusion" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_INFUSION">
+		<description>
+			<p>Also at 1st level, you learn to clothe yourself in magic. You can choose to have your AC equal 13 + the number of arcane patterns you know. You can’t do this while using a shield. Also, you can change the color, fit and style of your garb or armor as an action while wearing it. It reverts to its ordinary appearance if you stop wearing it.</p>
+		</description>
+		<sheet>
+			<description>While you are not using a shield, you can choose to have your {{ac:weaveshaper infusion}} AC. Also, you can use your action to change the color, fit and style of your clothing or armor while wearing it. It reverts to its ordinary appearance if you stop wearing it.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:weaveshaper infusion" value="13" />
+			<stat name="ac:weaveshaper infusion" value="weaveshaper:patterns known" />
+			<stat name="ac:calculation" value="ac:weaveshaper infusion" bonus="calculation" alt="Weaveshaper Infusion" equipped="[shield:none]" />
+		</rules>
+	</element>
+	<element name="Weaveshaper Guild" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_WEAVESHAPER_GUILD">
+		<description>
+			<p>At 2nd level, you devote your arcane studies towards the unification of two or more schools of magic. Choose from the list of available guilds. Your guild grants you features at 2nd level, and again at 6th, 10th, and 14th level.</p>
+		</description>
+		<rules>
+			<select type="Archetype" name="Weaveshaper Guild" supports="Weaveshaper Guild" />
+		</rules>
+	</element>
+	<element name="Renaissance Regular" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_RENAISSANCE_REGULAR">
+		<description>
+			<p>At 3rd level, you learn to shape your threadblade into useful objects, tools, and other ordinary devices that weigh less than 10 lbs. and cost less than 10 gp. Some things may be beyond your talents, depending on their complexity. </p>
+			<p class="indent">You can also summon your threadblade in the form of a 100-foot silk rope with grappling hook, a 10-foot ladder, or a spyglass. These items fade if you summon your threadblade again or after one minute if you stop touching them.</p>
+			<p class="indent">Additionally, you gain proficiency in three sets of tools, and can create these tool sets using this feature. </p>
+		</description>
+		<sheet action="Action">
+			<description>You can call and shape your arcane thread into useful objects, tools, and other ordinary devices that weigh less than 10 lbs. and cost less than 10 gp. Some things may be beyond your talents, depending on their complexity, and all items created with this feature are visibly magical.
+			You can also weave arcane thread in the form of a 100-foot silk rope with grappling hook, a 10-foot ladder, or a spyglass. These items fade if you summon one again or after one minute if you stop touching them.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Renaissance Regular" supports="Tool" number="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option, Weaveshaper, 4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option, Weaveshaper, 8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option, Weaveshaper, 12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option, Weaveshaper, 16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option, Weaveshaper, 19" level="19" />
+		</rules>
+	</element>
+		<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_WEAVESHAPER_REBORN_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Razor Thread" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_RAZOR_THREAD">
+		<description>
+			<p>Starting at 6th level, your threadblade weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>Your threadblade weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+		<element name="Arcane Discretion" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_ARCANE_DISCRETION">
+		<description>
+			<p>Beginning at 7th level, you can have your infusion redirect intrusive energies. Whenever you expend a spell slot, you gain advantage on Intelligence and Wisdom saving throws until the start of your next turn.</p>
+			<p class="indent">At 18th level, you gain advantage on all saving throws until the start of your next turn instead.</p>
+		</description>
+		<sheet>
+			<description>Whenever you expend a spell slot, you gain advantage on Intelligence and Wisdom saving throws until the start of your next turn.</description>
+			<description level="18">You gain advantage on all saving throws until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Shuttle Step" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_SHUTTLE_STEP">
+		<description>
+			<p>At 9th level, your martial studies grant you speed and power. While you are wearing no armor, your walking speed increases by 10 feet. When you fall, you can expend a spell slot to reduce the amount of falling damage you take by an amount equal to twenty times the level of the spell slot expended.</p>
+		</description>
+		<sheet>
+			<description>When you fall, you can expend a spell slot to reduce the amount of falling damage you take by an amount equal to twenty times the level of the spell slot expended.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" equipped="[armor:none]" />
+		</rules>
+	</element>
+	<element name="Fraying Blade" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_FRAYING_BLADE">
+		<description>
+			<p>At 11th level, you discover a way to fuel your spellcasting using your threadblade. When you expend a spell slot of 5th level or lower to perform a finisher or cast a spell, you can treat the level of the expended spell slot as one level higher than normal when determining the effects of its use. When you do this, your threadblades vanish at the end of your current turn.</p>
+			<p class="indent">Once you do this, you can’t do so again until you expend a spell slot of 6th level or higher, or you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest or until you expend a spell slot of 6th level or higher">
+			<description>When you expend a spell slot of 5th level or lower to perform a finisher or cast a spell, you can treat the level of the expended spell slot as one level higher than normal when determining the effects of its use. When you do this, your threadblades vanish at the end of your current turn.</description>
+		</sheet>
+	</element>
+	<element name="Cunning Recovery" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_CUNNING_RECOVERY">
+		<description>
+			<p>At 13th level, you fortify your mind further. As a bonus action, you can expend a spell slot of 2nd level or higher. When you do, you can end one effect that is causing you to be charmed or frightened and you gain advantage on your next attack roll.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend a spell slot of 2nd level or higher. When you do, you can end one effect that is causing you to be charmed or frightened and you gain advantage on your next attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Ribbon Shears" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_RIBBON_SHEARS">
+		<description>
+			<p>At 15th level, your infusion fortifies your eyes, allowing you to see through the deceptions of others. You gain advantage on ability checks and saving throws made to see through illusions, detect invisible creatures, or determine the true forms of shapeshifters.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on ability checks and saving throws made to see through illusions, detect invisible creatures, or determine the true forms of shapeshifters.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Patterns" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_WEAVESHAPER_REBORN_PERFECT_PATTERNS">
+		<description>
+			<p>At 20th level, choose one arcane pattern you know. You gain advantage on all attack rolls made using that special weapon. You can choose a different arcane pattern whenever you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>Choose one arcane pattern you know. You gain advantage on all attack rolls made using that special weapon. You can choose a different arcane pattern whenever you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Satinsin Couturier" type="Archetype" source="The Weaveshaper" id="ID_ARCHETYPE_WEAVESHAPER_REBORN_SATINSIN_COUTURIER">
+		<supports>Weaveshaper Guild</supports>
+		<description>
+			<p>Weaveshapers of this guild are devout and meditative, seeking communion with the divine through understanding of the arcane. Your meditations focus on the arts of transmutation, for to change the world is to express divinity, and the art of necromancy, as souls are the domain of the gods. The Satinsin Couturiers are resolute, zealous, and often heretical. </p>
+			<div element="ID_ARCHETYPE_FEATURE_SATINSIN_COUTURIER_SPELLS" />
+			<div element="ID_ARCHETYPE_FEATURE_SATINSIN_INFUSION" />
+			<div element="ID_ARCHETYPE_FEATURE_SATINSIN_MINDFUL_VIRTUE" />
+			<div element="ID_ARCHETYPE_FEATURE_SATINSIN_UNFORGIVABLE" />
+			<div element="ID_ARCHETYPE_FEATURE_SATINSIN_CURSED_REDEMPTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_SATINSIN_COUTURIER_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_SATINSIN_INFUSION" level="2" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_SATINSIN_MINDFUL_VIRTUE" level="6" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_SATINSIN_UNFORGIVABLE" level="10" />
+			<grant type="Archetype Feature" id="ID_ARCHETYPE_FEATURE_SATINSIN_CURSED_REDEMPTION" level="14" />
+		</rules>
+	</element>
+	<element name="Couturier Spells" type="Archetype Feature" source="The Weaveshaper" id="ID_ARCHETYPE_FEATURE_SATINSIN_COUTURIER_SPELLS">
+		<description>
+			<p>When you choose this guild, you gain access to the following spells. You learn these spells when you reach the indicated weaveshaper level and can cast them using your spell slots. You also learn the spare the dying cantrip.</p>
+			<h5 class="caption">SATINSIN COUTURIER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>false life</em></td></tr>
+				<tr><td>3rd</td><td><em>alter self</em></td></tr>
+				<tr><td>5th</td><td><em>haste</em></td></tr>
+				<tr><td>7th</td><td><em>blight</em></td></tr>
+				<tr><td>9th</td><td><em>telekinesis</em></td></tr>
+				<tr><td>9th</td><td><em>wind walk</em></td></tr>
+			</table>
+		</description>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" spellcasting="Weaveshaper" level="1"/>
+			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Weaveshaper" level="1"/>
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Weaveshaper" level="3"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Weaveshaper" level="5" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" spellcasting="Weaveshaper" level="7" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" spellcasting="Weaveshaper" level="9" />
+			<grant type="Spell" id="ID_PHB_SPELL_WIND_WALK" spellcasting="Weaveshaper" level="11" />
+		</rules>
+	</element>
+	<element name="Satinsin Infusion" type="Archetype Feature" source="The Weaveshaper" id="ID_ARCHETYPE_FEATURE_SATINSIN_INFUSION">
+		<description>
+			<p>At 2nd level, you fill your infusion with the corruption inherent to your soul, purifying yourself in the process. You gain a bonus to Insight checks equal to your Intelligence modifier. You can use a bonus action to touch an object within your reach. Until the start of your next turn, that object has vulnerability to all damage that it was not immune to.</p>
+		</description>
+		<sheet usage="bonus action">
+			<description>You can use a bonus action to touch an object within your reach. Until the start of your next turn, that object has vulnerability to all damage that it was not immune to.</description>
+		</sheet>
+		<rules>
+			<stat name="upgrade:bonus" value="intelligence:modifier" bonus="base" />
+			<stat name="insight:misc" value="upgrade:bonus" />
+		</rules>
+	</element>
+	<element name="Mindful Virtue" type="Archetype Feature" source="The Weaveshaper" id="ID_ARCHETYPE_FEATURE_SATINSIN_MINDFUL_VIRTUE">
+		<description>
+			<p>At 6th level, your meditations align you more fully to the tenets of your faith. When you make a Wisdom check or saving throw, you can choose to use your Intelligence modifier instead of your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>When you make a Wisdom check or saving throw, you can choose to use your Intelligence modifier instead of your Wisdom modifier.</description>
+		</sheet>
+	</element>
+	<element name="Unforgivable" type="Archetype Feature" source="The Weaveshaper" id="ID_ARCHETYPE_FEATURE_SATINSIN_UNFORGIVABLE">
+		<description>
+			<p>At 10th level, you learn to punish others for their foul deeds. Whenever you lose concentration because you took damage from another creature, you can expend a spell slot of 3rd level or higher to force the creature to make a Wisdom saving throw. If it fails, it is restrained by arcane thread until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Whenever you lose concentration because you took damage from another creature, you can expend a spell slot of 3rd level or higher to force the creature to make a Wisdom saving throw. If it fails, it is restrained by arcane thread until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Cursed Redemption" type="Archetype Feature" source="The Weaveshaper" id="ID_ARCHETYPE_FEATURE_SATINSIN_CURSED_REDEMPTION">
+		<description>
+			<p>At 14th level, your infusion allows you to take on the sins of others, cloaking you in a dark shroud of unholy power. When you reduce a creature to 0 hit points, you can expend a spell slot of 1st level or higher to generate a barrier around your yourself with a pool of points equal to five times the level of the spell slot expended. This barrier lasts for one minute. When a creature hits you with an attack, you can choose to expend points from this pool to reduce the damage by an amount up to the total amount of damage you would have taken. Any excess points manifest as threads of cruel radiance that sear your attacker, dealing damage equal to the amount of points in the pool and emptying the pool.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature to 0 hit points, you can expend a spell slot of 1st level or higher to generate a barrier around your yourself with a pool of points equal to five times the level of the spell slot expended. This barrier lasts for one minute. When a creature hits you with an attack, you can choose to expend points from this pool to reduce the damage by an amount up to the total amount of damage you would have taken. Any excess points manifest as threads of cruel radiance that sear your attacker, dealing damage equal to the amount of points in the pool and emptying the pool.</description>
+		</sheet>
+	</element>
+
+	<!-- arcane patterns -->
+	<element name="Red String" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_RED_STRING">
+		<supports>Arcane Patterns</supports>
+		<description>
+        <p>This special weapon resembles a sword fashioned into the shape of a single scissor. This weapon deals 1d10 slashing damage and has the finesse and versatile (1d12) properties.</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action and hit a creature with this weapon, you can expend a spell slot to make an additional attack with it targeting the same creature. If you hit a creature using a non-magical shield, it must make a Dexterity saving throw. If they fail, the shield is destroyed and rendered useless until repaired. You can then immediately jump up to 20 feet without provoking opportunity attacks.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> When a creature you hit during your previous turn starts their turn, you can use your reaction and expend a spell slot to empower your blade. Your next attack is made with advantage and deals an extra 1d8 slashing damage per level of the spell slot expended.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> When you start your turn after empowering your weapon, you can expend a spell slot and take the Attack action to launch yourself a number of feet equal to twenty times the level of the spell slot expended toward a creature you damaged during your previous turn and make all of your attacks targeting that creature. The first time you attack with advantage, you can choose to attack with disadvantage instead to strike with even greater force. If you hit, your attack is a critical hit.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>
+				<p>This special weapon resembles a sword fashioned into the shape of a single scissor. This weapon deals 1d10 slashing damage and has the finesse and versatile (1d12) properties.</p>
+			</description>
+		</sheet>
+	</element>
+	<element name="Skyshards" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_SKYSHARDS">
+		<supports>Arcane Patterns</supports>
+		<description>
+		<p>This special weapon resembles a collection of blades held suspended in the air around your hand by delicate arcane threads. This melee weapon deals 1d8 piercing damage, has the finesse and light property, and can be used to make ranged attacks at a range of (30/90).</p>
+		<p>
+		<span class="feature">Opening:</span>  When you attack with this weapon, you can expend a spell slot to make a number of bonus attacks equal to the level of the spell slot expended. You can’t add your ability score modifier to the damage rolls of these extra attacks. Each creature hit by an attack with this weapon is bound to you by an illusory thread until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> Whenever a creature bound to you by this weapon makes an attack, you can use your reaction to fly up to 10 feet without provoking opportunity attacks after the attack hits or misses. When you do, you can expend a spell slot to fly an additional 15 feet per level of the spell slot expended as part of the same reaction.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> When you start your turn while at least one creature is bound to you by this weapon, you can take the Attack action to unleash an arc of lightning in place of one of your attacks. Each creature bound to you must make a Constitution saving throw. If they fail, they take 1d6 lightning damage per creature bound to you, or half as much damage if they succeed. When you do, you can expend a spell slot to increase the lightning damage by 1d6 per spell slot level.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon resembles a collection of blades held suspended in the air around your hand by delicate arcane threads. This melee weapon deals 1d8 piercing damage, has the finesse and light property, and can be used to make ranged attacks at a range of (30/90).</description>
+		</sheet>
+	</element>
+	<element name="Water Dragon's Will" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_WATER_DRAGONS_WILL">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd level</prerequisite>
+		<description>
+		<p>This special weapon appears to be a set of metal cestuses and sabatons that cover the arms and legs. This melee weapon deals 1d10 bludgeoning damage and has the finesse property. You can attack with this weapon in place of making an unarmed strike.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action and attack with this weapon, you can expend a spell slot of 1st level or higher to make an additional attack with it and unleash a crushing wave of infused water. When you do, the target of the attack and hostile creatures in a 15-foot cone behind the target must make a Strength saving throw. If they fail, they take 2d4 cold damage per level of the spell slot expended and are knocked prone. If they succeed, they take half as much damage and are not knocked prone.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When a creature that took damage from your opening attack during your previous turn moves at least 5 feet or stands up from prone, you can use your reaction to launch yourself up to 15 feet to a location of your choosing and smash the ground, unleashing an arcane torrent. You can choose to expend a spell slot when you do so. Hostile creatures within 20 feet of you must make a Dexterity saving throw. If a creature fails, it takes 1d4 cold damage + 2d4 cold damage per level of the spell slot expended, or half as much damage on a success. If a prone creature takes damage, it can’t stand from prone until after the end of its next turn. <br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you start your turn while wielding this weapon after using your reaction to perform the assault, you can take the Attack action, expend a spell slot of 2nd level or higher, and sacrifice one of your attacks to create a massive serpent from water and arcane thread that tears around you in a maelstrom. Each hostile creature within 30 feet of you must make a Strength saving throw. If they fail, they take 1d12 cold damage per level of the spell slot expended, are knocked prone, and are pulled up to 20 feet towards you.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon appears to be a set of metal cestuses and sabatons that cover the arms and legs. This melee weapon deals 1d10 bludgeoning damage and has the finesse property. You can attack with this weapon in place of making an unarmed strike.</description>
+		</sheet>
+	</element>
+	<element name="Starlight Bow" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_STARLIGHT_BOW">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:3]</requirements>
+		<prerequisite>3rd level</prerequisite>
+		<description>
+		<p>This special weapon resembles a bow crafted from pale light and spirals of arcane thread. This ranged weapon deals 1d10 piercing damage and has a range of (200/600).</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action, you can choose to fire a flare instead of making one of your attacks. You can expend a spell slot when you do this. Choose two creatures within 200 feet of you that can see you, plus an additional two creatures per level of the spell slot expended. Each creature must make a Dexterity saving throw. If they fail, they are blinded until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When a creature blinded by your opening takes an action or moves at least 5 feet, you can use your reaction to illuminate that target. You can expend a spell slot when you do this. The creature, and two additional blinded creatures per level of the spell slot expended, become marked by a starlight sigil. When a marked creature takes damage before the end of your next turn, you can choose to shatter the sigil, causing the target to take an additional 2d6 radiant damage.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you can see a creature you marked with a sigil during your assault when you start your turn, when you take the Attack action and attack with this weapon, you can fire a volley of starswarm arrows in place of one of your attacks by expending a spell slot of 2nd level or higher. Make a separate attack targeting each marked creature you can see. If you hit a creature with this attack, it takes an extra 1d8 radiant damage per level of the spell slot expended and is knocked prone.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon resembles a bow crafted from pale light and spirals of arcane thread. This ranged weapon deals 1d10 piercing damage and has a range of (200/600).</description>
+		</sheet>
+	</element>
+	<element name="Dragonslayer" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_DRAGONSLAYER">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th level</prerequisite>
+		<description>
+		<p>This special weapon looks like an exceptionally massive sword crafted from metal and threads of dark crimson. The hilt is shaped like the maw of a roaring dragon. This melee weapon deals 2d8 slashing damage and has the heavy and two-handed properties.</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action and attack with this weapon, you can expend a spell slot of 2nd level or higher to unleash a fearsome war cry. When you do, choose two creatures per level of the spell slot expended. If a creature is friendly to you, it gains advantage on its next attack roll. If a creature is hostile, the next attack that hits it deals an additional 1d6 fire damage per level of the spell slot expended.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  After you’ve performed the opening, when you see a creature other than you make an attack with advantage before the start of your next turn, you can use your reaction and expend a spell slot to move up to 30 feet and make a single melee attack roll targeting all creatures within your reach using this weapon. If a creature takes fire damage from the opening of this Pattern Attack, you can choose to knock the target prone and deal an extra 1d6 fire damage per level of the spell slot expended.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you start your turn while wielding this weapon after using your reaction to perform the assault, you can take the Attack action, expend a spell slot of 3rd level or higher, and sacrifice two of your attacks to expand your blade and strike forward. Each creature within a 5-foot wide, 30-foot long line must make a Dexterity saving throw. If a creature fails, it takes 2d10 fire damage per level of the spell slot expended, or half as much damage on a success.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon looks like an exceptionally massive sword crafted from metal and threads of dark crimson. The hilt is shaped like the maw of a roaring dragon. This melee weapon deals 2d8 slashing damage and has the heavy and two-handed properties.</description>
+		</sheet>
+	</element>
+	<element name="Aversus Blade" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_AVERSUS_BLADE">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:5]</requirements>
+		<prerequisite>5th level</prerequisite>
+		<description>
+		<p>This special weapon resembles a wicked longsword, but the blade is broken into long, lashing fragments held together by arcane threads. This weapon deals 1d10 slashing damage and has the reach and finesse properties.</p>
+		<p>
+		<span class="feature">Opening:</span> You can expend a spell slot to increase this weapon’s reach by a number of feet equal to ten times the level of the spell slot expended until the end of your current turn. When you take the Attack action after doing so, the first successful attack with this weapon wraps it around the target and drags them forcibly to a space within 10 feet of you. The creature is restrained by the weapon until it takes the Disengage action, but you cannot attack creatures other than the target with this weapon while it is restrained.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When a creature restrained by this weapon takes an action, you can use your reaction constrict the target using this weapon. The creature must make a Strength saving throw. If it fails, it takes 1d12 slashing damage. If it succeeds, it takes no damage and is no longer restrained. You can expend a spell slot after the creature fails the saving throw to increase the slashing damage done by 1d10 per spell slot level.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If a creature is restrained by this weapon when you start your turn, you can take the Attack action and expend a spell slot of 3rd level or higher to hurl the creature up to 15 feet in a direction of your choosing in place of an attack, freeing them from the weapon. A creature hurled in this way takes falling damage whenever it impacts a surface. If it impacts another creature, both targets take the same amount of falling damage.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon resembles a wicked longsword, but the blade is broken into long, lashing fragments held together by arcane threads. This weapon deals 1d10 slashing damage and has the reach and finesse properties.</description>
+		</sheet>
+	</element>
+	<element name="Exile's Departure" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_EXILES_DEPARTURE">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:7]</requirements>
+		<prerequisite>7th level</prerequisite>
+		<description>
+		<p>This special weapon appears to be an impossibly large mace crafted from arcane thread and golden metal. This melee weapon deals 2d8 bludgeoning damage and has the heavy and two-handed properties.</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action you can expend a spell slot of 2nd level or higher and sacrifice two of your attacks. When you do, you prepare to deliver a mighty strike. The first time you hit with this weapon before the start of your next turn, the attack deals an additional 2d8 force damage per level of the spell slot expended.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> After you’ve performed the opening, when a creature enters, moves within, or exits your reach, you can use your reaction and expend a spell slot to make one attack targeting that creature using this weapon. If you hit, the target is hurled 20 per level of the spell slot expended in a direction of your choosing. <br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> If you start your turn while wielding this weapon after hitting a creature when performing your assault, you can take the Attack action, expend a spell slot of 4th level or higher, and sacrifice two of your attacks to teleport to a location you can see within 5 feet of the creature you hit. The creature must make a Dexterity saving throw. If it fails, you crush it with this weapon, dealing 2d12 force damage per spell slot level expended and knocking it prone.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon appears to be an impossibly large mace crafted from arcane thread and golden metal. This melee weapon deals 2d8 bludgeoning damage and has the heavy and two-handed properties.</description>
+		</sheet>
+	</element>
+	<element name="Tyrant's Scythe" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_TYRANTS_SCYTHE">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:7]</requirements>
+		<prerequisite>7th level</prerequisite>
+		<description>
+		<p>This special weapon appears to be a large polearm with a long, crescent blade covered in necromantic inscriptions. When wielded properly,you dance across the battlefield, cutting down everything in your path and driving your foes mad with fear. This melee weapon deals 2d6 slashing damage and has the finesse, heavy, and reach properties.</p>
+		<p>
+		<span class="feature">Opening:</span> Once per turn when you take the Attack action and miss with an attack, you can make another attack targeting a different creature within your reach. At the end of your turn, you can expend a spell slot of 2nd level or higher to unleash a wave of unearthly energy. Each creature you hit with an attack made using this weapon during your turn must make a Wisdom saving throw. If a creature fails, it takes 1d12 necrotic damage per level of the spell slot expended and is frightened of you until the end of your next turn. If a creature succeeds, it takes half as much damage and is not frightened. <br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When you see a creature start its turn while frightened, you can use your reaction to impale them with this weapon if they are within your reach by making a weapon attack roll. You can expend a spell slot when you do this. If you hit, the target takes an extra 1d6 necrotic damage per spell slot level expended and the target is restrained and grappled by you until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you start your turn after restraining a creature during your assault, when you take the Attack action, you can expend a spell slot of 4th level or higher and sacrifice two of your attacks. The restrained target must make a Charisma saving throw. If it fails, it takes 1d4 necrotic damage per level of the spell slot expended, and if this damage reduces it below a number of hit points equal to five times the level of the spell slot expended, it dies instantly and unleashes a horrifying scream. Each creature of your choosing within 60 feet that can hear the dying creature must make a Wisdom saving throw or be frightened of you until the end of your next turn.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon appears to be a large polearm with a long, crescent blade covered in necromantic inscriptions. When wielded properly,you dance across the battlefield, cutting down everything in your path and driving your foes mad with fear. This melee weapon deals 2d6 slashing damage and has the finesse, heavy, and reach properties.</description>
+		</sheet>
+	</element>
+	<element name="Cloak of Blades" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_CLOAK_OF_BLADES">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th level</prerequisite>
+		<description>
+		<p>This special weapon is a cloak covered in razor-sharp blades that seems to move and extend whenever you attack. This melee weapon deals 1d8 slashing damage and has the finesse and reach properties. It does not need to be held in a hand to be used. Whenever you make an attack with any weapon, you can attack with this weapon using your bonus action.</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action and attack with this weapon using your bonus action, you can expend a spell slot to animate this cloak and cut outward in a 15-foot cone. Each creature in the area must make a Dexterity saving throw. If a creature fails, it takes 1d8 slashing damage per level of the spell slot expended and its movement speed is halved until the start of your next turn. You then immediately jump up to 15 feet to a location you can see without provoking opportunity attacks.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> When a creature that took damage from your opening attack during your previous turn uses an action, you can use your reaction to vault up to 30 feet towards that creature and make a weapon attack using a weapon other than this one. You can choose to expend a spell slot when you do so. Each creature whose space you pass over takes 1d6 slashing damage per level of the spell slot expended as blades rain down from your cloak. <br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you start your turn while wielding this weapon after using your reaction to perform the assault, you can take the Attack action, expend a spell slot of 5th level or higher, and sacrifice two of your attacks to spin, hurling blades in every direction. Each hostile creature within 30 feet of you must make a Dexterity saving throw. If they fail, they take 2d10 slashing damage per level of the spell slot expended or half as much damage if they succeed. When you do this and reduce a creature to 0 hit points, you can make weapon attack using a weapon other than this one using your reaction.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon is a cloak covered in razor-sharp blades that seems to move and extend whenever you attack. This melee weapon deals 1d8 slashing damage and has the finesse and reach properties. It does not need to be held in a hand to be used. Whenever you make an attack with any weapon, you can attack with this weapon using your bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Judgment" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_JUDGMENT">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:9]</requirements>
+		<prerequisite>9th level</prerequisite>
+		<description>
+		<p>This special weapon resembles a massive polearm with a winged head. This melee weapon deals 2d10 piercing damage and has the two-handed and thrown (100/200) properties.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action, you can expend a spell slot of 3th level or higher and sacrifice two of your attacks to strike forward with this spear. Each creature in a 60 foot line must make a Dexterity saving throw. If a creature fails, it takes 1d6 radiant damage and 1d6 necrotic damage per level of the spell slot expended, or half as much damage if it succeeds. <br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When a creature damaged by your opening takes an action or moves at least 5 feet, you can use your reaction to gain a flying speed of 60 feet until the end of your next turn and fly up to 60 feet. You can expend a spell slot when you do this. The creature becomes marked until the end of your next turn by a glowing sigil. Attacks targeting this creature are made with advantage and ignore cover. A marked creature cannot take reactions. You can always see the marked creature.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you can see a creature you marked with a sigil during your assault when you start your turn while wielding this weapon, you can expend a spell slot of 5th level or higher to throw the spear at the creature, making a ranged weapon attack that ignores range limitations. If the attack hits, the creature is also knocked prone. All hostile creatures in a 30- foot radius around the target must make a Charisma saving throw. If a creature fails and its hit point total is less than eight times the level of the spell slot expended, it dies.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon resembles a massive polearm with a winged head. This melee weapon deals 2d10 piercing damage and has the two-handed and thrown (100/200) properties.</description>
+		</sheet>
+	</element>
+	<element name="Shrike's Cruelty" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_SHRIKES_CRUELTY">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:11]</requirements>
+		<prerequisite>11th level</prerequisite>
+		<description>
+		<p>This special weapon appears to be a long, thin blade with wicked thorns on the side opposite the edge. This weapon deals 2d6 slashing damage and has the two-handed, light, and finesse properties.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action, you can expend a spell slot of 3rd level or higher and sacrifice two of your attacks to skewer a creature within your reach. The target must make a Dexterity saving throw. If it fails, it takes 2d10 piercing damage per level of the spell slot expended and is skewered by your blade until it uses its action to extract itself. While skewered, the creature is restrained, automatically fails Dexterity saving throws, and cannot teleport. While you have skewered a creature, you can’t make attacks with this weapon.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When a creature skewered by this weapon tries to take an action, you can use your reaction to cause the thorns on your blade to impale the creature more fully by expending a spell slot of 5th level or higher. The target must succeed a Constitution saving throw or take 1d12 piercing damage and be stunned until the end of its turn.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> If you start your turn while wielding this weapon after using your reaction to perform the assault and the creature is still skewered, you can take the Attack action, expend a spell slot of 6th level or higher, and sacrifice two of your attacks to tear your blade from the creature, stealing its life. The creature must make a Charisma saving throw. If it fails, it takes 3d10 necrotic damage per spell slot level expended, or half as much damage on a success.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon appears to be a long, thin blade with wicked thorns on the side opposite the edge. This weapon deals 2d6 slashing damage and has the two-handed, light, and finesse properties.</description>
+		</sheet>
+	</element>
+	<element name="Exaltation" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_EXALTATION">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:11]</requirements>
+		<prerequisite>11th level</prerequisite>
+		<description>
+		<p>This special weapon resembles a pair of bladed wings held together by arcane thread. This melee weapon deals 1d10 slashing damage and can be used to make ranged weapon attacks at a range of (60/180). It does not need to be held in a hand to be used. Whenever you make an attack with any weapon, you can use your bonus action to gain a flying speed of 30 feet that lasts until the start of your next turn.</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action while flying, you can expend a spell slot of 2nd level of higher to flap these wings and unleash a burst of thunderous sound. Each hostile creature within 30 feet of you must make a Constitution saving throw. If it fails, it takes 1d6 thunder damage per level of the spell slot expended and is knocked prone. If it succeeds, it takes half as much damage and is not knocked prone.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> When a friendly creature takes an action, you can expend a spell slot of 3rd level or higher and use your reaction to channel arcane power into them. The creature gains advantage on attack rolls, saving throws, and ability checks until the start of its next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> When you take the Attack action after performing your assault, you can sacrifice two of your attacks and expend a spell slot of 6th level or higher to unleash an onslaught of sound in a 120-foot cone. Each creature within the cone is forcibly hurled a number of feet equal to twenty times the level of the spell slot expended. If a creature impacts a surface or another creature, both take 1d10 force damage per 10 feet of movement remaining and are knocked prone.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon resembles a pair of bladed wings held together by arcane thread. This melee weapon deals 1d10 slashing damage and can be used to make ranged weapon attacks at a range of (60/180). It does not need to be held in a hand to be used. Whenever you make an attack with any weapon, you can use your bonus action to gain a flying speed of 30 feet that lasts until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Seige Breaker" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_SEIGE_BREAKER">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:13]</requirements>
+		<prerequisite>13th level</prerequisite>
+		<description>
+		<p>This special weapon resembles a huge ballista churning with arcane energies. This ranged weapon deals 2d12 piercing damage, has the heavy property, and has an effective range of (500/1500). While carrying it, your speed is reduced to 5 feet.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action, you can sacrifice two attacks and expend a spell slot of 6th level or higher to fire a singular bolt of destructive energy at an object within 1500 feet. Non-magical objects within a 20-foot-radius sphere take 20 force damage per level of the spell slot expended. Creatures within the radius are pushed to the exterior of the radius and knocked prone.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When you see a creature stand up from prone, you can use your reaction to expend a spell slot of 5th level or higher. When you do, you create a mobile magical fortification around this weapon that lasts for 1 minute or until this weapon vanishes. The fortification grants you three-quarters cover from all attackers who are more than 10 feet away from you, and the area within 20 feet of you becomes difficult terrain.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> When you start your turn while wielding this weapon after performing your assault, you can expend a spell slot of 7th level or higher to fire a deadly barrage of explosive bolts. Choose a 50-foot-radius sphere you can see within 1500 feet. Each creature in the sphere must make a Dexterity saving throw. Creatures that fail, and all unattended objects within the radius, take 2d10 force damage per level of the spell slot expended and are knocked prone. Creatures that succeed take half as much damage and are not knocked prone.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon resembles a huge ballista churning with arcane energies. This ranged weapon deals 2d12 piercing damage, has the heavy property, and has an effective range of (500/1500). While carrying it, your speed is reduced to 5 feet.</description>
+		</sheet>
+	</element>
+	<element name="Winds of Destruction" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_WINDS_OF_DESTRUCTION">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:13]</requirements>
+		<prerequisite>13th level</prerequisite>
+		<description>
+		<p>This special weapon is actual a pair of circular blades, called chakram, that can be thrown and recalled using the arcane threads tied to them. These melee weapons deal 1d10 slashing damage and have the light and finesse properties. They can only be created and wielded as a pair, and can be used to make ranged weapon attacks at a range of (60/120).</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action, you can sacrifice two of your attacks and expend a spell slot of 3rd level or higher to hurl these blades in a spiral. Each hostile creature in a line 15 feet wide and 30 feet long must make a Dexterity saving throw. If a creature fails, it takes 2d6 lightning damage per level of the spell slot expended and it is lifted and thrown 30 feet in a horizontal direction of your choosing.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> When you see a creature that took damage from your opening take an action or move at least 5 feet during its next turn, you can expend a spell slot of 3rd level or higher and use your reaction to bind them in a spiral of wind. The creature must make a Wisdom saving throw. If it fails, it is moved 30 feet in a direction of your choosing and held aloft and paralyzed until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If you start your turn while you can see a creature you paralyzed during your assault while wielding this weapon, when you take the Attack action, you can expend a spell slot of 7th level or higher to make another attack targeting the same creature, grinding your chakarams together whether you hit or miss. The target takes 1d8 thunder damage and 1d8 lightning damage per level of the spell slot expended, and hostile creatures within 30 feet of the target must make a Constitution saving throw or take an equal amount of damage. If a creature succeeds, it takes half as much damage instead. The blades continue to grind until the start of your next turn, preventing the target from casting spells.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon is actual a pair of circular blades, called chakram, that can be thrown and recalled using the arcane threads tied to them. These melee weapons deal 1d10 slashing damage and have the light and finesse properties. They can only be created and wielded as a pair, and can be used to make ranged weapon attacks at a range of (60/120).</description>
+		</sheet>
+	</element>
+	<element name="Legion" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_LEGION">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:15]</requirements>
+		<prerequisite>15th level</prerequisite>
+		<description>
+		<p>This special weapon is a collection of six blades stored within a single sheathe. You can draw any number of these blades at any time. These melee weapons deal 1d12 slashing damage and have the finesse and versatile (2d8) properties.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action, you can expend a spell slot of 4th level or higher to unsheathe all of these blades and hurl them towards a point you can see within 30 feet of you, forming a 20-foot radius sphere of force. Creatures within the sphere cannot exit the sphere, but creatures can enter the sphere freely. Unattended objects, attacks, spells, and effects cannot pass through the sphere. The sphere lasts until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  After you’ve created the sphere, filament threads bind your fingers to the blades around the edge. Whenever a creature other than you takes an action for the first time during its turn while inside the sphere, you can expend a spell slot to pull a blade to your hand, teleport to an open space you can see within 5 feet of the creature, and make one melee attack using this weapon. If it hits, it deals an extra 1d6 force damage per level of the spell slot expended. If you do this six times, the sphere vanishes.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  If the sphere is still standing when you start your turn and you have performed your assault at least once, you can expend a spell slot of 8th level or higher to unify all of these weapons into a single blade of immense power, causing the sphere to vanish. When you do, your attacks with this weapon deal an additional 1d6 force damage per level of the spell slot expended until the start of your next turn.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon is a collection of six blades stored within a single sheathe. You can draw any number of these blades at any time. These melee weapons deal 1d12 slashing damage and have the finesse and versatile (2d8) properties.</description>
+		</sheet>
+	</element>
+	<element name="Heaven Piercer" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_HEAVEN_PIERCER">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:15]</requirements>
+		<prerequisite>15th level</prerequisite>
+		<description>
+		<p>This special weapon is actually a massive suit of arcane armor, manipulated by thread that you summon around yourself. While wearing this weapon, your size increases to become Huge, your speed increases by 10 feet, you gain advantage on Strength checks and saving throws, your reach increases by 5 feet, and your unarmed strikes deal an extra 1d8 force damage.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action, you can sacrifice two attacks and expend a spell slot of 5th level or higher to unleash a barrage of massive needles to pin your enemies. Choose up to 5 creatures you can see within 120 feet of you. Each creature must make a Dexterity saving throw. If a creature fails, it takes 1d10 piercing damage per level of the spell slot expended and is restrained until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span> When you see a creature that is restrained start its turn, you can expend a spell slot of 5th level or higher and use your reaction to stomp the ground. Each hostile creature within 30 feet of you must make a Dexterity saving throw. Unattended objects and creatures that fail are knocked prone and take 1d6 force damage per level of the spell slot expended.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  When you start your turn while wearing this weapon after performing your assault, you can sacrifice two attacks and expend a spell slot of 8th level or higher to transform this armor into a massive needle and launch yourself at a creature you can see within 300 feet of you. Creatures and objects between you and your target are pushed aside and knocked prone. Walls, structures, and other nonmagical immovable obstacles in your path are destroyed. If you reach the target, make a melee spell attack. If you hit, the target takes 3d10 force damage per level of the spell slot expended and is stunned until the end of your next turn.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon is actually a massive suit of arcane armor, manipulated by thread that you summon around yourself. While wearing this weapon, your size increases to become Huge, your speed increases by 10 feet, you gain advantage on Strength checks and saving throws, your reach increases by 5 feet, and your unarmed strikes deal an extra 1d8 force damage.</description>
+		</sheet>
+	</element>
+	<element name="Infinity" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_INFINITY">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:17]</requirements>
+		<prerequisite>17th level</prerequisite>
+		<description>
+		<p>This special weapon flows smoothly in your hands, appearing as whatever you wish. This weapon deals 2d8 force damage and can be a ranged or melee weapon with any properties you choose that are present on any other simple or martial weapon. While ranged, it has a range of (300/900). Damage dealt by this weapon cannot be reduced in any way.</p>
+		<p>
+		<span class="feature">Opening:</span> When you take the Attack action, you can expend a spell slot of 7th level or higher to fill yourself with power. Until the end of your next turn, you have advantage on all attack rolls, saving throws, and ability checks.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When your turn ends while you are empowered, you can use your reaction to charge this weapon with raw arcane force by expending a spell slot of 8th level or higher. Until the end of your next turn, this weapon deals an extra 1d8 force damage on a hit.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span> When you start your turn while wielding this weapon after performing the assault, you can take the Attack action and expend a spell slot of 9th level. When you do, you can teleport to any location you can see and make a single melee attack with this weapon targeting a creature within your reach. If you hit, you can repeat this process, teleporting and attacking again. You can continue to teleport and make attacks until you miss with an attack. If you miss a creature, it is stunned for 1 minute. It can make a Wisdom saving throw at the end of each of its turns, ending the effect on a success. For every four attacks you make, you gain one level of exhaustion at the end of your turn.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon flows smoothly in your hands, appearing as whatever you wish. This weapon deals 2d8 force damage and can be a ranged or melee weapon with any properties you choose that are present on any other simple or martial weapon. While ranged, it has a range of (300/900). Damage dealt by this weapon cannot be reduced in any way.</description>
+		</sheet>
+	</element>
+	<element name="Emptiness" type="Class Feature" source="The Weaveshaper" id="ID_CLASS_FEATURE_WEAVESHAPER_REBORN_PATTERN_EMPTINESS">
+		<supports>Arcane Patterns</supports>
+		<requirements>[level:17]</requirements>
+		<prerequisite>17th level</prerequisite>
+		<description>
+		<p>This special weapon is a thin coating of pure arcana that defies light, appearing as an infinite void. While you are wearing this weapon, your weapon attacks and unarmed strikes deal an additional 1d8 cold damage.</p>
+		<p>
+		<span class="feature">Opening:</span>  When you take the Attack action, you can expend a spell slot of 7th level or higher to create a singularity 10 feet above your head. Each creature of your choosing in a 100 foot radius is pulled towards the singularity up to 30 feet. If a creature impacts a surface, it takes 2d10 force damage. If a creature touches the singularity, it takes 8d6 force damage and is bound to the singularity, paralyzed, restrained, and stunned until the end of its next turn. If a non-magical unattended object touches the singularity, it is instantly destroyed and consumed. The singularity lasts until the end of your next turn.<br />
+		</p>
+		<p>
+		<span class="feature">Assault:</span>  When you see a creature touch the singularity, you can use your reaction and expend a spell slot of 9th level to rewrite time. You can declare a new initiative count for each creature you can see. Initiative then resumes as normal. This can cause a creature to miss its turn.<br />
+		</p>
+		<p>
+		<span class="feature">Finisher:</span>  When you start your turn after performing the assault while wearing this weapon, you can take the Attack action and expend a spell slot of 8th level to fly your singularity up to 120 feet. It can move around corners. For every 30 feet it moves, each creature touching the singularity takes an additional 3d6 force damage. At the end of your turn, the singularity detonates, hurling each creature that was touching it 50 feet directly away from it and knocking them prone.<br />
+		</p>
+		</description>
+		<sheet>
+			<description>This special weapon is a thin coating of pure arcana that defies light, appearing as an infinite void. While you are wearing this weapon, your weapon attacks and unarmed strikes deal an additional 1d8 cold damage.</description>
+		</sheet>
+	</element>
+</elements>

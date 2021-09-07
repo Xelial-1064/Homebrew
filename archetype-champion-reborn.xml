@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Champion Reborn" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_CHAMPION_REBORN">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>The champion is a fighter who is fueled by competition, gracefully maneuvering throughout the battlefield with ever-increasing and empowering confidence. Those who cooperate with one will find themselves motivated, protected, and ready to win.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_CHAMPIONS_HUBRIS"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_HUBRIS_CONTROL"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_CRITICAL_MASTERY"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_EFFICIENT_GAINS"/>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_INDOMITABLE_FLOW"/>
+		</description>
+		<sheet display="false">
+			<description>Those who emulate the archetypal Battle Master employ martial techniques passed down through generations.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_CHAMPIONS_HUBRIS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_HUBRIS_CONTROL" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_CRITICAL_MASTERY" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_EFFICIENT_GAINS" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_INDOMITABLE_FLOW" level="15"/>
+		</rules>
+	</element>
+	<element name="Champion's Hubris" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_CHAMPIONS_HUBRIS">
+		<description>
+			<p>When you choose this archetype at 3rd level, your success starts to build the desire to take more risks. It is important for champions to control this desire, for too much indulgence can breed eventual failure. </p>
+			<p class="indent">When you succeed a saving throw or hit an enemy with an attack, gain 1 Hubris. For every point of Hubris you have, you get -1 to attack rolls and +1 to damage rolls. Your Hubris resets on a short rest, and is capped at your Strength or Dex modifier(Minimum of 1) + Proficiency Bonus. As you level up, you will learn more ways to gain and use your Hubris. </p>
+		</description>
+		<sheet usage="Cap: {{hubris cap:usage}}">
+			<description>When you succeed a saving throw or hit an enemy with an attack, gain 1 Hubris. For every point of Hubris you have, you get -1 to attack rolls and +1 to damage rolls. Your Hubris resets on a short rest.</description>
+		</sheet>
+		<rules>
+			<stat name="hubris cap:usage" value="1" bonus="base" />
+			<stat name="hubris cap:usage" value="strength:modifier" bonus="base" />
+			<stat name="hubris cap:usage" value="dexterity:modifier" bonus="base" />
+			<stat name="hubris cap:usage" value="proficiency" bonus="misc" />
+
+		</rules>
+	</element>
+	<element name="Hubris Control" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_HUBRIS_CONTROL">
+		<description>
+			<p>At levels 3, 7, 10, and 15, you can choose one Hubris Expense to learn and gain the ability to use. Additionally, you can learn one Hubris Collection. </p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- create selection option -->
+			<select type="Archetype Feature" name="Hubris Expense (Level 3)" supports="Hubris Expense, Champion Reborn" number="1" />
+			<select type="Archetype Feature" name="Hubris Collection (Level 3)" supports="Hubris Collection, Champion Reborn" number="1" />
+			<select type="Archetype Feature" name="Hubris Expense (Level 7)" supports="Hubris Expense, Champion Reborn" number="1" level="7" />
+			<select type="Archetype Feature" name="Hubris Expense (Level 10)" supports="Hubris Expense, Champion Reborn" number="1" level="10" />
+			<select type="Archetype Feature" name="Hubris Expense (Level 15)" supports="Hubris Expense, Champion Reborn" number="1" level="15" />
+		</rules>
+	</element>
+	<element name="Critical Mastery" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_CRITICAL_MASTERY">
+		<description>
+			<p>Starting at 7th level, your ability to strike where it hurts most excels past your competitors.</p>
+			<p class="indent">Your weapon attacks score a critical hit on a roll of 19-20. This increases to rolls of 18-20 at 15th level. When you hit an enemy with a critical hit, gain 1 extra Hubris.</p>
+		</description>
+		<sheet>
+			<description>Your weapon attacks score a critical hit on a roll of 19-20. When you hit an enemy with a critical hit, gain 1 extra Hubris.</description>
+			<description level="15">Your weapon attacks score a critical hit on a roll of 18-20. When you hit an enemy with a critical hit, gain 1 extra Hubris.</description>
+		</sheet>
+	</element>
+	<element name="Efficient Gains" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_EFFICIENT_GAINS">
+		<description>
+			<p>At 10th level, while trying to find new ways to gain Hubris, you find ways to squeeze gaining Hubris into your combat maneuvers. </p>
+			<p class="indent">You can choose to use a Hubris Expense as a bonus action. You can do this an amount of times equal to your Constitution modifier (minimum of once.) You regain any expended uses when you finish a long rest. </p>
+			<p class="indent">Additionally, you can now learn a second Hubris Collection. </p>
+		</description>
+		<sheet usage="{{efficient gains:usage}}/Long Rest">
+			<description>You can choose to use a Hubris Expense as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="efficient gains:usage" value="1" bonus="base"/>
+			<stat name="efficient gains:usage" value="constitution:modifier" bonus="base" />
+			<select type="Archetype Feature" name="Hubris Collection (Level 10)" supports="Hubris Collection, Champion Reborn" number="1" />
+		</rules>
+	</element>
+	<element name="Indomitable Flow" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CHAMPION_REBORN_INDOMITABLE_FLOW">
+		<description>
+			<p>Starting at 15th level, your masterful victories reinforce your Hubris, instilling an incontestible will to press onward and continue the fight. </p>
+			<p class="indent"> When you reduce a creature's hitpoints to 0, land a critical hit with a weapon attack, or spend hubris on a Hubris Expense action, heal an amount of hitpoints equal to your current amount of Hubris + your Constitution modifier, and you can make one weapon attack as a reaction.</p>
+		</description>
+		<sheet>
+			<description>When you reduce a creature's hitpoints to 0, land a critical hit with a weapon attack, or spend hubris on a Hubris Expense action, heal an amount of hitpoints equal to your current amount of Hubris + {{constitution:modifier}}, and you can make one weapon attack as a reaction.</description>
+		</sheet>
+	</element>
+	<!-- Hubris Expenses -->
+	<element name="Coup de Grâce" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EXPENSE_COUP_DE_GRACE">
+		<supports>Hubris Expense, Champion Reborn</supports>
+		<description>
+			<p> You can use an action to rile up your companions for a devastating cooperative attack. </p>
+			<p class="indent"> You can spend 5 Hubris to allow an ally you can see within 30 feet of you to act on your turn. During this turn they can perform all the actions they would normally be able to perform on their own initiative. If your ally misses an attack against an enemy within range during this turn, you can use your reaction to make an attack against the enemy. </p>
+		</description>
+		<sheet usage="Action">
+			<description> You can spend 5 Hubris to allow an ally you can see within 30 feet of you to act on your turn. During this turn they can perform all the actions they would normally be able to perform on their own initiative. If your ally misses an attack against an enemy within range during this turn, you can use your reaction to make an attack against the enemy. </description>
+		</sheet>
+	</element>
+	<element name="Champion's Cleave" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EXPENSE_CHAMPIONS_CLEAVE">
+		<supports>Hubris Expense, Champion Reborn</supports>
+		<description>
+			<p> You can take an action to perform a flashy weapon maneuver that hits the area in front of you (things such as a groundshaking slam, a wide slash, or a fan of arrows).</p>
+			<p class="indent"> When you do this, you spend 4 Hubris to make a weapon attack with 5 ft. increased reach that hits in a 180-degree radius. For ranged weapon attacks, range is not increased and the projectiles used do not pierce.</p>
+		</description>
+		<sheet usage="Action">
+			<description> You can spend 4 Hubris to make a weapon attack with 5 ft. increased reach that hits in a 180-degree radius. For ranged weapon attacks, range is not increased and the projectiles used do not pierce.</description>
+		</sheet>
+	</element>
+	<element name="Stalwart Bastion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EXPENSE_STALWART_BASTION">
+		<supports>Hubris Expense, Champion Reborn</supports>
+		<description>
+			<p> You can use an action to form a strong defensive position that is able to protect either you or others from harm. </p>
+			<p class="indent"> When you do this, you spend 3 Hubris to increase your AC by 3 until the start of your next turn. During this time, as a reaction you can force an attack targeted at an ally you can see within 5 feet of you to target you instead.</p>
+		</description>
+		<sheet usage="Action">
+			<description> You can spend 3 Hubris to increase your AC by 3 until the start of your next turn. During this time, as a reaction you can force an attack targeted at an ally you can see within 5 feet of you to target you instead.</description>
+		</sheet>
+	</element>
+	<element name="Desperate Dash" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_EXPENSE_DESPERATE_DASH">
+		<supports>Hubris Expense, Champion Reborn</supports>
+		<description>
+			<p> When you make the Dash action, you can extend its distance through the sheer fuel of your confidence and desire to succeed. </p>
+			<p class="indent"> When you do this, you spend 2 Hubris to increase the distance of your Dash by an extra 30 ft. that is unimpeded by non-magical rough terrain. </p>
+		</description>
+		<sheet usage="Action">
+			<description> You can spend 2 Hubris to increase the distance of your Dash by an extra 30 ft. that is unimpeded by non-magical rough terrain.</description>
+		</sheet>
+	</element>
+	<!-- Hubris Collections -->
+	<element name="Psych Up" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_COLLECTION_PSYCH_UP">
+		<supports>Hubris Collection, Champion Reborn</supports>
+		<description>
+			<p> Your excessive confidence enables you to better psych up your allies with words or actions of motivation. </p>
+			<p class="indent"> When you use the Help action to aid an ally attacking a creature, you gain 1 Hubris. Additionally when you use Help in this way, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you. </p>
+		</description>
+		<sheet>
+			<description> When you use the Help action to aid an ally attacking a creature, you gain 1 Hubris. 
+			Additionally when you use Help in this way, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you. </description>
+		</sheet>
+	</element>
+	<element name="All According to Plan" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_COLLECTION_ALL_ACCORDING_TO_PLAN">
+		<supports>Hubris Collection, Champion Reborn</supports>
+		<description>
+			<p> When your confidence is proven through acts of preparation or planning, you gain even more of it. </p>
+			<p class="indent"> When you successfully execute a held action that involves attacking a creature, you gain 2 Hubris. </p>
+		</description>
+		<sheet>
+			<description> When you successfully execute a held action that involves attacking a creature, you gain 2 Hubris.</description>
+		</sheet>
+	</element>
+</elements>

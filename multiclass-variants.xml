@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dual Class</name>
+		<description>Custom, Dual Class</description>
+		<author url="">Custom</author>
+		<update version="0.0.1">
+			<file name="dual-class.xml" url="" />
+		</update>
+	</info>
+	<element name="Prestige" type="Item" source="Multiclassing Variant Rules" id="ID_CLASS_FEATURE_PRESTIGE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>As a prestige class you can select an additional subclass from your base class.</p>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Archetype" name="Prestige Subclass"/>
+		</rules>
+	</element>
+	<element name="Dual Class" type="Class" source="Custom" id="ID_CUSTOM_CLASS_DUAL_CLASS">
+		<description>
+			<p>Dual Class description</p>
+		</description>
+		<sheet display="false">
+			<description>Dual Class short description.</description>
+		</sheet>
+		<setters>
+			<set name="short">Dual Class test.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+            <grant type="Class Feature" id="ID_CLASS_FEATURE_DUAL_CLASS_VARIANT_DICE" level="1" />
+            <select type="Class Feature" name="Class" supports="Dual Class Selection" number="1" />
+			<select type="Class Feature" name="Dual Class Selection" supports="Dual Class Selection" number="1" />
+		</rules>
+	</element>
+    <element name="Multiclass Hit Die" type="Class Feature" source="Custom" id="ID_CLASS_FEATURE_DUAL_CLASS_VARIANT_DICE">
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Hit Die Selection" supports="Hit Die Selection" />
+        </rules>
+    </element>
+
+
+
+    <element name="D12" type="Class Feature" source="Custom" id="ID_SWORDMEOW_CLASS_FEATURE_VARIANT_DICE_TWELVE">
+        <supports>Hit Die Selection</supports>
+        <description>
+            <p>You have a d12 for your hit dice (12 + CON mod hitpoints at 1st). </p>
+        </description>
+        <sheet display="false">
+	</sheet>
+        <rules>            
+            <stat name="hp" value="1" />
+            <stat name="hp" value="level" />
+        </rules>
+    </element>
+    <element name="D10" type="Class Feature" source="Custom" id="ID_SWORDMEOW_CLASS_FEATURE_VARIANT_DICE_TEN">
+        <supports>Hit Die Selection</supports>
+        <description>
+            <p>You have a d10 for your hit dice (10 + CON mod hitpoints at 1st). </p>
+        </description>
+        <sheet display="false">
+	</sheet>
+    </element>
+    <element name="D8" type="Class Feature" source="Custom" id="ID_SWORDMEOW_CLASS_FEATURE_VARIANT_DICE_EIGHT">
+        <supports>Hit Die Selection</supports>
+        <description>
+            <p>You have a d8 for your hit dice (8 + CON mod hitpoints at 1st).</p>
+        </description>
+        <sheet display="false">
+	</sheet>
+        <rules>
+            <stat name="hp" value="-2" level="1" />
+            <stat name="hp" value="-1" level="2" />
+            <stat name="hp" value="-1" level="3" />
+            <stat name="hp" value="-1" level="4" />
+            <stat name="hp" value="-1" level="5" />
+            <stat name="hp" value="-1" level="6" />
+            <stat name="hp" value="-1" level="7" />
+            <stat name="hp" value="-1" level="8" />
+            <stat name="hp" value="-1" level="9" />
+            <stat name="hp" value="-1" level="10" />
+            <stat name="hp" value="-1" level="11" />
+            <stat name="hp" value="-1" level="12" />
+            <stat name="hp" value="-1" level="13" />
+            <stat name="hp" value="-1" level="14" />
+            <stat name="hp" value="-1" level="15" />
+            <stat name="hp" value="-1" level="16" />
+            <stat name="hp" value="-1" level="17" />
+            <stat name="hp" value="-1" level="18" />
+            <stat name="hp" value="-1" level="19" />
+            <stat name="hp" value="-1" level="20" />
+        </rules>
+    </element>
+    <element name="D6" type="Class Feature" source="Custom" id="ID_SWORDMEOW_CLASS_FEATURE_VARIANT_DICE_SIX">
+        <supports>Hit Die Selection</supports>
+        <description>
+            <p>You have a d6 for your hit dice (6 + CON mod hitpoints at 1st).</p>
+        </description>
+        <sheet display="false">
+	</sheet>
+        <rules>
+            <stat name="hp" value="-4" level="1" />
+            <stat name="hp" value="-2" level="2" />
+            <stat name="hp" value="-2" level="3" />
+            <stat name="hp" value="-2" level="4" />
+            <stat name="hp" value="-2" level="5" />
+            <stat name="hp" value="-2" level="6" />
+            <stat name="hp" value="-2" level="7" />
+            <stat name="hp" value="-2" level="8" />
+            <stat name="hp" value="-2" level="9" />
+            <stat name="hp" value="-2" level="10" />
+            <stat name="hp" value="-2" level="11" />
+            <stat name="hp" value="-2" level="12" />
+            <stat name="hp" value="-2" level="13" />
+            <stat name="hp" value="-2" level="14" />
+            <stat name="hp" value="-2" level="15" />
+            <stat name="hp" value="-2" level="16" />
+            <stat name="hp" value="-2" level="17" />
+            <stat name="hp" value="-2" level="18" />
+            <stat name="hp" value="-2" level="19" />
+            <stat name="hp" value="-2" level="20" />
+        </rules>
+    </element>
+
+
+    <element name="Barbarian" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_BARBARIAN">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_BARBARIAN" />
+        </description>
+        <rules>
+            <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_BARBARIAN" />
+            <stat name="level:barbarian" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Bard" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_BARD">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_BARD" />
+        </description>
+        <rules>
+            <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_BARD" />
+            <stat name="level:bard" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Cleric" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_CLERIC">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_CLERIC" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_CLERIC" />
+             <stat name="level:cleric" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Druid" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_DRUID">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_DRUID" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_DRUID" />
+             <stat name="level:druid" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Fighter" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_FIGHTER">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_FIGHTER" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_FIGHTER" />
+             <stat name="level:fighter" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Monk" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_MONK">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_MONK" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_MONK" />
+             <stat name="level:monk" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Paladin" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_PALADIN">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_PALADIN" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_PALADIN" />
+             <stat name="level:paladin" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Ranger" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_RANGER">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_RANGER" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_RANGER" />
+             <stat name="level:ranger" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Rogue" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_ROGUE">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_ROGUE" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_ROGUE" />
+             <stat name="level:rogue" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Sorcerer" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_SORCERER">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_SORCERER" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_SORCERER_VARIANT" />
+             <stat name="level:sorcerer" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Warlock" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_WARLOCK">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_WARLOCK" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_WARLOCK" />
+             <stat name="level:warlock" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Wizard" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_WIZARD">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <description>
+            <div class="ID_WOTC_PHB_CLASS_WIZARD" />
+        </description>
+        <rules>
+             <grant type="Class" id="ID_WOTC_PHB_MULTICLASS_WIZARD" />
+             <stat name="level:wizard" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Artificer" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_ARTIFICER">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_WOTC_ERLW_MULTICLASS_ARTIFICER" />
+             <stat name="level:artificer" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Blood Hunter" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_BLOOD_HUNTER">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_MMBH_MULTICLASS_BLOOD_HUNTER" />
+             <stat name="level:blood hunter" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Cook" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_COOK">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_TCC_MULTICLASS_COOK" />
+             <stat name="level:cook" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Dragon Knight" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_DRAGON_KNIGHT">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <sheet display="false">
+	    </sheet>
+        <rules>
+             <grant type="Class" id="ID_RDDT_RJ_MULTICLASS_DRAGON_KNIGHT" />
+             <stat name="level:dragon knight" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Grave Warden" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_GRAVE_WARDEN">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_GPGW_MULTICLASS_GRAVE_WARDEN" />
+             <stat name="level:grave warden" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Magus" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_MAGUS">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_HMGS_MULTICLASS_MAGUS" />
+             <stat name="level:magus" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Prism" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_PRISM">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_PLM_MUTLICLASS_PRISM" />
+             <stat name="level:prisn" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Pugilist" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_PUGILIST">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_MULTICLASS_PUGILIST" />
+             <stat name="level:pugilist" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Savant" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_SAVANT">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_LASERLL_MULTICLASS_SAVANT" />
+             <stat name="level:savant" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Spiritualist" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_SPIRITUALIST">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_HSPRT_MULTICLASS_SPIRITUALIST" />
+             <stat name="level:spiritualist" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Swordmage" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_SWORDMAGE">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_DMSG_AASM_MULTICLASS_SWORDMAGE" />
+             <stat name="level:swordmage" value="level" bonus="base" />
+        </rules>
+    </element>
+    <element name="Hermeticist" type="Class Feature" source="Custom" id="ID_CUSTOM_DUAL_CLASS_HERMETICIST">
+        <compendium display="false" />
+        <supports>Dual Class Selection</supports>
+        <rules>
+             <grant type="Class" id="ID_MULTICLASS_HERMETICIST" />
+             <stat name="level:hermeticist" value="level" bonus="base" />
+        </rules>
+        <sheet display="false">
+    	</sheet>
+    </element>
+
+</elements>

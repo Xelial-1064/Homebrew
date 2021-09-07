@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Hermeticist" type="Class" source="Player’s Handbook" id="ID_CLASS_HERMETICIST_V2">
+	
+		<description>
+			<!--
+			<p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
+			<p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
+			<p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
+			<p class="indent">Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
+			<h4>SCHOLARS OF THE ARCANE</h4>
+			<p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.</p>
+			<p class="indent">Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from ancient creatures (such as the fey) that are steeped in magic.</p>
+			<h4>THE LURE OF KNOWLEDGE</h4>
+			<p>Wizards’ lives are seldom mundane. The closest a wizard is likely to come to an ordinary life is working as a sage or lecturer in a library or university, teaching others the secrets of the multiverse. Other wizards sell their services as diviners, serve in military forces, or pursue lives of crime or domination.</p>
+			<p class="indent">But the lure of knowledge and power calls even the most unadventurous wizards out of the safety of their libraries and laboratories and into crumbling ruins and lost cities. Most wizards believe that their counterparts in ancient civilizations knew secrets of magic that have been lost to the ages, and discovering those secrets could unlock the path to a power greater than any magic available in the present age.</p>
+			<h4>CREATING A WIZARD </h4>
+			<p>Creating a wizard character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for it? Do you have a natural talent, or did you simply study hard and practice incessantly? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
+			<p class="indent">What drew you forth from your life of study? Did your first taste of magical knowledge leave you hungry for more? Have you received word of a secret repository of knowledge not yet plundered by any other wizard? Perhaps you’re simply eager to put your newfound magical skills to the test in the face of danger.</p>
+			-->
+			<h5>QUICK BUILD</h5>
+			<p>You can make a Hermeticist quickly by following these suggestions. First, make your spellcasting ability your highest ability score. Second, choose the sage background. </p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a hermeticist, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per hermeticist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per hermeticist level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Constitution</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, History, Insight, Investigation, and Perception.</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+				<li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+			</ul>
+			<h5 class="caption">THE HERMETICIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Studies</td><td>Spell Level</td><td>Spells Known</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Hermetic Magic, Hermetic Gift</td><td>-</td><td>1</td><td>4</td></tr>
+				<tr><td> 2nd</td><td class="left">Hermetic Studies</td><td>2</td><td>1</td><td>5</td></tr>
+				<tr><td> 3rd</td><td class="left">Hermetic Bestowal</td><td>2</td><td>2</td><td>6</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>2</td><td>7</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>4</td><td>3</td><td>8</td></tr>
+				<tr><td> 6th</td><td class="left">Gift Feature</td><td>4</td><td>3</td><td>9</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>6</td><td>4</td><td>10</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>11</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>8</td><td>5</td><td>12</td></tr>
+				<tr><td>10th</td><td class="left">Gift Feature</td><td>8</td><td>5</td><td>14</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>10</td><td>6</td><td>15</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>10</td><td>6</td><td>15</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>10</td><td>7</td><td>16</td></tr>
+				<tr><td>14th</td><td class="left">Gift Feature</td><td>10</td><td>7</td><td>18</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>12</td><td>8</td><td>19</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>12</td><td>8</td><td>19</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>12</td><td>9</td><td>20</td></tr>
+				<tr><td>18th</td><td class="left">Transcendental Theory </td><td>14</td><td>9</td><td>22</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>14</td><td>9</td><td>22</td></tr>
+				<tr><td>20th</td><td class="left">Limit of the Divine</td><td>14</td><td>9</td><td>22</td></tr>
+			</table>
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MAGIC" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_GIFT" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_BESTOWAL" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_ABILITYSCOREIMPROVEMENT_HERMETICIST" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_TRANSCENDENTAL_THEORY" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_V2_LIMIT_OF_THE_DIVINE" />
+		</description>
+		<sheet display="false">
+			<description>A magic user who can freely cast magic that don't challenge the established limits of Hermetic Theory.</description>
+		</sheet>
+		<setters>
+			<set name="short">A scholarly magic-user capable of manipulating the structures of reality.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>			
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<select type="Proficiency" name="Skill Proficiency (Hermeticist)" supports="Skill,Hermeticist" number="2" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MAGIC" level="1"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_GIFT" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_BESTOWAL" level="3" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_ABILITYSCOREIMPROVEMENT_HERMETICIST" level="4" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_TRANSCENDENTAL_THEORY" level="18" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_LIMIT_OF_THE_DIVINE" level="20" />
+
+			
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_TECHNIQUE"/>			
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_FORMS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_CASTING_SPEED"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_RANGE"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_COMPONENTS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_DURATION"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_TARGETS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_AOE"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_MAGNITUDE"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_DEBUFFS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_BUFFS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_CONJURATION"/>
+		</rules>
+		<multiclass id="ID_MULTICLASS_HERMETICIST">
+			<prerequisite>Constitution 13 and Intelligence 13, Wisdom 13,  or Charisma 13 </prerequisite>
+			<requirements>[con:13],([int:13]||[wis:13]||[cha:13])</requirements>
+
+				<set name="multiclass proficiencies">—</set>
+
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Hermetic Magic" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MAGIC">
+		<description>
+			<p>Starting at 1st level, you have attained the ability to manipulate the raw energies of the world, so long as you operate under a set of rules. To create spells you can combine different Techniques and Forms to achieve different effects. You have a certain number of prepared spells in this way that you can create during a long rest. Casting without preparation is possible but much more difficult.</p>
+			<p>In order to successfully cast a spell after determining its Technique, Form, and Magnitude, a successful Hermetic Check must be made. A Hermetic check is equal to (DC of the Spell / Spell Level) + Fatigue Modifier. Forms of advantage and disadvantage, or other modifiers do not apply to this check.</p>
+			<center>
+				<p><strong>Hermetic check DC</strong> = (DC of the Spell/ Spell Level) + Fatigue Modifier</p>
+			</center>
+			<h5>FATIGUE</h5>
+			<p>Fatigue is gained upon failing a Hermetic Check,  as the failed spell backfires. The total number of Fatigue levels impose a penalty: -0 at 1 (Winded), -1 at 2 (Weary), -3 at 3 (Tired), and -5 at 4 (Dazed). At 5 levels, you fall unconscious. Fatigue can be cleared by resting, with short rests removing 1 level of fatigue and Long rests removing 3 levels.</p>
+			<h5>SPELL LEVEL</h5>
+			<p>The Hermeticism table shows your Spell Level, which increases as you level allowing you to cast more powerful spells of which you are trained in. Casting more than one spell per round treats the additional spells as a rushed spell, doubling its cost. </p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Your spellcasting ability is determined by your hermetic gift. See the Gift feature of your hermetic gift for your spellcasting ability.</p>
+			<h5>RITUAL CASTING</h5>
+			<p>Some spell effects do not remain permanent upon being cast. Using Creo to heal a wound will only suppress the effects until the duration ends, never truly healing it. In order to bypass this limit, a ritual cast must take place, consuming raw magical energy, vis, in the process. </p>
+			<p>To produce vis, the caster must spend a day’s worth of downtime pouring magical energy into a medium of one of the forms.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your hermeticist spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You have learned to alter reality through ancient tomes. You use an arcane focus to cast spells. and can also cast madnomancer spells as a ritual.</description>
+		</sheet>	
+	</element>
+	<element name="Technique" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_TECHNIQUE">
+		<description>
+			<p>Creo | Intellego | Muto | Perdo | Rego</p>
+		</description>
+		<sheet usage="SL: {{spell level:usage}}">
+			<description>Creo | Intellego | Muto | Perdo | Rego</description>
+		</sheet>
+		<rules>
+			<stat name="spell level:usage" value="1" level="1" />
+			<stat name="spell level:usage" value="1" level="3" />
+			<stat name="spell level:usage" value="1" level="5" />
+			<stat name="spell level:usage" value="1" level="7" />
+			<stat name="spell level:usage" value="1" level="9" />
+			<stat name="spell level:usage" value="1" level="11" />
+			<stat name="spell level:usage" value="1" level="13" />
+			<stat name="spell level:usage" value="1" level="15" />
+			<stat name="spell level:usage" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Forms" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_FORMS">
+		<description>
+			<p>Animal | Aquam | Auram | Corpus | Herbam | Ignem | Imaginem | Mentem | Terram | Vim</p>
+		</description>
+		<sheet>
+			<description>Animal | Aquam | Auram | Corpus | Herbam | Ignem | Imaginem | Mentem | Terram | Vim</description>
+		</sheet>
+	</element>
+	<element name="Casting Speed" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_CASTING_SPEED">
+		<description>
+			<p>10 minutes (-10) | 1 minute (+0) | Action (+1) | Bonus Action (+5) | Reaction (+10)</p>
+		</description>
+		<sheet>
+			<description>10 minutes (-10) | 1 minute (+0) | Action (+1) | Bonus Action (+5) | Reaction (+10)</description>
+		</sheet>
+	</element>
+	<element name="Range" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_RANGE">
+		<description>
+			<p>Self (+0) | Touch (+1) | 5' (+1) | 10' (+5) | 30' (+10) | 60' (+15) | 90' (+20) | 120' (+25) | 150' (+30) | 300' (+50) | 500' (+75) | Sight (+100) | Unlimited (+200)</p>
+		</description>
+		<sheet>
+			<description>Self (+0) | Touch (+1) | 5' (+1) | 10' (+5) | 30' (+10) | 60' (+15) | 90' (+20) | 120' (+25) | 150' (+30) | 300' (+50) | 500' (+75) | Sight (+100) | Unlimited (+200)</description>
+		</sheet>
+	</element>
+	<element name="Components" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_COMPONENTS">
+		<description>
+			<p>V,S,M (+0) | (V,S,M) Any 2 (+5) | (V,S,M) Any 1 (+10) | (V,S,M) None (+25)</p>
+		</description>
+		<sheet>
+			<description>V,S,M (+0) | (V,S,M) Any 2 (+5) | (V,S,M) Any 1 (+10) | (V,S,M) None (+25)</description>
+		</sheet>
+	</element>
+	<element name="Duration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_DURATION">
+		<description>
+			<p>Instantaneous (+0) | 1 Round/Concentration 1 Minute (+1) | 1 Minute/Concentration 10 Minutes (+5) | 10 Minutes/Concentration 1 Hour (+10) | 1 hour/Concentration 8 Hours (+15) | 8 Hours/Concentration 24 Hours (+20) | 24 hours (+25) | 7 Days (+35) | 30 Days (+50) | Until Dispelled (+75) | Until Dispelled or Triggered (+80) | Permanent (+100)</p>
+		</description>
+		<sheet>
+			<description>Instantaneous (+0) | 1 Round/Concentration 1 Minute (+1) | 1 Minute/Concentration 10 Minutes (+5) | 10 Minutes/Concentration 1 Hour (+10) | 1 hour/Concentration 8 Hours (+15) | 8 Hours/Concentration 24 Hours (+20) | 24 hours (+25) | 7 Days (+35) | 30 Days (+50) | Until Dispelled (+75) | Until Dispelled or Triggered (+80) | Permanent (+100)</description>
+		</sheet>
+	</element>
+	<element name="Targets" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_TARGETS">
+		<description>
+			<p>No Target (+0) | 1 Creature (+5) | 2 Creatures (+15) | 4 Creatures (+30) | 8 Creatures (+50)</p>
+		</description>
+		<sheet>
+			<description>No Target (+0) | 1 Creature (+5) | 2 Creatures (+15) | 4 Creatures (+30) | 8 Creatures (+50)</description>
+		</sheet>
+	</element>
+	<element name="AoE" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_AOE">
+		<description>
+			<p>No Aoe(+0) | 5'x5'x5' (+5) | 10'x10'x10' (+15) | 15'x15'x15' (+30) | 20'x20'x20' (+50)</p>
+		</description>
+		<sheet>
+			<description>No Aoe(+0) | 5'x5'x5' (+5) | 10'x10'x10' (+15) | 15'x15'x15' (+30) | 20'x20'x20' (+50)</description>
+		</sheet>
+	</element>
+	<element name="Magnitude" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_MAGNITUDE">
+		<description>
+			<p>xd4 (+1) | xd6 (+10) | xd8 (+20) | xd10 (+35) | xd12 (+50)</p>
+			<p class="indent">Magnitude can only be purchased once, and scales with spell level.</p>
+		</description>
+		<sheet>
+			<description>{{spell level:usage}}d4 (+1) | {{spell level:usage}}d6 (+10) | {{spell level:usage}}d8 (+20) | {{spell level:usage}}d10 (+35) | {{spell level:usage}}d12 (+50)</description>
+		</sheet>
+	</element>
+	<element name="Debuffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_DEBUFFS">
+		<description>
+			<p>-10ft/AC -1/Charmed/Deafened/Frightened (+5) | -15ft/Poisoned (+10)/Bl | -20ft/AC -2/Blinded/Grappled (+15) | Halve Speed(+20) | Prone/AC -3 (+25) | Incapacitated/Restrained (+30) |AC -4 (+35) | Stunned (+40) | AC -5/Paralyzed/Petrified/Unconscious (+50)</p>
+		</description>
+		<sheet>
+			<description>-10ft/AC -1/Charmed/Deafened/Frightened (+5) | -15ft/Poisoned (+10)/Bl | -20ft/AC -2/Blinded/Grappled (+15) | Halve Speed(+20) | Prone/AC -3 (+25) | Incapacitated/Restrained (+30) |AC -4 (+35) | Stunned (+40) | AC -5/Paralyzed/Petrified/Unconscious (+50)</description>
+		</sheet>
+	</element>
+	<element name="Buffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_BUFFS">
+		<description>
+			<p>+10ft/AC +1 (+5) | +15ft (+10) | +20ft/AC +2 (+15) | Double Movement Speed (+20)| AC +3 (+25) | AC +4 (+35) | AC +5/Flight +60ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+50) | Non Magical Physical Damage Immunity (+100)</p>
+		</description>
+		<sheet>
+			<description>+10ft/AC +1 (+5) | +15ft (+10) | +20ft/AC +2 (+15) | Double Movement Speed (+20)| AC +3 (+25) | AC +4 (+35) | AC +5/Flight +60ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+50) | Non Magical Physical Damage Immunity (+100)</description>
+		</sheet>
+	</element>
+	<element name="Conjuration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_CONJURATION">
+		<description>
+			<p>No Beast Summoned (+0) | CR 0 (+15) | CR 1/2 (+25) | CR 1 (+35) | CR 2 (+65) | CR 3 (+95) | CR 4 (+125) | CR 5 (+155) | CR 6 (+185) | CR 7 (+215) | CR 8 (+245)</p>
+		</description>
+		<sheet>
+			<description>No Beast Summoned (+0) | CR 0 (+15) | CR 1/2 (+25) | CR 1 (+35) | CR 2 (+65) | CR 3 (+95) | CR 4 (+125) | CR 5 (+155) | CR 6 (+185) | CR 7 (+215) | CR 8 (+245)</description>
+		</sheet>
+	</element>
+	<element name="Hermetic Gift" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_GIFT">
+		<description>
+			<p>Choose a Hermetic Gift, which describes how your gift manifests. Your choice grants you features when you choose it at 1st level and again at 6th, 10th, and 14th level.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Hermetic Gift" supports="Hermetic Gift V2" />
+		</rules>
+	</element>
+	<element name="Hermetic Studies" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES">
+		<description>
+			<p>Starting at 2nd level, you gain proficiency in two Hermetic Techniques and Forms. </p>
+			<p class="indent">When you gain certain Hermeticism levels you gain additional techniques and forms of your choice. Trained techniques and forms create more efficient spells that utilize them. </p>
+			<p class="indent">Proficiency with a technique allows you to divide the DC determining a successful cast of a spell which utilizes the technique by your spell level. Proficiency with a form allows you to add your proficiency bonus and spellcasting ability modifier to the DC determining a successful cast of a spell which utilizes the form. </p>
+			<p class="indent">Additionally, you can modify existing spells with additional techniques and forms you are trained in to cast a complex spell. Complex spells only retain their proficiency bonuses if all techniques and forms are trained.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Hermetic Study Technique (Level 2)" supports="Hermetic Studies Techniques V2" level="2"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 2)" supports="Hermetic Studies Forms V2" level="2" />
+			<select type="Class Feature" name="Hermetic Study Technique (Level 5)" supports="Hermetic Studies Techniques V2" level="5"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 5)" supports="Hermetic Studies Forms V2" level="5"/>
+			<select type="Class Feature" name="Hermetic Study Technique (Level 7)" supports="Hermetic Studies Techniques V2" level="7"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 7)" supports="Hermetic Studies Forms V2" level="7"/>
+			<select type="Class Feature" name="Hermetic Study Technique (Level 9)" supports="Hermetic Studies Techniques V2" level="9"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 9)" supports="Hermetic Studies Forms V2" level="9"/>
+			<select type="Class Feature" name="Hermetic Study Technique (Level 12)" supports="Hermetic Studies Techniques V2" level="12"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 12)" supports="Hermetic Studies Forms V2" level="12"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 15)" supports="Hermetic Studies Forms V2" level="15" number="2"/>
+			<select type="Class Feature" name="Hermetic Study Form (Level 18)" supports="Hermetic Studies Forms V2" level="18" number="2"/>
+		</rules>
+	</element>
+	<element name="Hermetic Bestowal" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_BESTOWAL">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to create small fragments of Vis, which can temporarily store magic inside them. When you cast a spell, you can condense the spell’s energy into a fragment of vis embodying the form used to create it.  </p>
+			<p class="indent">A creature holding this fragment can use its action to release the spell within, whereupon the fragment disappears. The spell uses your attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.</p>
+			<p class="indent">Once you create a bead with this feature, you can’t do so again until you finish a short or long rest. Attempting to create a second bead will destroy the first, vanishing in a flash of light, losing the spell. </p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>  When you cast a spell, you can condense the spell’s energy into a fragment of vis embodying the form used to create it. A creature holding this fragment can use its action to release the spell within, whereupon the fragment disappears. The spell uses your attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.
+			Once you create a bead with this feature, you can’t do so again until you finish a short or long rest. Attempting to create a second bead will destroy the first, vanishing in a flash of light, losing the spell.</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_ABILITYSCOREIMPROVEMENT_HERMETICIST">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Hermeticist 4)" supports="Improvement Option,Hermeticist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 8)" supports="Improvement Option,Hermeticist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 12)" supports="Improvement Option,Hermeticist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 16)" supports="Improvement Option,Hermeticist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 19)" supports="Improvement Option,Hermeticist,19" level="19" />
+		</rules>
+	</element>
+	<element name="Transcendental Theory" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_TRANSCENDENTAL_THEORY">
+		<description>
+			<p>At 18th level, you have learned how to partially bypass the limits of Hermetic Theory. You no longer need to cast spells at a ritual level for them to have a permanent effect. Demons can no longer fool your Intellego Techniques. Additionally you can change the properties of raw vis, allowing it to be transferred between different forms.</p>
+		</description>
+		<sheet>
+			<description>You have learned how to partially bypass the limits of Hermetic Theory. You no longer need to cast spells at a ritual level for them to have a permanent effect. Demons can no longer fool your Intellego Techniques. Additionally you can change the properties of raw vis, allowing it to be transferred between different forms.</description>
+		</sheet>
+	</element>
+	<element name="Limit of the Divine" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_LIMIT_OF_THE_DIVINE">
+		<description>
+			<p>At 20th level, you are no longer bound by lesser limits, and have ascended to the divine state. </p>
+			<p class="indent">You have successfully halted the process of aging. </p>
+			<p class="indent">You gain immunity to radiant damage, and are considered a celestial. </p>
+			<p class="indent">You learn how to create a powerful aspect of time, in which you can store your current state in a mote of temporal energy. This mote is a Tiny object with AC 15 and 1 hit point, and it is immune to poison and psychic damage. </p>
+			<p class="indent">If you die, so long as your mote has not been destroyed, you are restored to your condition at the time you created the mote, destroying the mote in the process.</p>
+			<p class="indent">Your mote takes one week to collect temporal energy before it can be used again.</p>
+		</description>
+		<sheet usage="1/Week">
+			<description>You have successfully halted the process of aging. You gain immunity to radiant damage, and are considered a celestial.You learn how to create a powerful aspect of time, in which you can store your current state in a mote of temporal energy. This mote is a Tiny object with AC 15 and 1 hit point, and it is immune to poison and psychic damage.If you die, so long as your mote has not been destroyed, you are restored to your condition at the time you created the mote, destroying the mote in the process.Your mote takes one week to collect temporal energy before it can be used again.</description>
+		</sheet>
+	</element>
+
+	<element name="Architect" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<!--
+			<p>The School of Abjuration emphasizes magic that blocks, banishes, or protects. Detractors of this school say that its tradition is about denial, negation rather than positive assertion. You understand, however, that ending harmful effects, protecting the weak, and banishing evil influences is anything but a philosophical void. It is a proud and respected vocation.</p>
+			<p class="indent">Called abjurers, members of this school are sought when baleful spirits require exorcism, when important locations must be guarded against magical spying, and when portals to other planes of existence must be closed.</p>
+			-->
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_DOMAIN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_BY_DESIGN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_FLOOR_PLAN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_EVERLASTING_CREATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_LABYRINTH" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Intelligence.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_DOMAIN" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_BY_DESIGN" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_FLOOR_PLAN" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_EVERLASTING_CREATION" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_LABYRINTH" level="14"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
+		</rules>
+
+	</element>
+	<element name="Domain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_DOMAIN">
+		<description>
+			<p>Your magic comes from exposure to ancient technology, and from it you gained the ability to understand the structure of any non living construct. With a profound understanding of the laws of creation, and the ability to analyze the composition of matter, you are second to none when it comes to understanding advanced mechanizations and designs. </p>
+			<p class="indent">Starting at first level the size of your spell’s AoE is doubled as you are adept at creating in the midst of battle.</p>
+			<p class="indent">Additionally, you have a sense for anything that occurs within this terrain during its duration, you can cast spells on anyone within a terrain you have created as if you were touching them, ignoring range requirements.</p>
+		</description>
+		<sheet>
+			<description>The size of your spell’s AoE is doubled. Additionally, you have a sense for anything that occurs within this terrain during its duration, you can cast spells on anyone within a terrain you have created as if you were touching them, ignoring range requirements.</description>
+		</sheet>
+	</element>
+	<element name="By Design" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_BY_DESIGN">
+		<description>
+			<p>At 6th level, you can freely manipulate your terrain without having to maintain concentration on it. Manipulating it in this way is not enough to directly cause harm, but it can be used to allow passage ways to shift or other alterations. </p>
+			<p class="indent">Additionally certain properties of the existing terrain can be adjusted so long as you are proficient in the form used in the process. Ex.( Can cause flame to freeze over with an Aquam requisite).</p>
+		</description>
+		<sheet>
+			<description>You can freely manipulate your terrain without having to maintain concentration on it. Manipulating it in this way is not enough to directly cause harm, but it can be used to allow passage ways to shift or other alterations.
+			Additionally certain properties of the existing terrain can be adjusted so long as you are proficient in the form used in the process. Ex.( Can cause flame to freeze over with an Aquam requisite).</description>
+		</sheet>
+	</element>
+	<element name="Floor Plan" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_FLOOR_PLAN">
+		<description>
+			<p>Also at 6th level, you can share the awareness of your terrain through the use of the Hermetic Bestowal feature. Vis created to house this ability is shaped in the same form of your terrain. While possessing this mote, the wielder is aware of everyone inside the terrain, even if they can’t see them. They can also create small alterations in the terrain, enough to change certain passageways. </p>
+		</description>
+		<sheet>
+			<description>You can share the awareness of your terrain through the use of the Hermetic Bestowal feature. Vis created to house this ability is shaped in the same form of your terrain. While possessing this mote, the wielder is aware of everyone inside the terrain, even if they can’t see them. They can also create small alterations in the terrain, enough to change certain passageways.</description>
+		</sheet>
+	</element>
+	<element name="Everlasting Creation" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_EVERLASTING_CREATION">
+		<description>
+			<p>At 10th level, terrain you create lasts one level of duration longer, and allows you to continue adjusting it should you fall unconscious.</p>
+		</description>
+		<sheet>
+			<description>Terrain you create lasts one level of duration longer, and allows you to continue adjusting it should you fall unconscious.</description>
+		</sheet>
+	</element>
+	<element name="Labyrinth" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_LABYRINTH">
+		<description>
+			<p>Starting at 14th level, if terrain is cast using the range of self, enemies trapped inside are restricted from leaving until they kill you or you end the spell.</p>
+			<p class="indent">Additionally, casting from self renders you and any you choose immune to any negative effects of the terrain, and gives you the benefits of half cover. </p>
+		</description>
+		<sheet>
+			<description>If terrain is cast using the range of self, enemies trapped inside are restricted from leaving until they kill you or you end the spell.
+			Additionally, casting from self renders you and any you choose immune to any negative effects of the terrain, and gives you the benefits of half cover.</description>
+		</sheet>
+	</element>
+
+	<element name="Shardbinder" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<!--
+			<p>As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.</p>
+			-->
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_CORRUPTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_PARTIAL_DEMONIZATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIC_GIFT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DRAIN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIZATION" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Charisma.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_CORRUPTION" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_PARTIAL_DEMONIZATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIC_GIFT" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DRAIN" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIZATION" level="14"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Corruption" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_CORRUPTION">
+		<description>
+			<p>Your magic comes from a curse, the more you draw it the more crystals will consume your core, the origin of your magic and self. These crystals can be harnessed and contained through effort, but make no doubt that one day they will kill you. Starting at first level, whenever you successfully cast a spell you gain one charge of corruption. Your maximum level of corruption is equivalent to your charisma modifier (Minimum of 1).  Corruption reduces you max health by 1, but is added to your Hermetic Check DC for each charge. </p>
+			<p class="indent">Additionally you have the option to cleanse this corruption by releasing it all in a powerful burst of magic. By sacrificing your corruption, you can increase the magnitude of your spells damage die by 1 per corruption charge, up to a d12. If the charges of corruption are used on a d12, instead of increasing its magnitude the spell will crit on a natural roll of 19-20, and heal you for half of damage dealt. Lost max health from corruption is restored by a short or long rest.</p>
+		</description>
+		<sheet usage="{{corruption cap:usage}}">
+			<description> Whenever you successfully cast a spell you gain one charge of corruption. Your maximum level of corruption is {{corruption cap:usage}}.  Corruption reduces you max health by 1, but is added to your Hermetic Check DC for each charge. Additionally you have the option to cleanse this corruption by releasing it all in a powerful burst of magic. By sacrificing your corruption, you can increase the magnitude of your spells damage die by 1 per corruption charge, up to a d12. If the charges of corruption are used on a d12, instead of increasing its magnitude the spell will crit on a natural roll of 19-20, and heal you for half of damage dealt. Lost max health from corruption is restored by a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="corruption cap:usage" value="1" bonus="base" />
+			<stat name="corruption cap:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Partial Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_PARTIAL_DEMONIZATION">
+		<description>
+			<p>Starting at level 6, you can surrender part of your core to the corruption to enter a hyper state, drawing out more power from your curse but putting your life at risk. While in this state, your corruption increases by 1 at the start of every turn. Attacks that overcharge a d12 crit on a natural roll of 18-20, and add your spell modifier to your damage rolls, but no longer heal you. Additionally, if your max health is reduced to less than half its normal value, it becomes much more difficult to cleanse your blight: Short rests no longer restore max health. You receive one level of fatigue upon exiting this form.</p>
+		</description>
+		<sheet action="Action" usage="1 Fatigue on Exit">
+			<description>Surrender part of your core to enter a hyper state, drawing out more power from your curse at a cost. Your corruption increases by 1 at the start of every turn. Overcharged d12s crit on a natural roll of 18-20, and add your spell modifier to your damage rolls, but no longer heal you. Additionally, if your max health is reduced to less than half its normal value, it becomes much more difficult to cleanse your blight: Short rests no longer restore max health. You receive one level of fatigue upon exiting this form.</description>
+		</sheet>
+	</element>
+	<element name="Demonic Gift" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIC_GIFT">
+		<description>
+			<p>Also at level 6, this corruptive effect can be temporarily gifted through the use of the Hermetic Bestowal feature. Vis created to house partial demonization is shaped as a small glowing crystal, this crystal gives the effects of partial demonization, temporarily making the user compatible with its magic. If anyone other than a Shardbinder uses the mote, corruption is instead cleansed by imbuing weapons or magic with corruption, increasing the die by one level of magnitude per charge. All other effects of corruption and partial demonization apply to the user. Creating the Vis required for this feature applies one level of fatigue to the caster, and one level of exhaustion to anyone who uses the magic upon exiting as their body is not naturally compatible.</p>
+		</description>
+		<sheet action="Action" usage="1 Fatigue">
+			<description>Partial Demonization can be temporarily gifted through the use of the Hermetic Bestowal feature. Vis created to house partial demonization is shaped as a small glowing crystal, this crystal gives the effects of partial demonization, temporarily making the user compatible with its magic. If anyone other than a Shardbinder uses the mote, corruption is instead cleansed by imbuing weapons or magic with corruption, increasing the die by one level of magnitude per charge. All other effects of corruption and partial demonization apply to the user. Creating the Vis required for this feature applies one level of fatigue to the caster, and one level of exhaustion to anyone who uses the magic upon exiting as their body is not naturally compatible.</description>
+		</sheet>
+	</element>
+	<element name="Drain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DRAIN">
+		<description>
+			<p>Starting at level 10, When an enemy dies after receiving a corruption charged attack from you in the last turn, you siphon a fragment of vis from their essence, restoring 1 level of fatigue and restoring max health equal to your proficiency bonus, but not healing you.</p>
+		</description>
+		<sheet>
+			<description>When an enemy dies after receiving a corruption charged attack from you in the last turn, you siphon a fragment of vis from their essence, restoring 1 level of fatigue and restoring max health equal to your proficiency bonus, but not healing you.</description>
+		</sheet>
+	</element>
+	<element name="Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIZATION">
+		<description>
+			<p>Starting at level 14, frequent exposure to your blight has enabled you to enter a temporary state of full demonization. Once per long rest you can fully demonize for 1 minute. In a full demonization state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your corruption increases by 2 at the start of every turn, and is no longer capped. Attacks that overcharge a d12 crit on a natural roll of 17-20, and add your spell modifier to your damage rolls, but no longer heal you. You cannot cleanse corruption until you exit this state, and you suffer two levels of fatigue upon doing so. After killing an enemy, drain heals you for an amount equal to your current corruption + your proficiency bonus. If your max health falls below half its maximum, make a DC 10 wisdom save. On a failure you immediately attack whoever is nearest to you.</p>
+		</description>
+		<sheet usage="2 Fatigue on Exit, 1/Long Rest">
+			<description>You fully demonize for 1 minute. You are immune to non magical piercing, bludgeoning, and slashing damage. Your corruption increases by 2 at the start of every turn, and is no longer capped. Overcharged d12s crit on a natural roll of 17-20, and add your spell modifier to your damage rolls, but no longer heal you. You cannot cleanse corruption until you exit this state, and you suffer two levels of fatigue upon doing so. After killing an enemy, drain heals you for an amount equal to your current corruption + your proficiency bonus. If your max health falls below half its maximum, make a DC 10 wisdom save, attacking whoever is nearest to you on fail.</description>
+		</sheet>
+	</element>
+
+	<!--Techniques-->
+	<element name="Creo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_CREO">
+		<supports>Hermetic Studies Techniques V2</supports>
+		<description>
+			<p>Creo ("I create") brings objects and substances into existence from nothing, or makes an already-existing target a "more perfect" version of itself (e.g. healing magic, as healed bodies are nearer perfection than wounded bodies).</p>
+		</description>
+		<sheet>
+			<description>Creo ("I create") brings objects and substances into existence from nothing, or makes an already-existing target a "more perfect" version of itself</description>
+		</sheet>
+	</element>
+	<element name="Intellego" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_INTELLEGO">
+		<supports>Hermetic Studies Techniques V2</supports>
+		<description>
+			<p>Intellego ("I perceive") detects or reveals, enhances a target's natural senses or conveys supernatural ones.</p>
+		</description>
+		<sheet>
+			<description>Intellego ("I perceive") detects or reveals, enhances a target's natural senses or conveys supernatural ones.</description>
+		</sheet>
+	</element>
+	<element name="Muto" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_MUTO">
+		<supports>Hermetic Studies Techniques V2</supports>
+		<description>
+			<p>Muto ("I transform") alters the nature of a being, object or substance, adding unnatural traits and/or removing natural ones.</p>
+		</description>
+		<sheet>
+			<description>Muto ("I transform") alters the nature of a being, object or substance, adding unnatural traits and/or removing natural ones.</description>
+		</sheet>
+	</element>
+	<element name="Perdo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_PERDO">
+		<supports>Hermetic Studies Techniques V2</supports>
+		<description>
+			<p>Perdo ("I destroy") decays, disintegrates or otherwise diminishes the target, making something a worse example of its kind (i.e. the opposite of Creo).</p>
+		</description>
+		<sheet>
+			<description>Perdo ("I destroy") decays, disintegrates or otherwise diminishes the target, making something a worse example of its kind (i.e. the opposite of Creo).</description>
+		</sheet>
+	</element>
+	<element name="Rego" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_REGO">
+		<supports>Hermetic Studies Techniques V2</supports>
+		<description>
+			<p>Rego ("I control") involves manipulation of the target in any way that does not alter its nature, e.g. direct a target's movement, put a creature to sleep, or force a tree to bear fruit out of season. This is the main Technique used in spells of protection or 'warding'.</p>
+		</description>
+		<sheet>
+			<description>Rego ("I control") involves manipulation of the target in any way that does not alter its nature, e.g. direct a target's movement, put a creature to sleep, or force a tree to bear fruit out of season. This is the main Technique used in spells of protection or 'warding'.</description>
+		</sheet>
+	</element>
+
+	<!--Forms-->
+	<element name="Animal" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_ANIMAL">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Animal affects "all natural living things that are not plants or humans, doing to animals what Mentem and Corpus spells do to people" as well as "things made with animal products" such as leather, wool, cheese, silk, etc. Since bacteria were unknown in medieval times, illness (e.g.) was considered either a form of possession or an imbalance of 'bodily humors'; thus, magic dealing with disease is relegated variously to Creo, Mentem and/or Vim effects.</p>
+		</description>
+		<sheet>
+			<description>Animal affects "all natural living things that are not plants or humans, doing to animals what Mentem and Corpus spells do to people" as well as "things made with animal products" such as leather, wool, cheese, silk, etc.</description>
+		</sheet>
+	</element>
+	<element name="Auram" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_AURAM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Auram affects lightning, wind and gaseous substances; other weather effects typically require an Aquam requisite (see below).</p>
+		</description>
+		<sheet>
+			<description>Auram affects lightning, wind and gaseous substances; other weather effects typically require an Aquam requisite</description>
+		</sheet>
+	</element>
+	<element name="Aquam" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_AQUAM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Aquam is used for any liquid, with the exception of blood (which requires Animal or Corpus magic to affect); non-liquid forms of water will involve requisites (see below).</p>
+		</description>
+		<sheet>
+			<description>Aquam is used for any liquid, with the exception of blood (which requires Animal or Corpus magic to affect); non-liquid forms of water will involve requisites.</description>
+		</sheet>
+	</element>
+	<element name="Corpus" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_CORPUS">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Corpus applies to the human body, making it crucial to longevity formulas.</p>
+		</description>
+		<sheet>
+			<description>Corpus applies to the human body, making it crucial to longevity formulas.</description>
+		</sheet>
+	</element>
+	<element name="Herbam" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_HERBAM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Herbam primarily involves plants, but applies equally to any organic matter, living or dead, that is not of animal origin.</p>
+		</description>
+		<sheet>
+			<description>Herbam primarily involves plants, but applies equally to any organic matter, living or dead, that is not of animal origin.</description>
+		</sheet>
+	</element>
+	<element name="Ignem" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_IGNEM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Ignem involves light and heat, and is heavily represented in the fire spells.</p>
+		</description>
+		<sheet>
+			<description>Ignem involves light and heat, and is heavily represented in the fire spells.</description>
+		</sheet>
+	</element>
+	<element name="Imaginem" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_IMAGINEM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Imaginem deals with images, sounds, and other sensory stimuli (thus is involved in most illusionary effects).</p>
+		</description>
+		<sheet>
+			<description>Imaginem deals with images, sounds, and other sensory stimuli (thus is involved in most illusionary effects).</description>
+		</sheet>
+	</element>
+	<element name="Mentem" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_MENTEM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Mentem deals with emotions, memories, thoughts and spirits.</p>
+		</description>
+		<sheet>
+			<description>Animal affects "all natural living things that are not plants or humans, doing to animals what Mentem and Corpus spells do to people" as well as "things made with animal products" such as leather, wool, cheese, silk, etc.</description>
+		</sheet>
+	</element>
+	<element name="Terram" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_TERRAM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Terram involves earth and minerals: mere soil is the simplest target, while stone, metal and gems require progressively greater investment of spell levels to achieve the same effect.</p>
+		</description>
+		<sheet>
+			<description>Terram involves earth and minerals: mere soil is the simplest target, while stone, metal and gems require progressively greater investment of spell levels to achieve the same effect.</description>
+		</sheet>
+	</element>
+	<element name="Vim" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_VIM">
+		<supports>Hermetic Studies Forms V2</supports>
+		<description>
+			<p>Vim ("power") involves magic itself, as well as demons.</p>
+		</description>
+		<sheet>
+			<description>Vim ("power") involves magic itself, as well as demons.</description>
+		</sheet>
+	</element>
+
+</elements>

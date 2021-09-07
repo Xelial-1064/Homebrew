@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="xelial.index" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/xelial.index?token=AVQ23XINOBLX54LQCQPCKCTBG7X2Q" />
+		</update>
+	</info>
+	<files>  
+    <file name="class-dragonknight-variant" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-dragonknight-variant.xml?token=AVQ23XINOBLX54LQCQPCKCTBG7X2Q" />
+    <file name="class-hermeticist.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml?token=AVQ23XKMGEGWMROHL3M46JLBG7X4E" />
+    <file name="class-monk-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-monk-variant.xml?token=AVQ23XLCHBGPLTUMIRB6W2TBG7X5A" />
+    <file name="class-sorcerer-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-sorcerer-variant.xml?token=AVQ23XMFHVAOXT7CZGDV2PLBG7YDK" />
+    <file name="class-weaveshaper-reborn.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-weaveshaper-reborn.xml?token=AVQ23XNE3DOM26C5OVLJ3ADBG7X56" />
+    <file name="monk-acupuncture.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/monk-acupuncture.xml?token=AVQ23XOVHM5BZHQQWKCVUNLBG7X6U" />
+    <file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/warlock-elder-tempest.xml?token=AVQ23XKT7PUPJL5IYIG4TVDBG7X7O" />
+    <file name="archetype-champion-reborn.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/archetype-champion-reborn.xml?token=AVQ23XOJP2LJEEXSBTYJWATBG7YBA" />
+    <file name="multiclass-variants.xml" url="https://github.com/Xelial-1064/Homebrew/blob/main/multiclass-variants.xml" />
+
+	</files>
+</index>

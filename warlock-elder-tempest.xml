@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elder Tempest Patron</name>
+		<description>Elder Tempest Patron</description>
+		<author url="https://www.genfantasypress.com/about-the-compendium">Genuine Fantasy Press</author>
+		<update version="0.0.1">
+			<file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/genuine-fantasy-press/forgotten-secrets/archetypes/warlock-storm-lord.xml" />
+		</update>
+	</info>
+
+	<element name="The Elder Tempest" type="Archetype" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_OTHERWORLDLY_PATRON_ELDERTEMPEST">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>You’ve made a pact with an ancient power known as the Elder Tempest. Terrifying storms manifest in the body of the elder tempest. A being carved from clouds, wind, rain, and lightning, the elder tempest assumes the shape of a serpent that slithers through the sky. The tempest drowns the land beneath it with rain and stabs the earth with lances of lightning. Punishing winds scream around it as it flies, feeding the chaos it creates.</p>
+			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_EXPANDED_SPELL_LIST"/>
+			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_FISTOFTEMPESTS"/>
+			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_CLOAKOFTHESTORM"/>
+			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_SWIFTNESSOFTHEWIND"/>
+			<div element="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_ICONOFTHEGALE"/>
+		</description>
+		<sheet display="false">
+			<description>You’ve made a pact with an ancient power known as the Elder Tempest.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_FISTOFTEMPESTS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_CLOAKOFTHESTORM" level="6" />
+			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_SWIFTNESSOFTHEWIND" level="10" />
+			<grant type="Archetype Feature" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_ICONOFTHEGALE" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Elder Tempest lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>Elder Tempest EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud, warding wind</em></td></tr>
+				<tr><td>2nd</td><td><em>gust of wind, skyward rise</em></td></tr>
+				<tr><td>3rd</td><td><em>gaseous form, wind wall</em></td></tr>
+				<tr><td>4th</td><td><em>ice storm, windblade</em></td></tr>
+				<tr><td>5th</td><td><em>storm's eye, unstoppable ascent</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Elder Tempest lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+			<extend>ID_XGTE_SPELL_WARDING_WIND</extend>
+			<extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+			<extend>ID_GFP_COFSA_SPELL_SKYWARD_RISE</extend>
+			<extend>ID_PHB_SPELL_GASEOUS_FORM</extend>
+			<extend>ID_PHB_SPELL_WIND_WALL</extend>
+			<extend>ID_PHB_SPELL_ICE_STORM</extend>
+			<extend>ID_GFP_COFSA_SPELL_WINDBLADE</extend>
+			<extend>ID_GFP_COFSA_SPELL_STORMS_EYE</extend>
+			<extend>ID_GFP_COFSA_SPELL_UNSTROPPABLE_ASCENT</extend>
+		</spellcasting>
+	</element>
+
+	<element name="Fist of Tempests" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_FISTOFTEMPESTS">
+		<description>
+			<p>At first level, you can manifest the gifts of your patron through unarmed attacks, which carry the power of the wind. You gain a resource called Pressure, which increases as you level up in the warlock class. Your pressure die is a d10. You know how to use this resource to bolster your movement and attacks. You can use your pressure to propel yourself around with air blasts that don’t provoke opportunity attacks, moving either yourself or enemies back 10ft per pressure point. Moving around this way functions similarly to increasing your damage with a pressure die so long as you attack. </p>
+		</description>
+		<sheet>
+			<description>You can manifest the gifts of your patron through unarmed attacks, which carry the power of the wind. You gain a resource called Pressure, which increases as you level up in the warlock class. Your pressure die is a d10. You know how to use this resource to bolster your movement and attacks. You can use your pressure to propel yourself around with air blasts that don’t provoke opportunity attacks, moving either yourself or enemies back {{pressure:dice}}ft per pressure point. Moving around this way functions similarly to increasing your damage with a pressure die so long as you attack.</description>
+		</sheet>
+		<rules>
+			<stat name="pressure:dice" value="10" />
+			<stat name="pressure points" value="1" />
+            <stat name="pressure points" value="1" level="3" />
+            <stat name="pressure points" value="1" level="5" />
+            <stat name="pressure points" value="1" level="7" />
+            <stat name="pressure points" value="1" level="9" />
+            <stat name="pressure points" value="1" level="11" />
+            <stat name="pressure points" value="1" level="13" />
+            <stat name="pressure points" value="1" level="15" />
+            <stat name="pressure points" value="1" level="17" />
+            <stat name="pressure points" value="1" level="19" />
+		</rules>
+	</element>
+
+	<element name="Cloak of the Storm" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_CLOAKOFTHESTORM">
+		<description>
+			<p>At 6th level, you passively manifest a small tempest around yourself. You gain advantage on saving throws against dangerous gases, clouds, forceful winds, and other similar effects. Your vision is not obscured by fog, mist, smoke, rain, clouds, or other airborne particles.</p>
+            <p class="indent">Additionally, you gain resistance to ranged damage and whenever you maneuver around with pressure bursts nonmagical ranged attacks that target you are made with disadvantage until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You passively manifest a small tempest around yourself. You gain advantage on saving throws against dangerous gases, clouds, forceful winds, and other similar effects. Your vision is not obscured by fog, mist, smoke, rain, clouds, or other airborne particles. Additionally, you gain resistance to ranged damage and whenever you maneuver around with pressure bursts nonmagical ranged attacks that target you are made with disadvantage until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Swiftness of the Wind" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_SWIFTNESSOFTHEWIND">
+		<description>
+			<p>At 10th level, your movement speed doubles, you gain advantage on initiative rolls, and your fist of tempests movement ability’s distance is doubled. Additionally, your swift movement allows you to avoid perilous situations. Whenever you must make a saving throw against something similar to a dragon’s breath attack, on a success, you avoid the damage altogether, and failures only deal half as much damage.</p>
+		</description>
+		<sheet>
+			<description>Your movement speed doubles, you gain advantage on initiative rolls, and your fist of tempests movement ability’s distance is doubled. Additionally, your swift movement allows you to avoid perilous situations. Whenever you must make a saving throw against something similar to a dragon’s breath attack, on a success, you avoid the damage altogether, and failures only deal half as much damage.</description>
+		</sheet>
+		<rules>
+			<stat name="pressure:dice" value="14" />
+			<stat name="innate speed" value="30" />
+		</rules>
+	</element>
+
+	<element name="Icon of the Gale" type="Archetype Feature" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_FEATURE_ELDERTEMPEST_ICONOFTHEGALE">
+		<description>
+			<p>At 14th level, you discover the ability to embody a portion of the elder tempest’s powers around yourself. As an action, you can activate the Icon of the Gale, gaining resistance to Bludgeoning, Piercing, and Slashing damage, and immunity to Lightning and Thunder damage. Additionally, after an attack from your fist of tempest, the enemy must succeed on a constitution saving throw against your spell save dc, or it drops prone and cannot standup it’s next turn without using all of its movement speed.</p>
+            <p class="indent">This ability is active for 1 hour, and can only be used once per long rest.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can activate the Icon of the Gale, gaining resistance to Bludgeoning, Piercing, and Slashing damage, and immunity to Lightning and Thunder damage. Additionally, after an attack from your fist of tempest, the enemy must succeed on a constitution saving throw against your spell save dc, or it drops prone and cannot standup it’s next turn without using all of its movement speed. This ability is active for 1 hour, and can only be used once per long rest.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<element name="Hermeticist" type="Class" source="Player’s Handbook" id="ID_CLASS_HERMETICIST_V2">
-	
+		<info>
+		<update version="0.01">
+			<file name="class-hermeticist.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
+		</update>
+		</info>
 		<description>
 			<!--
 			<p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>

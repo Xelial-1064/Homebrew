@@ -4,7 +4,7 @@
 		<name>Elder Tempest Patron</name>
 		<description>Elder Tempest Patron</description>
 		<update version="0.0.1">
-			<file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/warlock-elder-tempest.xml />
+			<file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/warlock-elder-tempest.xml" />
 		</update>
 	</info>
 

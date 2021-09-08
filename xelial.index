@@ -14,6 +14,6 @@
     <file name="monk-acupuncture.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/monk-acupuncture.xml" />
     <file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/warlock-elder-tempest.xml" />
     <file name="archetype-champion-reborn.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/archetype-champion-reborn.xml" />
-	<file name="multiclass-variants.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/multiclass-variants.xml" />
+    <file name="multiclass-variants.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/multiclass-variants.xml" />
 	</files>
 </index>

@@ -2,10 +2,8 @@
 <elements>
     <info>
         <name>Acupuncture</name>
-        <description>The Acupuncture archetype from Xanathar’s Guide to Everything</description>
-        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Xanathar’s Guide to Everything</author>
         <update version="0.0.2">
-            <file name="monk-acupuncture.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/xanathars-guide-to-everything/archetypes/monk-kensei.xml" />
+            <file name="monk-acupuncture.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/monk-acupuncture.xml" />
         </update>
     </info>
     

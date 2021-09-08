@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+	<update version="0.01">
+		<file name="archetype-champion-reborn.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/archetype-champion-reborn.xml" />
+	</update>
+	</info>
 	<element name="Champion Reborn" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_CHAMPION_REBORN">
 		<supports>Martial Archetype</supports>
 		<description>

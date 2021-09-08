@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Elder Tempest Patron</name>
-		<description>Elder Tempest Patron</description>
-		<update version="0.0.1">
+		<update version="0.01">
 			<file name="warlock-elder-tempest.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/warlock-elder-tempest.xml" />
 		</update>
-	</info>
 
 	<element name="The Elder Tempest" type="Archetype" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ARCHETYPE_OTHERWORLDLY_PATRON_ELDERTEMPEST">
 		<supports>Otherworldly Patron</supports>

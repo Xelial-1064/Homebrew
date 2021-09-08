@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<element name="Reddit: Rain Junkie" type="Source" source="Core" id="ID_RDDT_RJ_SOURCE_RAINJUNKIE">
+		<info>
+		<update version="0.01">
+			<file name="class-dragonknight-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-dragonknight-variant.xml" />
+		</update>
+		</info>
 		<description>
 			<![CDATA[<p>Homebrew content posted on Reddit by Rain Junkie.</p>]]>
 		</description>

@@ -5,7 +5,7 @@
 		<description>Custom, Dual Class</description>
 		<author url="">Custom</author>
 		<update version="0.0.1">
-			<file name="dual-class.xml" url="" />
+			<file name="multiclass-variants.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/multiclass-variants.xml" />
 		</update>
 	</info>
 	<element name="Prestige" type="Item" source="Multiclassing Variant Rules" id="ID_CLASS_FEATURE_PRESTIGE">

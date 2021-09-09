@@ -485,6 +485,107 @@
 		</sheet>
 	</element>
 
+	<element name="Wave Controller" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<!--
+			<p>As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.</p>
+			-->
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_ENHANCEMENT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURITY" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURIFYING_GIFT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_REVERSE_FLOW_CONTROL" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_MASTERY" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Charisma.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_ENHANCEMENT" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURITY" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURIFYING_GIFT" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_REVERSE_FLOW_CONTROL" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_MASTERY" level="14"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Vis Enhancement" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_ENHANCEMENT">
+		<description>
+			<p>You were not gifted with the capabilities of creation, and instead have developed a sharp affinity to the magic residing inside yourself and surrounding others.</p>
+			<p class="indent">Creo spells are twice as expensive to manifest. You gain proficiency with Vim, if you would already gain proficiency from your trained forms, you gain expertise instead.</p>
+			<p class="indent">Additionally, your body is filled with and strengthened by Vis. You may add your spell level to your hp every time you gain a level in this class. Spells cast from a range of touch are considered unarmed strikes and add your wisdom modifier to their damage rolls.</p>
+		</description>
+		<sheet>
+			<description>  Creo spells are twice as expensive to manifest. You gain proficiency with Vim, if you would already gain proficiency from your trained forms, you gain expertise instead.
+			Additionally, spells cast from a range of touch are considered unarmed strikes and add your wisdom modifier to their damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="vis:hp" value="spell level:usage" level="1"/>
+			<stat name="vis:hp" value="spell level:usage" level="2"/>
+			<stat name="vis:hp" value="spell level:usage" level="3"/>
+			<stat name="vis:hp" value="spell level:usage" level="4"/>
+			<stat name="vis:hp" value="spell level:usage" level="5"/>
+			<stat name="vis:hp" value="spell level:usage" level="6"/>
+			<stat name="vis:hp" value="spell level:usage" level="7"/>
+			<stat name="vis:hp" value="spell level:usage" level="8"/>
+			<stat name="vis:hp" value="spell level:usage" level="9"/>
+			<stat name="vis:hp" value="spell level:usage" level="10"/>
+			<stat name="vis:hp" value="spell level:usage" level="11"/>
+			<stat name="vis:hp" value="spell level:usage" level="12"/>
+			<stat name="vis:hp" value="spell level:usage" level="13"/>
+			<stat name="vis:hp" value="spell level:usage" level="14"/>
+			<stat name="vis:hp" value="spell level:usage" level="15"/>
+			<stat name="vis:hp" value="spell level:usage" level="16"/>
+			<stat name="vis:hp" value="spell level:usage" level="17"/>
+			<stat name="vis:hp" value="spell level:usage" level="18"/>
+			<stat name="vis:hp" value="spell level:usage" level="19"/>
+			<stat name="vis:hp" value="spell level:usage" level="20"/>
+			<stat name="hp" value="vis:hp" />
+		</rules>
+	</element>
+	<element name="Purity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURITY">
+		<description>
+			<p>At 6th level, spells utilizing the form Vim are no longer affected by resistances, immunity, or vulnerability, as they instead manipulate raw magical energy. .</p>
+			<p class="indent">Additionally, you gain additional mastery over Vis manipulation, and can now cast touch spells at a range of 15ft. </p>
+		</description>
+		<sheet action="Action" usage="1 Fatigue on Exit">
+			<description>Spells utilizing the form Vim are no longer affected by resistances, immunity, or vulnerability, and you can now cast touch spells at a range of 15ft.</description>
+		</sheet>
+	</element>
+	<element name="Purifying Gift" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURIFYING_GIFT">
+		<description>
+			<p>Also at 6th level, you learn to manifest your Hermetic Bestowal feature into the purest form of Vis. A creature holding your mote is infused with Vis, temporarily benefiting from Purity’s damage effects. </p>
+			<p class="indent">Additionally a creature holding your mote can choose to expend it in reaction to being attacked. Causing it to form a barrier that will fully absorb the incoming damage. </p>
+		</description>
+		<sheet action="Action">
+			<description>You learn to manifest your Hermetic Bestowal feature into the purest form of Vis. A creature holding your mote is infused with Vis, temporarily benefiting from Purity’s damage effects. A creature holding your mote can choose to expend it in reaction to being attacked. Causing it to form a barrier that will fully absorb the incoming damage.</description>
+		</sheet>
+	</element>
+	<element name="Reverse Flow Control" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_REVERSE_FLOW_CONTROL">
+		<description>
+			<p>At 10th level you gain the ability to manipulate the Vis in the body of another more easily. As a reaction you can stop the Vis flowing through an enemies body within touch range for a short period, freezing them in place and stunning them until the end of their turn. Doing this takes a toll on your body and gives +1 fatigue. </p>
+			<p class="indent">Additionally, spells cast on an enemy within touch range no longer suffer the improvised penalty. </p>
+		</description>
+		<sheet action="Reaction" usage="1 Fatigue">
+			<description>You can stop the Vis flowing through an enemies body within touch range for a short period, freezing them in place and stunning them until the end of their turn. 
+			Additionally, spells cast on an enemy within touch range no longer suffer the improvised penalty.</description>
+		</sheet>
+	</element>
+	<element name="Vis Mastery" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_MASTERY">
+		<description>
+			<p>At 14th level your body is perfectly enhanced by the Vis you have mastered. You can no longer be damaged by spells lower than half your spell level rounded up. You have advantage on saving throws against spells and magic effects. </p>
+			<p class="indent">Additionally, you can cast touch spells from a range of 30ft, and spells that are cast on a range of self are treated as one spell level higher. </p>
+		</description>
+		<sheet usage="{{spell half:usage}}">
+			<description>You can no longer be damaged by spells lower than half your spell level rounded up. You have advantage on saving throws against spells and magic effects. You can cast touch spells from a range of 30ft, and spells that are cast on a range of self are treated as one spell level higher.</description>
+		</sheet>
+		<rules>
+			<stat name="spell half:usage" value="4" />
+			<stat name="spell half:usage" value="1" level="17" />
+		</rules>
+	</element>
+
 	<!--Techniques-->
 	<element name="Creo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_CREO">
 		<supports>Hermetic Studies Techniques V2</supports>

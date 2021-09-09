@@ -636,7 +636,7 @@
 		</description>
 		<sheet action="Reaction" usage="1/Long Rest, 1 Fatigue After First">
 			<description>At 6th level, once per long rest you can partially manifest your soul into a protective aura surrounding you for one hour. Attacks made with your soul weapon are made from the aura, leaving your hands free. If a creature approaches within 5 feet of you while it is manifested you may make an attack of opportunity. 
-            Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1{{soul weapon:die}} + {{hermeticist:level}}. Additional uses of this feature cost +1 fatigue to maintain. </description>
+            Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1{{soul weapon:die}} + {{level:hermeticist}}. Additional uses of this feature cost +1 fatigue to maintain. </description>
 		</sheet>
 	</element>
 	<element name="Gifted Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURIFYING_GIFT">

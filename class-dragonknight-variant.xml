@@ -1246,7 +1246,6 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1278,7 +1277,6 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1310,7 +1308,7 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
+			<set name="traits">IID_RDDT_RJ_COMPANION_TRAIT_DRAGON_AMPHIBIOUS</set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1342,7 +1340,6 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1374,7 +1371,7 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
+			<set name="traits">IID_RDDT_RJ_COMPANION_TRAIT_DRAGON_AMPHIBIOUS</set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1406,7 +1403,7 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
+			<set name="traits">IID_RDDT_RJ_COMPANION_TRAIT_DRAGON_AMPHIBIOUS</set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1438,7 +1435,6 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>
@@ -1470,7 +1466,6 @@
 			<set name="size">Large</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">0</set>
-			<set name="traits"></set>
 			<set name="actions">IID_RDDT_RJ_COMPANION_ACTION_DRAGON_CLAW</set>
 		</setters>
 		<rules>

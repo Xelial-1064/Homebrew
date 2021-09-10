@@ -90,7 +90,7 @@
 			<set name="short">A scholarly magic-user capable of manipulating the structures of reality.</set>
 			<set name="hd">d6</set>
 		</setters>
-		<rules>	
+		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_HERMETICIST"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_MULTICLASS_HERMETICIST"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST"/>
@@ -497,7 +497,7 @@
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_MASTERY" />
 		</description>
 		<sheet >
-			<description>Your Spellcasting Ability Modifier is Charisma.</description>
+			<description>Your Spellcasting Ability Modifier is Wisdom.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_ENHANCEMENT" level="1"/>
@@ -506,7 +506,7 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_REVERSE_FLOW_CONTROL" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_MASTERY" level="14"/>
 
-			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" />
 		</rules>
 	</element>
 	<element name="Vis Enhancement" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_ENHANCEMENT">
@@ -578,6 +578,92 @@
 		</description>
 		<sheet usage="{{spell half:usage}}">
 			<description>You can no longer be damaged by spells lower than half your spell level rounded up. You have advantage on saving throws against spells and magic effects. You can cast touch spells from a range of 30ft, and spells that are cast on a range of self are treated as one spell level higher.</description>
+		</sheet>
+		<rules>
+			<stat name="spell half:usage" value="4" />
+			<stat name="spell half:usage" value="1" level="17" />
+		</rules>
+	</element>
+
+    	<element name="Emissary" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<!--
+			<p>As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.</p>
+			-->
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SHAPE_SOUL" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PROJECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_GIFTED_PROJECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SWORN_ENEMY" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PERFECT_PROJECTION" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Wisdom.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SHAPE_SOUL" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURITY" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURIFYING_GIFT" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SWORN_ENEMY" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PERFECT_PROJECTION" level="14"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Shape Soul" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SHAPE_SOUL">
+		<description>
+			<p>You have been gifted with an awareness of your soul. Through this awareness you have learned to shape it and use it as a tool against others. </p>
+			<p class="indent">As an action you can manifest a soul weapon. This weapon can take the form of any weapon you are proficient with, and does an amount of damage equal to you spell level times your soul weapon die. Your soul weapon die starts at a d4, and increases as you gain levels in the class. You use your wisdom modifier for the attack and damage rolls used for this weapon. </p>
+			<p class="indent">Additionally as a bonus action while you have a manifested soul weapon, you can choose to infuse your attack with the power of your magic. The next time you attack with your soul weapon you can cast a spell from it instead of yourself. Spells cast this way have a casting time of 1 Action and a Range of Self. </p>
+		</description>
+		<sheet action="Action/Bonus Action">
+			<description> You can manifest a soul weapon. This weapon can take the form of any weapon you are proficient with, and does an amount of damage equal to y. Your soul weapon does {{spell level:usage}}d{{soul weapon:die}} damage. You use your wisdom modifier for the attack and damage rolls used for this weapon.
+			Additionally as a bonus action while you have a manifested soul weapon, you can choose to infuse your attack with the power of your magic. The next time you attack with your soul weapon you can cast a spell from it instead of yourself. Spells cast this way have a casting time of 1 Action and a Range of Self.</description>
+		</sheet>
+		<rules>
+            <stat name="soul weapon:die" value="4" level="1" />
+            <stat name="soul weapon:die" value="6" level="5" />
+            <stat name="soul weapon:die" value="8" level="9" />
+            <stat name="soul weapon:die" value="10" level="13" />
+            <stat name="soul weapon:die" value="12" level="17" />
+		</rules>
+	</element>
+	<element name="Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURITY">
+		<description>
+			<p>At 6th level, once per long rest you can partially manifest your soul into a protective aura surrounding you for one hour. Attacks made with your soul weapon are made from the aura, leaving your hands free. If a creature approaches within 5 feet of you while it is manifested you may make an attack of opportunity. </p>
+			<p class="indent">Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1 soul weapon die + your Hermeticist level. Additional uses of this feature cost +1 fatigue to maintain. </p>
+		</description>
+		<sheet action="Reaction" usage="1/Long Rest, 1 Fatigue After First">
+			<description>At 6th level, once per long rest you can partially manifest your soul into a protective aura surrounding you for one hour. Attacks made with your soul weapon are made from the aura, leaving your hands free. If a creature approaches within 5 feet of you while it is manifested you may make an attack of opportunity. 
+            Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1{{soul weapon:die}} + {{hermeticist:level}}. Additional uses of this feature cost +1 fatigue to maintain. </description>
+		</sheet>
+	</element>
+	<element name="Gifted Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURIFYING_GIFT">
+		<description>
+			<p>Also at 6th level you learn to use your Hermetic Bestowal feature to manifest your soul. You can gift your projection feature to a creature once per long rest, with additional motes costing +2 fatigue to create. Any creature holding a mote made from this receives the benefits of the aura. </p>
+			<p class="indent">Additionally you may make attacks with your soul weapon from your mote's position.  </p>
+		</description>
+		<sheet usage="1/Long Rest, 2 Fatigue After First">
+			<description>Also at 6th level you learn to use your Hermetic Bestowal feature to manifest your soul. You can gift your projection feature to a creature once per long rest, with additional motes costing +2 fatigue to create. Any creature holding a mote made from this receives the benefits of the aura. 
+			Additionally, you may make attacks with your soul weapon from your mote's position.</description>
+		</sheet>
+	</element>
+	<element name="Sworn Enemy" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SWORN_ENEMY">
+		<description>
+			<p>At 10th level you can turn an enemy against themself. As an action you can cause an enemy within 30ft to manifest their soul. Their soul is only visible to them, and cannot be killed. A creature with a manifested soul will only focus on attacking it, and at the start of each of their turns their soul will deal 1 soul weapon die damage to them. To end the effect, they can either die, or succeed on a wisdom saving throw against your spell save dc at the start of their turn. A creature who succeeds their saving throw cannot be affected by this again for 24 hours.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest, 1 Fatigue After First">
+			<description>At 10th level you can turn an enemy against themself. As an action you can cause an enemy within 30ft to manifest their soul. Their soul is only visible to them, and cannot be killed. A creature with a manifested soul will only focus on attacking it, and at the start of each of their turns their soul will deal 1 soul weapon die damage to them. To end the effect, they can either die, or succeed on a wisdom saving throw against your spell save dc at the start of their turn. A creature who succeeds their saving throw cannot be affected by this again for 24 hours.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PERFECT_PROJECTION">
+		<description>
+			<p>At 14th level, you can fully manifest your soul into being. Once per long rest you can create a projection of yourself through soul. It can act independently of you, and takes its turn after you on initiative count. It’s health is equal to half that of yours upon casting, and it retains all features you would normally possess. It’s spell level is considered to be half that of your spell level rounded up. </p>
+			<p class="indent">Additionally, as a reaction to being attacked you can switch places with your projection. Your projection lasts until it is destroyed or until you use this feature again. It cannot be healed and additional attempts to summon it cost +3 fatigue to maintain.</p>
+		</description>
+		<sheet usage="1/Long Rest, 3 Fatigue After First">
+			<description>You can create a projection of yourself through soul. It can act independently of you, and takes its turn after you on initiative count. It’s health is equal to half that of yours upon casting, and it retains all features you would normally possess. It’s spell level is {{spell half:usage}}.
+			Additionally, as a reaction to being attacked you can switch places with your projection. Your projection lasts until it is destroyed or until you use this feature again, and cannot be healed.</description>
 		</sheet>
 		<rules>
 			<stat name="spell half:usage" value="4" />

@@ -615,7 +615,6 @@
 		<description>
 			<p>You have a covenant formed with a black dragon, either the one you’ve bonded to or another.</p>
 			<div element="ID_RDDT_RJ_CLASS_FEATURE_DRAGON_KNIGHT_DRAGON_COVENANT" />
-			<div element="ID_RDDT_RJ_COMPANION_BLACK_DRAGON" />
 		</description>
 		<sheet alt="Black Dragon">
 			<description>You have formed a covenant with a {{dragon-convenant-ancestry}} dragon.</description>

@@ -326,6 +326,7 @@
 
 	<element name="Architect" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT">
 		<supports>Hermetic Gift V2</supports>
+		<description>
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_DOMAIN" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_BY_DESIGN" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_FLOOR_PLAN" />
@@ -344,7 +345,6 @@
 
 			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
 		</rules>
-
 	</element>
 	<element name="Domain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_DOMAIN">
 		<description>

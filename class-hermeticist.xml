@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+	<update version="0.01">
+		<file name="class-hermeticist.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
+	</update>
+	</info>
 	<element name="Hermeticist" type="Class" source="Player’s Handbook" id="ID_CLASS_HERMETICIST_V2">
-		<info>
-		<update version="0.01">
-			<file name="class-hermeticist.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
-		</update>
-		</info>
 		<description>
 			<h5>QUICK BUILD</h5>
 			<p>You can make a Hermeticist quickly by following these suggestions. First, make your spellcasting ability your highest ability score. Second, choose the sage background. </p>

@@ -7,21 +7,6 @@
 		</update>
 		</info>
 		<description>
-			<!--
-			<p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
-			<p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
-			<p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
-			<p class="indent">Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
-			<h4>SCHOLARS OF THE ARCANE</h4>
-			<p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.</p>
-			<p class="indent">Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from ancient creatures (such as the fey) that are steeped in magic.</p>
-			<h4>THE LURE OF KNOWLEDGE</h4>
-			<p>Wizards’ lives are seldom mundane. The closest a wizard is likely to come to an ordinary life is working as a sage or lecturer in a library or university, teaching others the secrets of the multiverse. Other wizards sell their services as diviners, serve in military forces, or pursue lives of crime or domination.</p>
-			<p class="indent">But the lure of knowledge and power calls even the most unadventurous wizards out of the safety of their libraries and laboratories and into crumbling ruins and lost cities. Most wizards believe that their counterparts in ancient civilizations knew secrets of magic that have been lost to the ages, and discovering those secrets could unlock the path to a power greater than any magic available in the present age.</p>
-			<h4>CREATING A WIZARD </h4>
-			<p>Creating a wizard character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for it? Do you have a natural talent, or did you simply study hard and practice incessantly? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
-			<p class="indent">What drew you forth from your life of study? Did your first taste of magical knowledge leave you hungry for more? Have you received word of a secret repository of knowledge not yet plundered by any other wizard? Perhaps you’re simply eager to put your newfound magical skills to the test in the face of danger.</p>
-			-->
 			<h5>QUICK BUILD</h5>
 			<p>You can make a Hermeticist quickly by following these suggestions. First, make your spellcasting ability your highest ability score. Second, choose the sage background. </p>
 			<h3>CLASS FEATURES</h3>
@@ -341,11 +326,6 @@
 
 	<element name="Architect" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT">
 		<supports>Hermetic Gift V2</supports>
-		<description>
-			<!--
-			<p>The School of Abjuration emphasizes magic that blocks, banishes, or protects. Detractors of this school say that its tradition is about denial, negation rather than positive assertion. You understand, however, that ending harmful effects, protecting the weak, and banishing evil influences is anything but a philosophical void. It is a proud and respected vocation.</p>
-			<p class="indent">Called abjurers, members of this school are sought when baleful spirits require exorcism, when important locations must be guarded against magical spying, and when portals to other planes of existence must be closed.</p>
-			-->
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_DOMAIN" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_BY_DESIGN" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_ARCHITECT_FLOOR_PLAN" />
@@ -416,9 +396,6 @@
 	<element name="Shardbinder" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER">
 		<supports>Hermetic Gift V2</supports>
 		<description>
-			<!--
-			<p>As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.</p>
-			-->
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_CORRUPTION" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_PARTIAL_DEMONIZATION" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SHARDBINDER_DEMONIC_GIFT" />
@@ -487,9 +464,6 @@
 	<element name="Wave Controller" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER">
 		<supports>Hermetic Gift V2</supports>
 		<description>
-			<!--
-			<p>As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.</p>
-			-->
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_VIS_ENHANCEMENT" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURITY" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_WAVE_CONTROLLER_PURIFYING_GIFT" />
@@ -584,13 +558,9 @@
 			<stat name="spell half:usage" value="1" level="17" />
 		</rules>
 	</element>
-
-    	<element name="Emissary" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY">
+    <element name="Emissary" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY">
 		<supports>Hermetic Gift V2</supports>
 		<description>
-			<!--
-			<p>As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.</p>
-			-->
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SHAPE_SOUL" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PROJECTION" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_GIFTED_PROJECTION" />
@@ -602,8 +572,8 @@
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SHAPE_SOUL" level="1"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURITY" level="6"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURIFYING_GIFT" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PROJECTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_GIFTED_PROJECTION" level="6"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_SWORN_ENEMY" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PERFECT_PROJECTION" level="14"/>
 
@@ -628,7 +598,7 @@
             <stat name="soul weapon:die" value="12" level="17" />
 		</rules>
 	</element>
-	<element name="Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURITY">
+	<element name="Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PROJECTION">
 		<description>
 			<p>At 6th level, once per long rest you can partially manifest your soul into a protective aura surrounding you for one hour. Attacks made with your soul weapon are made from the aura, leaving your hands free. If a creature approaches within 5 feet of you while it is manifested you may make an attack of opportunity. </p>
 			<p class="indent">Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1 soul weapon die + your Hermeticist level. Additional uses of this feature cost +1 fatigue to maintain. </p>
@@ -638,7 +608,7 @@
             Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1{{soul weapon:die}} + {{hermeticist:level}}. Additional uses of this feature cost +1 fatigue to maintain. </description>
 		</sheet>
 	</element>
-	<element name="Gifted Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PURIFYING_GIFT">
+	<element name="Gifted Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_GIFTED_PROJECTION">
 		<description>
 			<p>Also at 6th level you learn to use your Hermetic Bestowal feature to manifest your soul. You can gift your projection feature to a creature once per long rest, with additional motes costing +2 fatigue to create. Any creature holding a mote made from this receives the benefits of the aura. </p>
 			<p class="indent">Additionally you may make attacks with your soul weapon from your mote's position.  </p>

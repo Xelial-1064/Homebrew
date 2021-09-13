@@ -116,15 +116,15 @@
 	</element>
 	<element name="Hermetic Magic" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MAGIC">
 		<description>
-			<p>Starting at 1st level, you have attained the ability to manipulate the raw energies of the world, so long as you operate under a set of rules. To create spells you can combine different Techniques and Forms to achieve different effects. You have a certain number of prepared spells in this way that you can create during a long rest. Casting without preparation is possible but much more difficult.</p>
+			<p>Starting at 1st level, you have attained the ability to manipulate the raw energies of the world, so long as you operate under a set of rules. To create spells you can combine different Techniques and Forms to achieve different effects. Casting without preparation is possible but much more difficult.</p>
 			<p>In order to successfully cast a spell after determining its Technique, Form, and Magnitude, a successful Hermetic Check must be made. A Hermetic check is equal to (DC of the Spell / Spell Level) + Fatigue Modifier. Forms of advantage and disadvantage, or other modifiers do not apply to this check.</p>
 			<center>
 				<p><strong>Hermetic check DC</strong> = (DC of the Spell/ Spell Level) + Fatigue Modifier</p>
 			</center>
 			<h5>FATIGUE</h5>
-			<p>Fatigue is gained upon failing a Hermetic Check,  as the failed spell backfires. The total number of Fatigue levels impose a penalty: -0 at 1 (Winded), -1 at 2 (Weary), -3 at 3 (Tired), and -5 at 4 (Dazed). At 5 levels, you fall unconscious. Fatigue can be cleared by resting, with short rests removing 1 level of fatigue and Long rests removing 3 levels.</p>
+			<p>Fatigue is gained upon failing a Hermetic Check, as the failed spell backfires. The total number of Fatigue levels impose a penalty: -0 at 1 (Winded), -1 at 2 (Weary), -3 at 3 (Tired), and -5 at 4 (Dazed). At 5 levels, you fall unconscious. Fatigue can be cleared by resting, with short rests removing 1 level of fatigue and Long rests removing 3 levels.</p>
 			<h5>SPELL LEVEL</h5>
-			<p>The Hermeticism table shows your Spell Level, which increases as you level allowing you to cast more powerful spells of which you are trained in. Casting more than one spell per round treats the additional spells as a rushed spell, doubling its cost. </p>
+			<p>The Hermeticism table shows your Spell Level, which increases as you level allowing you to cast more powerful spells of which you are trained in. Casting more than one spell per round treats the additional spells as a rushed spell, halving its spell level by 2 rounded up, and you can only cast one spell with a magnitude component per turn. </p>
 			<h5>SPELLCASTING ABILITY</h5>
 			<h5 class="caption">SPELLCASTING ABILITY</h5>
 			<p>Your spellcasting ability is determined by your hermetic gift. See the Gift feature of your hermetic gift for your spellcasting ability.</p>
@@ -587,15 +587,15 @@
 			<p class="indent">Additionally as a bonus action while you have a manifested soul weapon, you can choose to infuse your attack with the power of your magic. The next time you attack with your soul weapon you can cast a spell from it instead of yourself. Spells cast this way have a casting time of 1 Action and a Range of Self. </p>
 		</description>
 		<sheet action="Action/Bonus Action">
-			<description> You can manifest a soul weapon. This weapon can take the form of any weapon you are proficient with, and does an amount of damage equal to y. Your soul weapon does {{spell level:usage}}d{{soul weapon:die}} damage. You use your wisdom modifier for the attack and damage rolls used for this weapon.
+			<description> You can manifest a soul weapon. This weapon can take the form of any weapon you are proficient with. Your soul weapon does 1d{{soul weapon:die}} damage. You use your wisdom modifier for the attack and damage rolls used for this weapon.
 			Additionally as a bonus action while you have a manifested soul weapon, you can choose to infuse your attack with the power of your magic. The next time you attack with your soul weapon you can cast a spell from it instead of yourself. Spells cast this way have a casting time of 1 Action and a Range of Self.</description>
 		</sheet>
 		<rules>
             <stat name="soul weapon:die" value="4" level="1" />
-            <stat name="soul weapon:die" value="6" level="5" />
-            <stat name="soul weapon:die" value="8" level="9" />
-            <stat name="soul weapon:die" value="10" level="13" />
-            <stat name="soul weapon:die" value="12" level="17" />
+            <stat name="soul weapon:die" value="2" level="5" />
+            <stat name="soul weapon:die" value="2" level="9" />
+            <stat name="soul weapon:die" value="2" level="13" />
+            <stat name="soul weapon:die" value="2" level="17" />
 		</rules>
 	</element>
 	<element name="Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_EMISSARY_PROJECTION">

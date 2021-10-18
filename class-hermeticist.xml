@@ -240,10 +240,10 @@
 	</element>
 	<element name="Conjuration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_CONJURATION">
 		<description>
-			<p>No Beast Summoned (+0) | CR 0 (+15) | CR 1/2 (+25) | CR 1 (+35) | CR 2 (+65) | CR 3 (+95) | CR 4 (+125) | CR 5 (+155) | CR 6 (+185) | CR 7 (+215) | CR 8 (+245)</p>
+			<p>No Beast Summoned (+0) | CR 0 (+1) | CR 1/2 (+5) | CR 1 (+15) | CR 2 (+30) | CR 3 (+50) | CR 4 (+75) | CR 5 (+100) | CR 6 (+125) </p>
 		</description>
 		<sheet>
-			<description>No Beast Summoned (+0) | CR 0 (+15) | CR 1/2 (+25) | CR 1 (+35) | CR 2 (+65) | CR 3 (+95) | CR 4 (+125) | CR 5 (+155) | CR 6 (+185) | CR 7 (+215) | CR 8 (+245)</description>
+			<description>No Beast Summoned (+0) | CR 0 (+1) | CR 1/2 (+5) | CR 1 (+15) | CR 2 (+30) | CR 3 (+50) | CR 4 (+75) | CR 5 (+100) | CR 6 (+125) </description>
 		</sheet>
 	</element>
 	<element name="Hermetic Gift" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_GIFT">
@@ -422,7 +422,6 @@
 			<p class="indent">You gain a resource called charge. Charge is refreshed at the start of each of your turns, and is equal to your Spell Level. Your charge grants you an unarmored defense of 10 + Intelligence modifier + Charge Level. You can use your charge in a number of different ways to enhance your body's natural capabilities.</p>
             <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_TELEPORT" />
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_SPEAR" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_PUNCH" />
             <p class="indent">You can teleport up to 10 feet per charge expended, as your body moves with the blessing of Auram.</p>
             <p class="indent">You manifest a spear of electricity in your hand that does (Spell Level)d4 + Intelligence electricity damage. This is a thrown weapon attack with a range of (60/240). You can overcharge this spear by consuming charges, increasing the size of the die up to a d12. If you overcharge it past a d12, you can teleport to the point of impact.</p>
             <p class="indent">You directly channel the current into your fists, striking foes at breakneck speeds. You have a charge die that increases as you gain levels in this class. Unarmed strikes do charge die + Intelligence Modifier Electricity or Thunder damage. You can consume charges to make 1 additional attack per charge expended after attacking with an unarmed strike or teleporting by any means.</p>
@@ -434,7 +433,6 @@
         <rules>
 			<grant type="Class Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_TELEPORT" />
 			<grant type="Class Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_SPEAR" />
-			<grant type="Class Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_PUNCH" />
 
             <stat name="ac:unarmored defense conduit:base" value="10" />
 			<stat name="ac:unarmored defense conduit:intelligence" value="intelligence:modifier" />
@@ -462,21 +460,6 @@
 		<sheet usage="Bioelectricity {{charge:size}}">
 			<description>You manifest a spear of electricity in your hand that does {{spell level:usage}}d4 + {{intelligence:modifier}} electricity damage. This is a thrown weapon attack with a range of (60/240). You can overcharge this spear by consuming charges, increasing the size of the die up to a d12. If you overcharge it past a d12, you can teleport to the point of impact.</description>
 		</sheet>
-	</element>
-	<element name="Blitz Punch" type="Class Feature" source="Reddit: Rain Junkie" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_PUNCH">
-		<description>
-			<p>You directly channel the current into your fists, striking foes at breakneck speeds. You have a charge die that increases as you gain levels in this class. Unarmed strikes do charge die + Intelligence Modifier Electricity or Thunder damage. You can consume charges to make 1 additional attack per charge expended after attacking with an unarmed strike or teleporting by any means.</p>
-		</description>
-		<sheet usage="Bioelectricity {{charge:size}}">
-			<description>You directly channel the current into your fists, striking foes at breakneck speeds. You have a charge die that increases as you gain levels in this class. Unarmed strikes do 1d{{blitz punch:die}} + {{intelligence:modifier}} Electricity or Thunder damage. You can consume charges to make 1 additional attack per charge expended after attacking with an unarmed strike or teleporting by any means.</description>
-		</sheet>
-        <rules>
-            <stat name="blitz punch:die" value="4" level="1" />
-            <stat name="blitz punch:die" value="2" level="5" />
-            <stat name="blitz punch:die" value="2" level="9" />
-            <stat name="blitz punch:die" value="2" level="13" />
-            <stat name="blitz punch:die" value="2" level="17" />
-        </rules>
 	</element>
 	<element name="Overcharge" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_OVERCHARGE">
 		<description>
@@ -834,6 +817,294 @@
 			<stat name="spell half:usage" value="1" level="17" />
 		</rules>
 	</element>
+
+	<element name="Successor" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_STRIKE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_LINK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_FRAME" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_TRANSCENDENT_FORM" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Essence (+{{hermeticist:spellcasting:modifier}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_STRIKE" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_LINK" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_FRAME" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_TRANSCENDENT_FORM" level="14"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
+			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" />
+			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Essence" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE">
+		<description>
+			<p>You were taught by the creators of Hermetic magic, the [redacted], and have started a long journey to fully comprehend the full scope of magic.</p>
+			<p class="indent">Your spell casting modifier, called Essence,  is equal to the sum of your Intelligence, Wisdom, and Charisma modifiers.</p>
+			<p class="indent">When casting a Muto conjuration spell with a range of self, you retain your mental stats in the form of what you transform into. While transformed, you can cast spells with your Hermetic Magic feature and use class features still, but must abide by the Verbal, Somatic and Material capabilities of your new form.</p>
+			<p class="indent">Additionally, you gain access to different combinations of creature types as you train yourself in more forms.</p>
+			<table>
+                <thead>
+                    <tr><td class="col-10">Form Requirements</td><td>Creature Type</td></tr>
+                </thead>
+                <tr><td>Animal</td><td>Beasts</td></tr>
+                <tr><td>Animal and Aquam, Auram, Ignem, or Terram</td><td>Elementals, Giants</td></tr>
+				<tr><td>Animal and Corpus</td><td>Undead</td></tr>
+				<tr><td>Animal and Herbam</td><td>Plants, Oozes</td></tr>
+				<tr><td>Animal and Imaginem</td><td>Fey</td></tr>
+				<tr><td>Animal and Mentem</td><td>Aberrations, Monstrosities</td></tr>
+				<tr><td>Animal and Vim</td><td>Fiends</td></tr>
+				<tr><td>Animal, Terram, and Vim</td><td>Constructs</td></tr>
+				<tr><td>Vim, Animal, Ignem and Terram</td><td>Dragons</td></tr>
+            </table>
+		</description>
+		<sheet>
+			<description> When casting a Muto conjuration spell with a range of self, you retain your mental stats in the form of what you transform into. While transformed, you can cast spells with your Hermetic Magic feature and use class features still, but must abide by the Verbal, Somatic and Material capabilities of your new form.
+			Additionally, you gain access to different combinations of creature types as you train yourself in more forms.</description>
+		</sheet>
+	</element>
+	<element name="Essence Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_STRIKE">
+		<description>
+			<p>At 6th level, your attacks in transformed form and the attacks of your summons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<p class="indent">Additionally, you and your summons can use your Essence modifier in place of the primary stat for attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Your attacks in transformed form and the attacks of your summons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+			Additionally, you and your summons can use your Essence modifier in place of the primary stat for attack and damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="Essence Link" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_LINK">
+		<description>
+			<p>Also at 6th level, you learn to manifest your Hermetic Bestowal feature into the Essence of creation. When another creature possesses this Essence, your health is linked with it. You both share the same total hit points, and damage against either is dealt to both. If you possess this Essence and are transformed, your transformation HP is shared with your normal HP. If you possess this Essence and are not transformed, but have conjured creatures, all the creatures add their HP and yours into a shared pool. If the shared pool reaches zero, the Essence is destroyed.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You manifest your Hermetic Bestowal feature into the Essence of creation. When another creature possesses this Essence, your health is linked with it. You both share the same total hit points, and damage against either is dealt to both. If you possess this Essence and are transformed, your transformation HP is shared with your normal HP. If you possess this Essence and are not transformed, but have conjured creatures, all the creatures add their HP and yours into a shared pool. If the shared pool reaches zero, the Essence is destroyed.</description>
+		</sheet>
+	</element>
+	<element name="Essence Frame" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_FRAME">
+		<description>
+			<p>At 10th level you have mastered the physical forms of your transformations. Transformations and summons gain more hit points than normal: Spell level points per Hit Die it has. </p>
+			<p class="indent">Additionally, you have advantage on constitution saving throws made to preserve the effects of a transformation or summon. If the duration is not concentration-based, then instead they gain advantage on dexterity saving throws.</p>
+		</description>
+		<sheet>
+			<description>Transformations and summons gain more hit points than normal: {{spell level:usage}} per Hit Die it has.
+			Additionally, you have advantage on constitution saving throws made to preserve the effects of a transformation or summon. If the duration is not concentration-based, then instead they gain advantage on dexterity saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Transcendent Form" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_TRANSCENDENT_FORM">
+		<description>
+			<p>At 14th level your body has adapted to the forms you have used, and you have seen a way to go further beyond your limits. You can add levels of fatigue to the CR on the table to increase the CR of the spell. A CR 1 summon with 1 level of fatigue would summon a CR 2 creature for the cost of a CR 1. A CR 8 summon with 2 levels of fatigue would summon a CR 10 creature for the cost of a CR 8. If you use 5 levels of fatigue to transform, you transform as usual, but when the transformation ends you immediately fall unconscious.</p>
+		</description>
+		<sheet usage="1-5 Fatigue on Exit">
+			<description>You can add levels of fatigue to the CR on the table to increase the CR of the spell. A CR 1 summon with 1 level of fatigue would summon a CR 2 creature for the cost of a CR 1. A CR 8 summon with 2 levels of fatigue would summon a CR 10 creature for the cost of a CR 8. If you use 5 levels of fatigue to transform, you transform as usual, but when the transformation ends you immediately fall unconscious.</description>
+		</sheet>
+	</element>
+
+	<element name="Apex" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_BRACE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_DISC" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CONNECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_MEDALLION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CROWN" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Apex Energy (+{{hermeticist:spellcasting modifier}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_BRACE" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_DISC" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CONNECTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_MEDALLION" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CROWN" level="14"/>
+
+			<stat name="hermeticist:spellcasting modifier" value="intelligence:modifier" />
+			<stat name="hermeticist:spellcasting modifier" value="wisdom:modifier" />
+			<stat name="hermeticist:spellcasting modifier" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Zenith Brace" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_BRACE">
+		<description>
+			<p>You were gifted with a fragment of the Zenith Crown from Jörmex, and have fused with it, unlocking your hermetic capabilities while putting your body under constant strain. You have learned how to manifest this crown into a number of different forms. You learn different forms as you gain levels in this class, and each form confers a number of different benefits. You can only awaken one form at a time.</p>
+			<p class="indent">Your spell casting modifier, called Apex Energy,  is equal to the sum of your Intelligence, Wisdom, and Charisma modifiers.</p>
+			<p class="indent">You shape the crown into a brace around one of your arms. This crown counts as a melee weapon in which you are proficient, does damage equal to your spell level d10, and lets you use your spellcasting ability modifier for strength ability checks and saving throws. As a bonus action, you can activate the inherent gravitational energy in the crown jewel, awakening it. While awakened, you can alter the gravity of your body and the space around you. When you make an attack with your Awakened Zenith Brace, you reinforce the blow with an immeasurable heaviness on impact. Your movement speed is halved, and your attacks create a gravitational tether on hit. While a creature is tethered, if you make a weapon attack with the Awakened Zenith Bracelet, the creature is pulled in towards your strike. For every 10 ft they are moved this way, your attack does one extra die of damage. Additionally, if you have the enemy tethered and they are within your standard melee range, striking them creates a gravitational fold, imploding and sending them flying 10ft times your proficiency bonus, destroying the tether in the process. This void implosive attack doubles the damage, but your body also gains one level of fatigue in shock.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description> {{brace:strength}}You have learned how to manifest this crown into a number of different forms. You learn different forms as you gain levels in this class, and each form confers a number of different benefits. You can only awaken one form at a time.
+			You shape the crown into a brace around one of your arms. This crown counts as a melee weapon in which you are proficient, does {{spell level:usage}}d10 force damage. As a bonus action, you can activate the inherent gravitational energy in the crown jewel, awakening it. While awakened, you can alter the gravity of your body and the space around you. When you make an attack with your Awakened Zenith Brace, you reinforce the blow with an immeasurable heaviness on impact. Your movement speed is halved, and your attacks create a gravitational tether on hit that last for one minute. While a creature is tethered, if you make a weapon attack with the Awakened Zenith Bracelet, the creature is pulled in towards your strike. For every 10 ft they are moved this way, your attack does one extra die of damage. Additionally, if you have the enemy tethered and they are within your standard melee range, striking them creates a gravitational fold, imploding and sending them flying 10ft times your proficiency bonus, destroying the tether in the process. This void implosive attack doubles the damage, but your body also gains one level of fatigue in shock.</description>
+		</sheet>
+        <rules>
+			<stat name="strength:max" value="100" />
+			<stat name="strength" value="2"  />
+            <stat name="strength" value="hermeticist:spellcasting modifier" />
+            <stat name="strength" value="hermeticist:spellcasting modifier" />
+			
+		</rules>
+	</element>
+	<element name="Zenith Disc" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_DISC">
+		<description>
+			<p>At 6th level, on your other arm you manifest a detachable crown. This crown doubles as a throwable round disc with a range of (60/240). This disc counts as a thrown melee weapon in which you are proficient, does damage equal to 1d8, and doubles your movement speed. As a bonus action, you can awaken the disc. When you make an attack with your Awakened Zenith Disc, you can choose to have it create a singularity on impact, compressing everything around it. If a creature is within 5ft of the singularity, it must make a strength saving throw against your spell save dc to avoid being pulled into the singularity. On a failure, it is sucked in and takes spell level d12 force damage and is stunned until the end of its next turn. On success, it takes half damage and is not stunned. Creatures within 30ft of the singularity have their movement halved during its effect as it causes extreme gravity. The singularity lasts until the end of your next turn. Using this feature puts strain on your body and you gain one level of fatigue.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You manifest a detachable crown on your other arm. This crown doubles as a throwable round disc with a range of (60/240). This disc counts as a thrown melee weapon in which you are proficient, does 1d8 slashing damage, and doubles your movement speed. As a bonus action, you can awaken the disc. When you make an attack with your Awakened Zenith Disc, you can choose to have it create a singularity on impact, compressing everything around it. If a creature is within 5ft of the singularity, it must make a strength saving throw against your spell save dc to avoid being pulled into the singularity. On a failure, it is sucked in and takes {{spell level:usage}}d12 force damage and is stunned until the end of its next turn. On success, it takes half damage and is not stunned. Creatures within 30ft of the singularity have their movement halved during its effect as it causes extreme gravity. The singularity lasts until the end of your next turn. Using this feature puts strain on your body and you gain one level of fatigue. </description>
+		</sheet>
+	</element>
+	<element name="Zenith Connection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CONNECTION">
+		<description>
+			<p>Also at 6th level, you learn to manifest your Hermetic Bestowal feature into one of your crown forms. When gifted, it is always treated as if it is awakened, and does not count against your awakening limit of 1 crown piece, although you do not possess the piece you have gifted throughout the duration of the effect. Lending the crown costs one level of fatigue, and any features that would normally induce fatigue instead induces exhaustion on the user.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>Also at 6th level, you learn to manifest your Hermetic Bestowal feature into one of your crown forms. When gifted, it is always treated as if it is awakened, and does not count against your awakening limit of 1 crown piece, although you do not possess the piece you have gifted throughout the duration of the effect. Lending the crown costs one level of fatigue, and any features that would normally induce fatigue instead induces exhaustion on the user.</description>
+		</sheet>
+	</element>
+	<element name="Zenith Medallion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_MEDALLION">
+		<description>
+			<p>At 10th level, you manifest a crown medallion across your neck. As a bonus action, you can awaken the medallion. An Awakened Zenith Medallion produces a strong gravitational field around the wearer. Provided you are not wearing armor, the field produces a strong enough repulsion to add your Spell casting ability modifier to your Armor Class. As a reaction to being hit by an attack, you can instead reflect the blow back at the attacker for 1 level of fatigue. </p>
+			<p class="indent">Additionally, AoE spells cast through your Hermetic Spellcasting feature have the ability to imbue the terrain with gravitational anomalies. Flying creatures inside these anomalies have their flight disabled and fall down to the ground. All attacks and strength or dexterity saving throws within an anomaly are made with disadvantage. While the Zenith Medallion is awakened, you do not suffer the negative effects of these zones.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You manifest a crown medallion across your neck. As a bonus action, you can awaken the medallion. An Awakened Zenith Medallion produces a strong gravitational field around the wearer. Provided you are not wearing armor, the field produces a strong enough repulsion to add your Spell casting ability modifier to your Armor Class. As a reaction to being hit by an attack, you can instead reflect the blow back at the attacker for 1 level of fatigue.
+			Additionally, AoE spells cast through your Hermetic Spellcasting feature have the ability to imbue the terrain with gravitational anomalies. Flying creatures inside these anomalies have their flight disabled and fall down to the ground. All attacks and strength or dexterity saving throws within an anomaly are made with disadvantage. While the Zenith Medallion is awakened, you do not suffer the negative effects of these zones.</description>
+		</sheet>
+	</element>
+	<element name="Zenith Crown" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CROWN">
+		<description>
+			<p>At 14th level you learn to summon the true form of your crown fragment in times of need. You manifest a crown atop your head. As a reaction to being reduced to 0 hit points, you awaken your crown and gain immunity to all forms of damage. While you are immune in this way, your crown becomes vulnerable to attack. It shares your AC and is immune to all conditions. Your crown has hit points equal to your level, and temp HP equal to half your max HP. Your crown remains awakened until this temp HP is exhausted, or it is destroyed. While your crown is awakened, all of your crown jewelry gains its awakened benefits. Your crown actions are all made with advantage, and you are always under the effects of haste. Your crown recharges from being destroyed after a long rest. If you are reduced to 0 HP before you reform your crown, you make 1 death save. On a success, you instead drop to 1 hit point and are immune until the start of your next turn. On a failure, you are obliterated, and all memories of your existence removed from the mind of everyone. There is no way to revert this obliteration, and your Zenith Crown fragment returns to the crown.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Long Rest">
+			<description>At 14th level you learn to summon the true form of your crown fragment in times of need. You manifest a crown atop your head. As a reaction to being reduced to 0 hit points, you awaken your crown and gain immunity to all forms of damage. While you are immune in this way, your crown becomes vulnerable to attack. It shares your AC and is immune to all conditions. Your crown has {{hermeticist:level}} HP, and {{hp:half}} temp HP. Your crown remains awakened until this temp HP is exhausted, or it is destroyed. While your crown is awakened, all of your crown jewelry gains its awakened benefits. Your crown actions are all made with advantage, and you are always under the effects of haste. Your crown recharges from being destroyed after a long rest. If you are reduced to 0 HP before you reform your crown, you make 1 death save. On a success, you instead drop to 1 hit point and are immune until the start of your next turn. On a failure, you are obliterated, and all memories of your existence removed from the mind of everyone. There is no way to revert this obliteration, and your Zenith Crown fragment returns to the crown.</description>
+		</sheet>
+	</element>
+
+	<element name="Maniac" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC">
+		<supports>Hermetic Gift V2</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_BLIGHT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_OVERCHANNELING" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_TRAVELLING" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_ANGUISH" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_MADWORLD" />
+            <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_TIERS_OF_MADNESS" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Apex Energy (+{{hermeticist spellcasting modifier}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_BLIGHT" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_OVERCHANNELING" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_TRAVELLING" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_ANGUISH" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_MADWORLD" level="14"/>
+
+			<stat name="hermeticist spellcasting modifier" value="intelligence:modifier" />
+			<stat name="hermeticist spellcasting modifier" value="wisdom:modifier" />
+			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Blight" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_BLIGHT">
+		<description>
+			<p>You were gifted with the damning power of blight, a strong maddening magic source represented by tar and blackness. This gift is slowly driving you mad, but infuses you with an unreal power. Do not be consumed by this power, as overuse will surely spell your doom.</p>
+			<p class="indent">Your spell casting modifier, called Blight, is equal to the sum of your Intelligence, Wisdom, and Charisma modifiers. </p>
+			<p class="indent">You add your spell level to your HP as your body is toughened by your sickening gift. You lose access to the standard spellcasting of Hermeticist while you are not channeling. In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, spellcasters can detect a sickly aura around you, and immediately are made aware of your nature. Most people are hostile to or afraid of those they know with Blight. Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness, and you add your spellcasting modifier to the roll. Tiers of madness are detailed at the end of the subclass description. </p>
+            <p class="indent">When channeling, your spell potency is no longer determined by a d20 roll. Instead, your spells are cast with an assumed potency of 10 + Spellcasting Modifier, and proficiencies are applied as normal. You can choose to cast spells with a potency of 20 + Spellcasting Modifier, but must make a Madness Check upon doing so. You are no longer barred from casting one magnitude spell per turn, but for every spell cast after the first your spell level is reduced by half, and you cannot cast a magnitude spell with your reaction. </p>
+            <p class="indent">When you stop channeling the blight, your fatigue increases by 1. You ignore the effects of fatigue while channeling, but its negative effects are applied to all rolls when not. Channeling requires one Madness check for every additional hour it is active.</p>
+        </description>
+		<sheet action="Action" usage="1 Fatigue">
+			<description> You lose access to the standard spellcasting of Hermeticist while you are not channeling. In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, spellcasters can detect a sickly aura around you, and immediately are made aware of your nature. Most people are hostile to or afraid of those they know with Blight. Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness, and you add your spellcasting modifier to the roll.
+			When channeling, your spell potency is no longer determined by a d20 roll. Instead, your spells are cast with an assumed potency of 10 + Spellcasting Modifier, and proficiencies are applied as normal. You can choose to cast spells with a potency of 20 + Spellcasting Modifier, but must make a Madness Check upon doing so. You are no longer barred from casting one magnitude spell per turn, but for every spell cast after the first your spell level is reduced by half, and you cannot cast a magnitude spell with your reaction. 
+            When you stop channeling the blight, your fatigue increases by 1. You ignore the effects of fatigue while channeling, but its negative effects are applied to all rolls when not. Channeling requires one Madness check for every additional hour it is active.</description>
+		</sheet>
+        <rules>
+            <stat name="blight:hp" value="spell level:usage" level="1"/>
+			<stat name="blight:hp" value="spell level:usage" level="2"/>
+			<stat name="blight:hp" value="spell level:usage" level="3"/>
+			<stat name="blight:hp" value="spell level:usage" level="4"/>
+			<stat name="blight:hp" value="spell level:usage" level="5"/>
+			<stat name="blight:hp" value="spell level:usage" level="6"/>
+			<stat name="blight:hp" value="spell level:usage" level="7"/>
+			<stat name="blight:hp" value="spell level:usage" level="8"/>
+			<stat name="blight:hp" value="spell level:usage" level="9"/>
+			<stat name="blight:hp" value="spell level:usage" level="10"/>
+			<stat name="blight:hp" value="spell level:usage" level="11"/>
+			<stat name="blight:hp" value="spell level:usage" level="12"/>
+			<stat name="blight:hp" value="spell level:usage" level="13"/>
+			<stat name="blight:hp" value="spell level:usage" level="14"/>
+			<stat name="blight:hp" value="spell level:usage" level="15"/>
+			<stat name="blight:hp" value="spell level:usage" level="16"/>
+			<stat name="blight:hp" value="spell level:usage" level="17"/>
+			<stat name="blight:hp" value="spell level:usage" level="18"/>
+			<stat name="blight:hp" value="spell level:usage" level="19"/>
+			<stat name="blight:hp" value="spell level:usage" level="20"/>
+			<stat name="hp" value="blight:hp" />
+		</rules>
+	</element>
+	<element name="Overchanneling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_OVERCHANNELING">
+		<description>
+			<p>At 6th level, you can push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by up to half your proficiency bonus (rounded down). In order to successfully cast the spell, you must make an Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22. </p>
+            <p class="indent">If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by a wish spell.</p>
+        </description>
+		<sheet action="Bonus Action">
+			<description>You push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by {{proficiency:half}}. In order to successfully cast the spell, you must make an Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22.
+            If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by a wish spell. </description>
+		</sheet>
+	</element>
+	<element name="Travelling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_TRAVELLING">
+		<description>
+			<p>Also at 6th level, you learn to manifest your Hermetic Bestowal feature into a gate of spacetime. This gate is represented by a runed lettering, and can only be activated by those you reveal the workings to. A gate has no functionality by itself, but when two gates are present you can open up a rift that allows you to travel between them. In this rift, light is suppressed and you can never truly relax. The road is made of a cold dilapidated concrete connected by bridges suspended over immeasurably deep chasms. Travelling through it reduces the magnitude of time between the destinations by 1. A distance that would normally take a year, only takes one month. One month, a week. One week, a day. One day, an hour. One hour, a minute. One minute, one second. Etc. You can only have a number of gates up to your proficiency bonus, and can only disable them by destroying them from the inside or outside of the rift.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>you learn to manifest your Hermetic Bestowal feature into a gate of spacetime. This gate is represented by a runed lettering, and can only be activated by those you reveal the workings to. A gate has no functionality by itself, but when two gates are present you can open up a rift that allows you to travel between them. In this rift, light is suppressed and you can never truly relax. The road is made of a cold dilapidated concrete connected by bridges suspended over immeasurably deep chasms. Travelling through it reduces the magnitude of time between the destinations by 1. A distance that would normally take a year, only takes one month. One month, a week. One week, a day. One day, an hour. One hour, a minute. One minute, one second. Etc. You can only have up to {{proficiency}} number of gates, and can only disable them by destroying them from the inside or outside of the rift.</description>
+		</sheet>
+	</element>
+	<element name="Anguish" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_ANGUISH">
+		<description>
+			<p>At 10th level, the depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity, and you cannot be affected by spells lower than half your spell level rounded up.  </p>
+			<p class="indent">Additionally, any attempts at invading your mind are met with shrieks of anguish and crazed laughter, inflicting Indefinite Madness on the invader.</p>
+		</description>
+		<sheet>
+			<description>The depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity, and you cannot be affected by spells lower than {{spell half:usage}}
+			Additionally, any attempts at invading your mind are met with shrieks of anguish and crazed laughter, inflicting Indefinite Madness on the invader.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Mad World" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_MADWORLD">
+		<description>
+			<p>At 14th level, your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight. </p>
+            <p class="indent">Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</p>
+		</description>
+		<sheet action="Action">
+			<description>your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight.
+            Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</description>
+		</sheet>
+	</element>
+    <element name="Tiers of Madness" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_TIERS_OF_MADNESS">
+		<description>
+            <p>When you create a Maniac Hermeticist, you gain a resource called Sanity that decreases as your connection with the blight strengthens, eating away at your mind. Your starting Sanity is equal to 80 + 1d20. Your madness decreases by 1d6 everytime you gain a level in this class. If you fail a madness check, your fatigue increases by 1. If you fall unconscious due to building fatigue through this method, your Sanity decreases by 1d6. </p>
+            <h5>Tier 0 (80-100)</h5>
+            <p class="indent">You are in control of your own thoughts. You may begin to hear whispers the closer you get to 80. The voice behind these whispers has a personality that is up to your DM, but has long since fallen to Madness.</p>
+            <h5>Tier 1 (70-80)</h5>
+            <p class="indent">You become unsettled. Make a Madness check whenever your hit points falls below half your hit point maximum.</p>
+            <h5>Tier 2 (60-70)</h5>
+            <p class="indent">You have begun to laugh. Lots. Make a Madness check whenever you make a Wisdom saving throw.</p>
+            <h5>Tier 3 (40-60)</h5>
+            <p class="indent">At your DMs discretion, you sometimes speak with the voice of another. Seizing the blight both thrills and terrifies you. Make a Madness check whenever you stop channeling the blight.</p>
+            <h5>Tier 4 (20-40)</h5>
+            <p class="indent">Your mind is all but lost to you. Any stressful situation might drive you to extreme behavior. In addition to being fatigued, whenever you fail a Madness check, roll a d100. On a roll of 10 or below, your body becomes temporarily possessed by the voice in your head. The DM determines how this voice acts. You can make a Madness check contested by the Madness check of your voice to regain possession of your body. You do not suffer the negative effects of failing a madness check, although you do not gain back control. A greater restoration spell can also be used to regain control of your body.</p>
+            <h5>Tier 5 (0-20)</h5>
+            <p class="indent">You are so far gone with Madness, it becomes a permanent condition. You automatically fail all Madness Checks, and you are irredeemably insane. If you lose your body due to failing the percentile roll, you can only gain it back by the effects of a Greater Restoration spell.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+	</element>
+
 
 	<!--Techniques-->
 	<element name="Creo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES_CREO">

@@ -993,7 +993,7 @@
             <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_TIERS_OF_MADNESS" />
 		</description>
 		<sheet >
-			<description>Your Spellcasting Ability Modifier is Apex Energy (+{{hermeticist spellcasting modifier}}).</description>
+			<description>Your Spellcasting Ability Modifier is Blight (+{{hermeticist spellcasting modifier}}).</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_BLIGHT" level="1"/>

@@ -122,14 +122,14 @@
 				<p><strong>Hermetic check DC</strong> = (DC of the Spell/ Spell Level) + Fatigue Modifier</p>
 			</center>
 			<h5>FATIGUE</h5>
-			<p>Fatigue is gained upon failing a Hermetic Check, as the failed spell backfires. The total number of Fatigue levels impose a penalty: -0 at 1 (Winded), -1 at 2 (Weary), -3 at 3 (Tired), and -5 at 4 (Dazed). At 5 levels, you fall unconscious. Fatigue can be cleared by resting, with short rests removing 1 level of fatigue and Long rests removing 3 levels.</p>
+			<p>Fatigue is gained upon failing a Hermetic Check, as the failed spell backfires. The total number of Fatigue levels impose a penalty: -0 at 1 (Winded), -1 at 2 (Weary), -3 at 3 (Tired), and -5 at 4 (Dazed). At 5 levels, you fall unconscious. Fatigue can be cleared by resting, with short rests removing 1 level of fatigue and Long rests removing all levels.</p>
 			<h5>SPELL LEVEL</h5>
 			<p>The Hermeticism table shows your Spell Level, which increases as you level allowing you to cast more powerful spells of which you are trained in. Casting more than one spell per round treats the additional spells as a rushed spell, halving its spell level by 2 rounded up, and you can only cast one spell with a magnitude component per turn. </p>
 			<h5>SPELLCASTING ABILITY</h5>
 			<h5 class="caption">SPELLCASTING ABILITY</h5>
 			<p>Your spellcasting ability is determined by your hermetic gift. See the Gift feature of your hermetic gift for your spellcasting ability.</p>
 			<h5>RITUAL CASTING</h5>
-			<p>Some spell effects do not remain permanent upon being cast. Using Creo to heal a wound will only suppress the effects until the duration ends, never truly healing it. In order to bypass this limit, a ritual cast must take place, consuming raw magical energy, vis, in the process. </p>
+			<p>Some spell effects do not remain permanent upon being cast. Using Creo to heal a wound will only suppress the effects until the duration ends, never truly healing it. In order to bypass this limit, a ritual cast must take place, consuming raw magical energy, vis, in the process. Ritual casts take 10 minutes, and use your average modifier for the roll.</p>
 			<p>To produce vis, the caster must spend a day’s worth of downtime pouring magical energy into a medium of one of the forms.</p>
 			<h5>SPELLCASTING FOCUS</h5>
 			<p>You can use an arcane focus as a spellcasting focus for your hermeticist spells.</p>
@@ -671,26 +671,26 @@
 			Additionally, spells cast from a range of touch are considered unarmed strikes and add your wisdom modifier to their damage rolls.</description>
 		</sheet>
 		<rules>
-			<stat name="vis:hp" value="spell level:usage" level="1"/>
-			<stat name="vis:hp" value="spell level:usage" level="2"/>
-			<stat name="vis:hp" value="spell level:usage" level="3"/>
-			<stat name="vis:hp" value="spell level:usage" level="4"/>
-			<stat name="vis:hp" value="spell level:usage" level="5"/>
-			<stat name="vis:hp" value="spell level:usage" level="6"/>
-			<stat name="vis:hp" value="spell level:usage" level="7"/>
-			<stat name="vis:hp" value="spell level:usage" level="8"/>
-			<stat name="vis:hp" value="spell level:usage" level="9"/>
-			<stat name="vis:hp" value="spell level:usage" level="10"/>
-			<stat name="vis:hp" value="spell level:usage" level="11"/>
-			<stat name="vis:hp" value="spell level:usage" level="12"/>
-			<stat name="vis:hp" value="spell level:usage" level="13"/>
-			<stat name="vis:hp" value="spell level:usage" level="14"/>
-			<stat name="vis:hp" value="spell level:usage" level="15"/>
-			<stat name="vis:hp" value="spell level:usage" level="16"/>
-			<stat name="vis:hp" value="spell level:usage" level="17"/>
-			<stat name="vis:hp" value="spell level:usage" level="18"/>
-			<stat name="vis:hp" value="spell level:usage" level="19"/>
-			<stat name="vis:hp" value="spell level:usage" level="20"/>
+			<stat name="vis:hp" value="proficiency:half" level="1"/>
+			<stat name="vis:hp" value="proficiency:half" level="2"/>
+			<stat name="vis:hp" value="proficiency:half" level="3"/>
+			<stat name="vis:hp" value="proficiency:half" level="4"/>
+			<stat name="vis:hp" value="proficiency:half" level="5"/>
+			<stat name="vis:hp" value="proficiency:half" level="6"/>
+			<stat name="vis:hp" value="proficiency:half" level="7"/>
+			<stat name="vis:hp" value="proficiency:half" level="8"/>
+			<stat name="vis:hp" value="proficiency:half" level="9"/>
+			<stat name="vis:hp" value="proficiency:half" level="10"/>
+			<stat name="vis:hp" value="proficiency:half" level="11"/>
+			<stat name="vis:hp" value="proficiency:half" level="12"/>
+			<stat name="vis:hp" value="proficiency:half" level="13"/>
+			<stat name="vis:hp" value="proficiency:half" level="14"/>
+			<stat name="vis:hp" value="proficiency:half" level="15"/>
+			<stat name="vis:hp" value="proficiency:half" level="16"/>
+			<stat name="vis:hp" value="proficiency:half" level="17"/>
+			<stat name="vis:hp" value="proficiency:half" level="18"/>
+			<stat name="vis:hp" value="proficiency:half" level="19"/>
+			<stat name="vis:hp" value="proficiency:half" level="20"/>
 			<stat name="hp" value="vis:hp" />
 		</rules>
 	</element>
@@ -837,9 +837,9 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE_FRAME" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_TRANSCENDENT_FORM" level="14"/>
 
-			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
-			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" />
-			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" bonus="base" />
+			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" bonus="base" />
+			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
 	<element name="Essence" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_SUCCESSOR_ESSENCE">
@@ -924,20 +924,20 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_MEDALLION" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_CROWN" level="14"/>
 
-			<stat name="hermeticist:spellcasting modifier" value="intelligence:modifier" />
-			<stat name="hermeticist:spellcasting modifier" value="wisdom:modifier" />
-			<stat name="hermeticist:spellcasting modifier" value="charisma:modifier" />
+			<stat name="hermeticist:spellcasting modifier" value="intelligence:modifier" bonus="base" />
+			<stat name="hermeticist:spellcasting modifier" value="wisdom:modifier" bonus="base" />
+			<stat name="hermeticist:spellcasting modifier" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
 	<element name="Zenith Brace" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_APEX_ZENITH_BRACE">
 		<description>
 			<p>You were gifted with a fragment of the Zenith Crown from Jörmex, and have fused with it, unlocking your hermetic capabilities while putting your body under constant strain. You have learned how to manifest this crown into a number of different forms. You learn different forms as you gain levels in this class, and each form confers a number of different benefits. You can only awaken one form at a time.</p>
 			<p class="indent">Your spell casting modifier, called Apex Energy,  is equal to the sum of your Intelligence, Wisdom, and Charisma modifiers.</p>
-			<p class="indent">You shape the crown into a brace around one of your arms. This crown counts as a melee weapon in which you are proficient, does damage equal to your spell level d10, and lets you use your spellcasting ability modifier for strength ability checks and saving throws. As a bonus action, you can activate the inherent gravitational energy in the crown jewel, awakening it. While awakened, you can alter the gravity of your body and the space around you. When you make an attack with your Awakened Zenith Brace, you reinforce the blow with an immeasurable heaviness on impact. Your movement speed is halved, and your attacks create a gravitational tether on hit. While a creature is tethered, if you make a weapon attack with the Awakened Zenith Bracelet, the creature is pulled in towards your strike. For every 10 ft they are moved this way, your attack does one extra die of damage. Additionally, if you have the enemy tethered and they are within your standard melee range, striking them creates a gravitational fold, imploding and sending them flying 10ft times your proficiency bonus, destroying the tether in the process. This void implosive attack doubles the damage, but your body also gains one level of fatigue in shock.</p>
+			<p class="indent">You shape the crown into a brace around one of your arms. This crown counts as a melee weapon in which you are proficient, does 1d10 force damage. Once per turn when you hit an enemy with this attack, you can increase its damage by your spell level d10 force damage, and lets you use your spellcasting ability modifier for strength ability checks and saving throws. As a bonus action, you can activate the inherent gravitational energy in the crown jewel, awakening it. While awakened, you can alter the gravity of your body and the space around you. When you make an attack with your Awakened Zenith Brace, you reinforce the blow with an immeasurable heaviness on impact. Your movement speed is halved, and your attacks create a gravitational tether on hit. While a creature is tethered, if you make a weapon attack with the Awakened Zenith Bracelet, the creature is pulled in towards your strike. For every 10 ft they are moved this way, your attack does one extra die of damage. Additionally, if you have the enemy tethered and they are within your standard melee range, striking them creates a gravitational fold, imploding and sending them flying 10ft times your proficiency bonus, destroying the tether in the process. This void implosive attack doubles the damage, but your body also gains one level of fatigue in shock.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description> {{brace:strength}}You have learned how to manifest this crown into a number of different forms. You learn different forms as you gain levels in this class, and each form confers a number of different benefits. You can only awaken one form at a time.
-			You shape the crown into a brace around one of your arms. This crown counts as a melee weapon in which you are proficient, does {{spell level:usage}}d10 force damage. As a bonus action, you can activate the inherent gravitational energy in the crown jewel, awakening it. While awakened, you can alter the gravity of your body and the space around you. When you make an attack with your Awakened Zenith Brace, you reinforce the blow with an immeasurable heaviness on impact. Your movement speed is halved, and your attacks create a gravitational tether on hit that last for one minute. While a creature is tethered, if you make a weapon attack with the Awakened Zenith Bracelet, the creature is pulled in towards your strike. For every 10 ft they are moved this way, your attack does one extra die of damage. Additionally, if you have the enemy tethered and they are within your standard melee range, striking them creates a gravitational fold, imploding and sending them flying 10ft times your proficiency bonus, destroying the tether in the process. This void implosive attack doubles the damage, but your body also gains one level of fatigue in shock.</description>
+			<description> You have learned how to manifest this crown into a number of different forms. You learn different forms as you gain levels in this class, and each form confers a number of different benefits. You can only awaken one form at a time.
+			You shape the crown into a brace around one of your arms. This crown counts as a melee weapon in which you are proficient, does 1d10 force damage. Once per turn when you hit an enemy with this attack, you can increase its damage by {{spell level:usage}}d10 force damage. As a bonus action, you can activate the inherent gravitational energy in the crown jewel, awakening it. While awakened, you can alter the gravity of your body and the space around you. When you make an attack with your Awakened Zenith Brace, you reinforce the blow with an immeasurable heaviness on impact. Your movement speed is halved, and your attacks create a gravitational tether on hit that last for one minute. While a creature is tethered, if you make a weapon attack with the Awakened Zenith Bracelet, the creature is pulled in towards your strike. For every 10 ft they are moved this way, your attack does one extra die of damage. Additionally, if you have the enemy tethered and they are within your standard melee range, striking them creates a gravitational fold, imploding and sending them flying 10ft times your proficiency bonus, destroying the tether in the process. This void implosive attack doubles the damage, but your body also gains one level of fatigue in shock.</description>
 		</sheet>
         <rules>
 			<stat name="strength:max" value="100" />
@@ -1002,55 +1002,37 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_ANGUISH" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_MADWORLD" level="14"/>
 
-			<stat name="hermeticist spellcasting modifier" value="intelligence:modifier" />
-			<stat name="hermeticist spellcasting modifier" value="wisdom:modifier" />
-			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" />
+			<stat name="hermeticist spellcasting modifier" value="intelligence:modifier" bonus="base" />
+			<stat name="hermeticist spellcasting modifier" value="wisdom:modifier" bonus="base"/>
+			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Blight" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_BLIGHT">
 		<description>
 			<p>You were gifted with the damning power of blight, a strong maddening magic source represented by tar and blackness. This gift is slowly driving you mad, but infuses you with an unreal power. Do not be consumed by this power, as overuse will surely spell your doom.</p>
 			<p class="indent">Your spell casting modifier, called Blight, is equal to the sum of your Intelligence, Wisdom, and Charisma modifiers. </p>
-			<p class="indent">You add your spell level to your HP as your body is toughened by your sickening gift. You lose access to the standard spellcasting of Hermeticist while you are not channeling. In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, spellcasters can detect a sickly aura around you, and immediately are made aware of your nature. Most people are hostile to or afraid of those they know with Blight. Once you connect to the blight, make a madness check. The DC is equal to 10 + your tier of madness, and you add your spellcasting modifier to the roll. Tiers of madness are detailed at the end of the subclass description. </p>
+			<p class="indent">Your body is toughened by its connection to the blight, you can choose to have your AC equal 13 + Spell Level. You lose access to the standard spellcasting of Hermeticist while you are not channeling. In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, spellcasters can detect a sickly aura around you, and immediately are made aware of your nature. Most people are hostile to or afraid of those they know with Blight. Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness, and you add your spellcasting modifier and profiency bonus to the roll. Rolls of 1 automatically fail. Tiers of madness are detailed at the end of the subclass description. </p>
             <p class="indent">When channeling, your spell potency is no longer determined by a d20 roll. Instead, your spells are cast with an assumed potency of 10 + Spellcasting Modifier, and proficiencies are applied as normal. You can choose to cast spells with a potency of 20 + Spellcasting Modifier, but must make a Madness Check upon doing so. You can add your spellcasting modifier to spell damage rolls. </p>
             <p class="indent">When you stop channeling the blight, your fatigue increases by 1. You ignore the effects of fatigue while channeling, but its negative effects are applied to all rolls when not. Channeling requires one Madness check for every additional hour it is active.</p>
         </description>
 		<sheet action="Action" usage="1 Fatigue">
-			<description> You lose access to the standard spellcasting of Hermeticist while you are not channeling. In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, spellcasters can detect a sickly aura around you, and immediately are made aware of your nature. Most people are hostile to or afraid of those they know with Blight. Once you connect to the blight, make a madness check. The DC is equal to 10 + your tier of madness, and you add your spellcasting modifier to the roll.
+			<description> You lose access to the standard spellcasting of Hermeticist while you are not channeling. In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, spellcasters can detect a sickly aura around you, and immediately are made aware of your nature. Most people are hostile to or afraid of those they know with Blight. Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness, and you add your spellcasting modifier and proficiency bonus to the roll. Rolls of 1 automatically fail.
 			When channeling, your spell potency is no longer determined by a d20 roll. Instead, your spells are cast with an assumed potency of 10 + Spellcasting Modifier, and proficiencies are applied as normal. You can choose to cast spells with a potency of 20 + Spellcasting Modifier, but must make a Madness Check upon doing so. You can add your spellcasting modifier to spell damage rolls.
             When you stop channeling the blight, your fatigue increases by 1. You ignore the effects of fatigue while channeling, but its negative effects are applied to all rolls when not. Channeling requires one Madness check for every additional hour it is active.</description>
 		</sheet>
         <rules>
-            <stat name="blight:hp" value="spell level:usage" level="1"/>
-			<stat name="blight:hp" value="spell level:usage" level="2"/>
-			<stat name="blight:hp" value="spell level:usage" level="3"/>
-			<stat name="blight:hp" value="spell level:usage" level="4"/>
-			<stat name="blight:hp" value="spell level:usage" level="5"/>
-			<stat name="blight:hp" value="spell level:usage" level="6"/>
-			<stat name="blight:hp" value="spell level:usage" level="7"/>
-			<stat name="blight:hp" value="spell level:usage" level="8"/>
-			<stat name="blight:hp" value="spell level:usage" level="9"/>
-			<stat name="blight:hp" value="spell level:usage" level="10"/>
-			<stat name="blight:hp" value="spell level:usage" level="11"/>
-			<stat name="blight:hp" value="spell level:usage" level="12"/>
-			<stat name="blight:hp" value="spell level:usage" level="13"/>
-			<stat name="blight:hp" value="spell level:usage" level="14"/>
-			<stat name="blight:hp" value="spell level:usage" level="15"/>
-			<stat name="blight:hp" value="spell level:usage" level="16"/>
-			<stat name="blight:hp" value="spell level:usage" level="17"/>
-			<stat name="blight:hp" value="spell level:usage" level="18"/>
-			<stat name="blight:hp" value="spell level:usage" level="19"/>
-			<stat name="blight:hp" value="spell level:usage" level="20"/>
-			<stat name="hp" value="blight:hp" />
+            <stat name="ac:blight" value="13" />
+			<stat name="ac:blight" value="spell level:usage" />
+			<stat name="ac:calculation" value="ac:blight" bonus="calculation" alt="blight" equipped="[shield:none]" />
 		</rules>
 	</element>
 	<element name="Overchanneling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_MANIAC_OVERCHANNELING">
 		<description>
-			<p>At 6th level, you can push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by up to half your proficiency bonus (rounded down). In order to successfully cast the spell, you must make an Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22. </p>
+			<p>At 6th level, you can push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by up to half your proficiency bonus (rounded down). In order to successfully cast the spell, you must make an Overweave check to determine its effects. Increasing by one level has a DC of 10, two levels a DC of 15, three levels a DC of 20. </p>
             <p class="indent">If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by a wish spell.</p>
         </description>
 		<sheet action="Bonus Action">
-			<description>You push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by {{proficiency:half}}. In order to successfully cast the spell, you must make an Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22.
+			<description>You push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by {{proficiency:half}}. In order to successfully cast the spell, you must make an Overweave check to determine its effects. Increasing by one level has a DC of 10, two levels a DC of 15, three levels a DC of 20.
             If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by a wish spell. </description>
 		</sheet>
 	</element>
@@ -1081,7 +1063,7 @@
             <p class="indent">Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</p>
 		</description>
 		<sheet action="Action">
-			<description>your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight.
+			<description>Your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight.
             Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</description>
 		</sheet>
 	</element>

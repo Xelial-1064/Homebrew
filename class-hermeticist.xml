@@ -80,7 +80,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_MULTICLASS_HERMETICIST"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_HERMETICIST"/>
-			<select type="Proficiency" name="Skill Proficiency (Hermeticist)" supports="Skill,Hermeticist" number="2" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<select type="Proficiency" name="Skill Proficiency (Hermeticist)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION | ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_MULTICLASS_HERMETICIST"/>
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MAGIC" level="1"/>
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_GIFT" level="1" />
 			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_STUDIES" level="2" />

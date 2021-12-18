@@ -207,10 +207,10 @@
 	</element>
 	<element name="AoE" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_AOE">
 		<description>
-			<p>No Aoe(+0) | 5'x5'x5' (+5) | 10'x10'x10' (+15) | 15'x15'x15' (+30) | 20'x20'x20' (+50)</p>
+			<p>No Aoe(+0) | 5'x5'x5' (+5) | 15'x15'x15' (+15) | 25'x25'x25' (+30) | 35'x35'x35' (+50)</p>
 		</description>
 		<sheet>
-			<description>No Aoe(+0) | 5'x5'x5' (+5) | 10'x10'x10' (+15) | 15'x15'x15' (+30) | 20'x20'x20' (+50)</description>
+			<description>No Aoe(+0) | 5'x5'x5' (+5) | 15'x15'x15' (+15) | 25'x25'x25' (+30) | 35'x35'x35' (+50)</description>
 		</sheet>
 	</element>
 	<element name="Magnitude" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_V2_HERMETIC_MATH_MAGNITUDE">
@@ -424,7 +424,6 @@
 			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_GIFT_V2_CONDUIT_BIOELECTRICITY_SPEAR" />
             <p class="indent">You can teleport up to 10 feet per charge expended, as your body moves with the blessing of Auram.</p>
             <p class="indent">You manifest a spear of electricity in your hand that does (Spell Level)d4 + Intelligence electricity damage. This is a thrown weapon attack with a range of (60/240). You can overcharge this spear by consuming charges, increasing the size of the die up to a d12. If you overcharge it past a d12, you can teleport to the point of impact.</p>
-            <p class="indent">You directly channel the current into your fists, striking foes at breakneck speeds. You have a charge die that increases as you gain levels in this class. Unarmed strikes do charge die + Intelligence Modifier Electricity or Thunder damage. You can consume charges to make 1 additional attack per charge expended after attacking with an unarmed strike or teleporting by any means.</p>
 		</description>
 		<sheet>
 			<description>You cannot cast spells with a range greater than self. You gain proficiency with Auram; if you would already gain proficiency from your trained forms, you gain expertise instead. You are innately acute to the effects of Muto, and learn it. If you would already have learned this technique from your trained forms, spells cast using it are treated as one spell level higher.

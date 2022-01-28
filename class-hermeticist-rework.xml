@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+	<update version="0.01">
+		<file name="class-hermeticist-rework.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
+	</update>
+	</info>
+	<element name="Hermeticist Rework" type="Class" source="Player’s Handbook" id="ID_CLASS_HERMETICIST_REWORK">
+		<description>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a Hermeticist quickly by following these suggestions. First, make your spellcasting ability your highest ability score. Second, choose the sage background. </p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a hermeticist, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d6 per hermeticist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per hermeticist level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Intelligence, Constitution</li>
+				<li><strong>Skills:</strong> Choose two from Acrobatics, Arcana, Athletics, History, Insight, Investigation, and Perception.</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>
+				<li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+			</ul>
+			<h5 class="caption">THE HERMETICIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Studies</td><td>Spell Level</td><td>Spells Known</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Hermetic Magic, Hermetic Study</td><td>-</td><td>1</td><td>4</td></tr>
+				<tr><td> 2nd</td><td class="left">Hermetic Bestowal</td><td>2</td><td>1</td><td>5</td></tr>
+				<tr><td> 3rd</td><td class="left">Hermetic Study Feature</td><td>2</td><td>2</td><td>6</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>2</td><td>7</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>4</td><td>3</td><td>8</td></tr>
+				<tr><td> 6th</td><td class="left">Hermetic Study Feature</td><td>4</td><td>3</td><td>9</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>6</td><td>4</td><td>10</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>6</td><td>4</td><td>11</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>8</td><td>5</td><td>12</td></tr>
+				<tr><td>10th</td><td class="left">Hermetic Study Feature</td><td>8</td><td>5</td><td>14</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>10</td><td>6</td><td>15</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>10</td><td>6</td><td>15</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>10</td><td>7</td><td>16</td></tr>
+				<tr><td>14th</td><td class="left">Hermetic Study Feature</td><td>10</td><td>7</td><td>18</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>12</td><td>8</td><td>19</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>12</td><td>8</td><td>19</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>12</td><td>9</td><td>20</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>14</td><td>9</td><td>22</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>14</td><td>9</td><td>22</td></tr>
+				<tr><td>20th</td><td class="left">Hermetic Study Feature</td><td>14</td><td>9</td><td>22</td></tr>
+			</table>
+			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MAGIC" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDY" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_BESTOWAL" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_ABILITYSCOREIMPROVEMENT_HERMETICIST" />
+		</description>
+		<sheet display="false">
+			<description>A magic user who can freely cast magic that don't challenge the established limits of Hermetic Theory.</description>
+		</sheet>
+		<setters>
+			<set name="short">A scholarly magic-user capable of manipulating the structures of reality.</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<select type="Proficiency" name="Skill Proficiency (Hermeticist)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION | ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MAGIC" level="1"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDY" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_BESTOWAL" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_ABILITYSCOREIMPROVEMENT_HERMETICIST" level="4" />
+
+			
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TECHNIQUE"/>			
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_FORMS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_ANIMAL"/>
+		</rules>
+		<multiclass id="ID_MULTICLASS_HERMETICIST_REWORK">
+			<prerequisite>Constitution 13 and Intelligence 13, Wisdom 13,  or Charisma 13 </prerequisite>
+			<requirements>[con:13],([int:13]||[wis:13]||[cha:13])</requirements>
+
+				<set name="multiclass proficiencies">—</set>
+
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Hermetic Magic" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MAGIC">
+		<description>
+			<p>Starting at 1st level, you have attained the ability to manipulate the raw energies of the world, so long as you operate under a set of rules. To create spells you can combine different Techniques and Forms to achieve different effects. Careful preparation is required for all but the most advanced Hermetic Mages.</p>
+			<p>In order to successfully cast a spell you have a Spell Crafting total equal to your Spell Level. Each property of a spell has a cost, and you can only cast spells within your Spell Crafting Total. </p>
+			<h5>CHANNELING</h5>
+			<p>You can attune yourself to the weave, channeling its energies into yourself allowing access to magic. As an action you can open yourself up to the weave, filling yourself with its power. While channeling, other Hermeticists will be able to tell if you are holding the weave by an aura that surrounds you. Channeling too much through the weave has the potential to burn yourself out if you’re not careful, however, and caution is advised to ensure you don’t lose yourself to its addictive power. You gain one level of fatigue for every hour you channel without break. </p>
+			<h5>FATIGUE</h5>
+			<p>If you attempt to cast a spell that is beyond your safe limit for channeling, you gain one level of fatigue for every level past your Spell Craft limit. The more fatigue you have, the longer you will need to take a break to recover before channeling again. 1 minute at 1 (Winded), 10 minutes at 2 (Weary), 30 minutes at 3 (Tired), and 1 hour at 4 (Dazed). At 5+ levels, you fall unconscious for 1d4 + Fatigue hours. If you attempt to channel while you are in the recovery period, you must spend one fatigue to do so. </p>
+			<h5>SPELL LEVEL</h5>
+			<p>The Hermeticism table shows your Spell Level, which increases as you level, allowing you to cast more powerful spells of which you are trained in. You can only cast one spell with a magnitude component per turn. </p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Your spellcasting ability is determined by your hermetic study. See the Study feature of your hermetic study for your spellcasting ability.</p>
+			<h5>RITUAL CASTING</h5>
+			<p>Some spell effects do not remain permanent upon being cast. Using Creo to heal a wound will only suppress the effects until the duration ends, never truly healing it. In order to bypass this limit, a ritual cast must take place, consuming raw magical energy, vis, in the process. Ritual casts take 10 minutes, and can cast spells with a duration of Until Dispelled or Triggered, or Permanent.</p>
+			<h5>VIS</h5>
+			<p>Vis is the raw magical energy of any given Hermetic form, and can be used to strengthen spell casting. To produce vis, the caster must perform an 8 hour ritual pouring magical energy into a medium of one of the forms. If you are proficient in the form you are creating you create a number of vis equal to your proficiency bonus, otherwise you only create 1. If you cast a spell of a form of which you have Vis prepared, you can increase its spell level by 1 per each Vis consumed in the casting. If you are fatigued you can substitute vis for the fatigue cost to begin channeling.</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your hermeticist spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You cast spells gooder.</description>
+		</sheet>	
+		<rules>
+		<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MAJOR"/>
+		<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MINOR"/>
+		</rules>
+	</element>
+	<element name="Technique" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TECHNIQUE">
+		<description>
+			<p>Creo | Intellego | Muto | Perdo | Rego</p>
+		</description>
+		<sheet usage="SL: {{spell level:usage}}">
+			<description>Creo | Intellego | Muto | Perdo | Rego</description>
+		</sheet>
+		<rules>
+			<stat name="spell level:usage" value="1" level="1" />
+			<stat name="spell level:usage" value="1" level="3" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="5" />
+			<stat name="spell level:usage" value="1" level="7" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="9" />
+			<stat name="spell level:usage" value="1" level="11" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="13" />
+			<stat name="spell level:usage" value="1" level="15" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="17" />
+
+			<stat name="spell level:half" value="1" level="1" />		
+			<stat name="spell level:half" value="1" level="5" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="9" />
+			<stat name="spell level:half" value="1" level="13" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="17" />	
+		</rules>
+	</element>
+	<element name="Hermetic Study" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDY">
+		<description>
+			<p>Choose a Hermetic Study, which describes how your gift manifests. Your choice grants you features when you choose it at 1st level and again at 3rd, 6th, 10th, 14th, and 20th level.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype" name="Hermetic Study" supports="Hermetic Study" />
+		</rules>
+	</element>
+	<element name="Major" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MAJOR">
+		<description>
+			<p>You gain proficiency in one Hermetic Techniques and Form. Spells cast using your major can consist of one non proficient Technique or Form at spell level 1.</p>
+			<p class="indent">Trained techniques and forms create more efficient spells that utilize them. </p>
+			<p class="indent">Proficiency with a technique and form allows you to use your full spellcraft limit. </p>
+			<p class="indent">Additionally, you can modify existing spells with additional techniques and forms you are trained in to cast a complex spell. Complex spells only retain their proficiency bonuses if all techniques and forms are trained.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Major Technique" supports="Hermetic Studies Techniques"/>
+			<select type="Class Feature" name="Major Form" supports="Hermetic Studies Forms" />
+		</rules>
+	</element>
+	<element name="Minor" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MINOR">
+		<description>
+			<p>You gain proficiency in one Hermetic Techniques and Form.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Minor Technique" supports="Hermetic Studies Techniques"/>
+			<select type="Class Feature" name="Minor Form" supports="Hermetic Studies Forms"/>
+		</rules>
+	</element>
+	<element name="Hermetic Bestowal" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_BESTOWAL">
+		<description>
+			<p>Starting at 2nd level, you gain the ability to create small fragments of Vis, which can temporarily store magic inside them. When you cast a spell, you can condense the spell’s energy into a fragment of vis embodying the form used to create it.  </p>
+			<p class="indent">A creature holding this fragment can use its action to release the spell within, whereupon the fragment disappears. The spell uses your attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.</p>
+			<p class="indent">Once you create a bead with this feature, you can’t do so again until you finish a short or long rest. Attempting to create a second bead will destroy the first, vanishing in a flash of light, losing the spell. </p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>  When you cast a spell, you can condense the spell’s energy into a fragment of vis embodying the form used to create it. A creature holding this fragment can use its action to release the spell within, whereupon the fragment disappears. The spell uses your attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.
+			Once you create a bead with this feature, you can’t do so again until you finish a short or long rest. Attempting to create a second bead will destroy the first, vanishing in a flash of light, losing the spell.</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_ABILITYSCOREIMPROVEMENT_HERMETICIST">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Hermeticist 4)" supports="Improvement Option,Hermeticist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 8)" supports="Improvement Option,Hermeticist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 12)" supports="Improvement Option,Hermeticist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 16)" supports="Improvement Option,Hermeticist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 19)" supports="Improvement Option,Hermeticist,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Half Caster" type="Archetype Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER">
+		<description>
+			<p>You gain proficiency in light armor, medium armor, shields, simple weapons, and martial weapons. </p>
+        </description>
+		<sheet display="false">
+		</sheet>
+        <rules>
+
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			
+		</rules>
+	</element>
+
+	<element name="Full Caster" type="Archetype Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER">
+		<description>
+			<p></p>
+        </description>
+		<sheet display="false">
+		</sheet>
+	</element>
+
+	<element name="Monarch" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_TOUCHED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_EXTRACTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_ADVANCEMENT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_EXCHANGE" />
+            <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DOMINION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_DAMNED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_TEMPLATE" />
+		</description>
+		<sheet>
+			<description>Your Spellcasting Ability Modifier is Charisma (+{{hermeticist spellcasting modifier}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_TOUCHED" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_EXTRACTION" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_TEMPLATE" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_ADVANCEMENT" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK" level="5"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_EXCHANGE" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DOMINION" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_DAMNED" level="20"/>
+
+			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Shadow Touched" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_TOUCHED">
+		<description>
+			<p>You have been touched by death, and it has left a scar that you can never be rid of, enhancing your vitality with undeath. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. </p>
+			<p class="indent">You are considered a half caster for the purposes of spell level advancement and proficiencies, and use Charisma as your spell casting modifier. </p>
+        </description>
+		<sheet display="false">
+		</sheet>
+        <rules>
+
+			<stat name="hp" value="1" level="1" />
+			<stat name="hp" value="1" level="2" />
+			<stat name="hp" value="1" level="3" />
+			<stat name="hp" value="1" level="4" />
+			<stat name="hp" value="1" level="5" />
+			<stat name="hp" value="1" level="6" />
+			<stat name="hp" value="1" level="7" />
+			<stat name="hp" value="1" level="8" />
+			<stat name="hp" value="1" level="9" />
+			<stat name="hp" value="1" level="10" />
+			<stat name="hp" value="1" level="11" />
+			<stat name="hp" value="1" level="12" />
+			<stat name="hp" value="1" level="13" />
+			<stat name="hp" value="1" level="14" />
+			<stat name="hp" value="1" level="15" />
+			<stat name="hp" value="1" level="16" />
+			<stat name="hp" value="1" level="17" />
+			<stat name="hp" value="1" level="18" />
+			<stat name="hp" value="1" level="19" />
+			<stat name="hp" value="1" level="20" />
+
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER" />
+
+		</rules>
+	</element>
+	<element name="Shadow Extraction" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_EXTRACTION">
+		<description>
+			<p>You can extract the shadows of creatures that have been slain. You cannot extract shadows from creatures that have been slain for more than 3 days. You cannot extract the shadows of creatures with a challenge rating higher than half your level (minimum of 1). The maximum number of shadows that you can extract is equal to your level + spell level. As an action you can touch a corpse and attempt to extract its shadow. You get three tries per corpse. Make a charisma check with the DC set by 10 + the creature's challenge rating + the creature's charisma score or wisdom score, whichever is higher. You are considered proficient in this check. On success, the creature is absorbed into your shadow. If this would put you over the number of shadows you can store, then you can dismiss one summon from your shadow. A dismissed summon can never be resummoned. A creature that has legendary resistance(s) can use them to resist extraction. A creature can also choose not to resist the call, causing an automatic success on the extraction check. The creature's statistics are the original statistics it had, with the shadow template applied. The shadow template is detailed at the end of the class description. At your DM's discretion, this feature may not work on undead. </p>
+            <p class="indent">Extracted shadows, when not being used, reside within the user's shadow. Shadows are unable to speak unless their challenge rating is 7 or greater, however most can communicate to an extent using grunts and gestures. Players and adventurers can also be made into shadows, in which case instead of challenge rating you would use their level for any checks and effects.</p>
+            <p class="indent">You have a shadow manifestation limit, equal to half your level. You cannot summon creatures from your shadow that have a combined CR higher than your shadow manifestation limit, and you must use a bonus action to retrieve them from your shadow. You can choose to make familiars and companions a shadow without them counting against your maximum shadows or shadow manifestation limit.</p>
+        </description>
+		<sheet action="Action" usage="Shadows = {{shadow:limit}} SML = {{shadow:manifestationlimit}}">
+			<description> You can extract the shadows of creatures that have been slain. You cannot extract shadows from creatures that have been slain for more than 3 days. You cannot extract the shadows of creatures with a challenge rating higher than {{shadow:manifestationlimit}}. The maximum number of shadows that you can extract is {{shadow:limit}}. As an action you can touch a corpse and attempt to extract its shadow. You get three tries per corpse. Make a charisma check with the DC set by 10 + the creature's challenge rating + the creature's charisma score. You are considered proficient in this check. On success, the creature is absorbed into your shadow. If this would put you over the number of shadows you can store, then you can dismiss one summon from your shadow. A dismissed summon can never be resummoned. A creature that has legendary resistance(s) can use them to resist extraction. A creature can also choose not to resist the call, causing an automatic success on the extraction check. The creature's statistics are the original statistics it had, with the shadow template applied.
+            Extracted shadows, when not being used, reside within the user's shadow. Shadows are unable to speak unless their challenge rating is 7 or greater, however most can communicate to an extent using grunts and gestures. Players and adventurers can also be made into shadows, in which case instead of challenge rating you would use their level for any checks and effects.
+			You cannot summon creatures from your shadow that have a combined CR higher than {{shadow:manifestationlimit}}, and you must use a bonus action to retrieve them from your shadow. You can choose to make familiars and companions a shadow without them counting against your maximum shadows or shadow manifestation limit. </description>
+		</sheet>
+		<rules>
+			<stat name="shadow:manifestationlimit" value="1" level="1" />
+			<stat name="shadow:manifestationlimit" value="1" level="4" />
+			<stat name="shadow:manifestationlimit" value="1" level="6" />
+			<stat name="shadow:manifestationlimit" value="1" level="8" />
+			<stat name="shadow:manifestationlimit" value="1" level="10" />
+			<stat name="shadow:manifestationlimit" value="1" level="12" />
+			<stat name="shadow:manifestationlimit" value="1" level="14" />
+			<stat name="shadow:manifestationlimit" value="1" level="16" />
+			<stat name="shadow:manifestationlimit" value="1" level="18" />
+			<stat name="shadow:manifestationlimit" value="1" level="20" />
+
+			<stat name="shadow:limit" value="level" />
+			<stat name="shadow:limit" value="spell level:usage" />
+
+		</rules>
+	</element>
+	<element name="Shadow Advancement" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_ADVANCEMENT">
+		<description>
+			<p>Starting at level 3, your shadows become enhanced by your magic. If your spell attack is higher than a shadow summon’s attack bonus, it may use your spell attack instead of its native melee attack bonus. If your spell DC is higher than a shadow summon's special ability DCs (such as pounce for panthers), it may use your spell DC in that form instead of its native DC. Additionally, they gain a bonus to their attack rolls, damage rolls, armor class, and hit points per CR equal to your spell level.</p>
+		</description>
+		<sheet>
+			<description> Your shadows become enhanced by your magic. If your spell attack is higher than a shadow summon’s attack bonus, it may use your spell attack instead of its native melee attack bonus. If your spell DC is higher than a shadow summon's special ability DCs (such as pounce for panthers), it may use your spell DC in that form instead of its native DC. Additionally, they gain a bonus to their attack rolls, damage rolls, armor class, and hit points per CR equal to {{spell level:usage}}.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Shadow Exchange" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_EXCHANGE">
+		<description>
+			<p>Starting at level 6, you have learned how to exchange your location with the location of one of your shadows. As an action, you can teleport to the location of one of your shadows, and the shadow teleports to your former location.  </p>
+			<p class="indent">Additionally, you can store shadows in the shadow of a friendly creature as a bonus action provided you can see their shadow. Shadows stored this way still count against your maximum shadows.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can swap places with one of your shadows.
+			Additionally, you can store shadows in the shadow of a friendly creature as a bonus action provided you can see their shadow. Shadows stored this way still count against your maximum shadows.</description>
+		</sheet>
+	</element>
+	<element name="Dominion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DOMINION">
+		<description>
+			<p>Starting at level 10, you exude an aura of shadow, empowering summons within 30ft. At the start of your turn, all shadows within your aura gain temp hp equal to your charisma modifier + spell level, and have advantage on all saving throws. This range increases to 60ft at 17th level. </p>
+		</description>
+		<sheet>
+			<description> All shadows within {{shadow:aura}}ft gain {{shadow:temp}} temp hp at the start of your turn, and have advantage on all saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="shadow:aura" value="30" />
+			<stat name="shadow:aura" value="30" level="17" />
+			<stat name="shadow:temp" value="charisma:modifier" />
+			<stat name="shadow:temp" value="spell level:usage" />
+		</rules>
+	</element>
+	<element name="Shadow Heart" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART">
+		<description>
+			<p>Starting at level 14, your connection to the shade manifests itself into a second heart, blurring the lines between your humanity and the shadow. When you die, you can consume your shadow heart, reviving yourself as a shade at 1 hit point. You gain the traits of the Shadow Template, and treat the effects of fatigue as if they were half as severe. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead at the cost of 1 fatigue. Your shadows no longer dispel automatically when you are at 1 hit point. This transformation is permanent, and cannot be dispelled. </p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Shadow Heart" supports="Shadow Heart Activation" />
+		</rules>
+	</element>
+	<element name="Dead" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART_DEAD">
+		<supports>Shadow Heart Activation</supports>
+		<description>
+			<p>You gain the traits of the Shadow Template, and treat the effects of fatigue as if they were half as severe. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead at the cost of 1 fatigue. Your shadows no longer dispel automatically when you are at 1 hit point. This transformation is permanent, and cannot be dispelled. </p>
+		</description>
+		<sheet>
+			<description> You gain the traits of the Shadow Template, and treat the efects of fatigue as if they were half as severe. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead at the cost of 1 fatigue. Your shadows no longer dispel automatically when you are at 1 hit point. This transformation is permanent, and cannot be dispelled.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART_DEAD_TYPE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+			<grant type="Condition" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART_DEAD_SUNSENS" requirements="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<stat name="ac:misc" value="spell level:usage" />
+
+			<stat name="template:hp" value="spell level:usage" level="1"/>
+			<stat name="template:hp" value="spell level:usage" level="2"/>
+			<stat name="template:hp" value="spell level:usage" level="3"/>
+			<stat name="template:hp" value="spell level:usage" level="4"/>
+			<stat name="template:hp" value="spell level:usage" level="5"/>
+			<stat name="template:hp" value="spell level:usage" level="6"/>
+			<stat name="template:hp" value="spell level:usage" level="7"/>
+			<stat name="template:hp" value="spell level:usage" level="8"/>
+			<stat name="template:hp" value="spell level:usage" level="9"/>
+			<stat name="template:hp" value="spell level:usage" level="10"/>
+			<stat name="template:hp" value="spell level:usage" level="11"/>
+			<stat name="template:hp" value="spell level:usage" level="12"/>
+			<stat name="template:hp" value="spell level:usage" level="13"/>
+			<stat name="template:hp" value="spell level:usage" level="14"/>
+			<stat name="template:hp" value="spell level:usage" level="15"/>
+			<stat name="template:hp" value="spell level:usage" level="16"/>
+			<stat name="template:hp" value="spell level:usage" level="17"/>
+			<stat name="template:hp" value="spell level:usage" level="18"/>
+			<stat name="template:hp" value="spell level:usage" level="19"/>
+			<stat name="template:hp" value="spell level:usage" level="20"/>
+			<stat name="hp" value="template:hp" />
+		</rules>
+	</element>
+	<element name="Sunlight Sensitivity" type="Racial Trait" source="Player's Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART_DEAD_SUNSENS">
+		<description>
+			<p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on attack rolls and on Perception checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+		</sheet>
+	</element>
+	<element name="Undead" type="Racial Trait" source="Player's Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_HEART_DEAD_TYPE">
+		<description>
+			<p>You are considered undead for the purposes of spell targeting and effects, but are capable of casting spells that would not normally be allowed to affect undead.</p>
+		</description>
+		<sheet>
+			<description>You are considered undead for the purposes of spell targeting and effects, but are capable of casting spells that would not normally be allowed to affect undead.</description>
+		</sheet>
+	</element>
+	<element name="Limit of the Damned" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_DAMNED">
+		<description>
+			<p>Starting at level 20, you no longer have to abide by the shadow manifestation limit. </p>
+		</description>
+		<sheet>
+			<description> You no longer have to abide by the shadow manifestation limit.</description>
+		</sheet>
+	</element>
+	<element name="Shadow Template" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_SHADOW_TEMPLATE">
+		<description>
+			<p>The shadow template simply changes the creature type of the creature to undead, and gives vulnerability to radiant damage and resistance to necrotic damage. If the creature already had resistance to necrotic damage, it now has immunity. If the creature already had immunity to necrotic damage, it now regains hit points equal to 1/2 the necrotic damage if it would take necrotic damage. If a creature already had vulnerability to radiant damage, it now gains the sunlight sensitivity feature. Active summons share the same hp pool as the caster, but cannot take more damage in one attack than their max hit points. If they take damage equal to or greater than their maximum hit points, they dissipate until the start of your next turn. If a summon takes enough damage to drop the summoner below one health, all summons are returned to your shadow and you drop to 1 hit point instead. </p>
+		</description>
+		<sheet display="false">
+		</sheet>
+	</element>
+
+	<element name="Shardbinder" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_MARKED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_COMBAT_TRAINING" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_SMITE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_PARTIAL_DEMONIZATION" />
+            <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DRAIN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DEMONIZATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_CURSED" />
+		</description>
+		<sheet>
+			<description>Your Spellcasting Ability Modifier is Charisma (+{{hermeticist spellcasting modifier}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_MARKED" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_COMBAT_TRAINING" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_SMITE" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK" level="5"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_PARTIAL_DEMONIZATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DRAIN" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DEMONIZATION" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_CURSED" level="20"/>
+
+			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Vim Marked" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_MARKED">
+		<description>
+			<p>You have chosen to embrace Vim, enhancing your magical core with excess magical energy which threatens your stability. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. While channeling, your weapons can use your charisma modifier in place of its strength or dexterity modifier for the attack and damage rolls. </p>
+			<p class="indent">You are considered a half caster for the purposes of spell level advancement and proficiencies, and use Charisma as your spell casting modifier. </p>
+        </description>
+		<sheet>
+			<description>While channeling, your weapons can use your charisma modifier in place of its strength or dexterity modifier for the attack and damage rolls.</description>
+		</sheet>
+        <rules>
+
+			<stat name="hp" value="1" level="1" />
+			<stat name="hp" value="1" level="2" />
+			<stat name="hp" value="1" level="3" />
+			<stat name="hp" value="1" level="4" />
+			<stat name="hp" value="1" level="5" />
+			<stat name="hp" value="1" level="6" />
+			<stat name="hp" value="1" level="7" />
+			<stat name="hp" value="1" level="8" />
+			<stat name="hp" value="1" level="9" />
+			<stat name="hp" value="1" level="10" />
+			<stat name="hp" value="1" level="11" />
+			<stat name="hp" value="1" level="12" />
+			<stat name="hp" value="1" level="13" />
+			<stat name="hp" value="1" level="14" />
+			<stat name="hp" value="1" level="15" />
+			<stat name="hp" value="1" level="16" />
+			<stat name="hp" value="1" level="17" />
+			<stat name="hp" value="1" level="18" />
+			<stat name="hp" value="1" level="19" />
+			<stat name="hp" value="1" level="20" />
+
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER" />
+
+		</rules>
+	</element>
+	<element name="Combat Training" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_COMBAT_TRAINING">
+		<description>
+			<p>Alongside your magic studies, you have been trained in combat. You learn 1 stance and 1 fighting style. The number of stances learned from this feature increases at 5th level, 9th level, and 13th level. </p>
+        </description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+
+		</rules>
+	</element>
+	<element name="Vim Smite" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_SMITE">
+		<description>
+			<p>Starting at level 3, you learn how to channel your magic through your weaponry, imbuing it with the power of Vim. As an action, you can make a spellstrike with a weapon you are wielding. Make a weapon attack, on hit, the weapon deals extra damage equal to your spell level number of the weapon’s damage die. This counts as casting a magnitude spell for the purposes of Hermetic magic calculations.</p>
+		</description>
+		<sheet usage="Action">
+			<description> You can make a spellstrike with a weapon you are wielding. Make a weapon attack, on hit, the weapon deals extra damage equal to {{spell level:usage}} of the weapon’s damage die. This counts as casting a magnitude spell for the purposes of Hermetic magic calculations.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Additionally, if one of these attacks is a spellstrike, you can follow it up with a half magnitude spell cast.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.
+			Additionally, if one of these attacks is a spellstrike, you can follow it up with a half magnitude spell cast.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Partial Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_PARTIAL_DEMONIZATION">
+		<description>
+			<p>Starting at level 6, you can surrender part of your core to the corruption to enter a hyper state, drawing out more power from your curse but putting your life at risk. While in this state, you generate stacks of corruption at the start of your turn. Corruption manifests itself as crystalline cysts on your skin. You can have a number of stacks of corruption equal to your Charisma modifier (minimum of 1). When you reach max stacks of corruption, your next turn you will take damage equal to a number of d6 equal to your corruption stacks. You can use stacks of corruption to increase your spell level for successful spell strikes and Hermetic Spells. You receive one level of fatigue upon exiting this form.  </p>
+		</description>
+		<sheet action="Action">
+			<description>Starting at level 6, you can surrender part of your core to the corruption to enter a hyper state, drawing out more power from your curse but putting your life at risk. While in this state, you generate stacks of corruption at the start of your turn. Corruption manifests itself as crystalline cysts on your skin. You can have a number of stacks of corruption equal to {{charisma:modifier}}. When you reach max stacks of corruption, your next turn you will take damage equal to a number of d6 equal to your corruption stacks. You can use stacks of corruption to increase your spell level for successful spell strikes and Hermetic Spells. You receive one level of fatigue upon exiting this form.</description>
+		</sheet>
+	</element>
+	<element name="Drain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DRAIN">
+		<description>
+			<p>Starting at level 10, When an enemy dies after receiving a corruption-charged attack from you in the last turn, you siphon a fragment of vis from their essence, restoring 1 level of fatigue and restoring health equal to your proficiency bonus + Charisma Modifier(minimum of 1).</p>
+		</description>
+		<sheet>
+			<description> When an enemy dies after receiving a corruption-charged attack from you in the last turn, you siphon a fragment of vis from their essence, restoring 1 level of fatigue and restoring health equal to your {{proficiency}} + {{charisma:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DEMONIZATION">
+		<description>
+			<p>Starting at level 14, frequent exposure to your curse has enabled you to enter a temporary state of full demonization. You can fully demonize for 1 minute. In a full demonization state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your corruption increases by 2 at the start of every turn, and is no longer capped. You do not cleanse corruption until you exit this state, and take full damage upon exiting. After killing an enemy, drain removes a number of stacks of corruption equal to your Charisma Modifier. If your max health falls below half its maximum, make a DC 10 wisdom save. On a failure you immediately attack whoever is nearest to you. You receive two levels of fatigue upon exiting this form. </p>
+		</description>
+		<sheet usage="Action">
+		<description> You can fully demonize for 1 minute. In a full demonization state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your corruption increases by 2 at the start of every turn, and is no longer capped. You do not cleanse corruption until you exit this state, and take full damage upon exiting. After killing an enemy, drain removes a number of stacks of corruption equal to your Charisma Modifier. If your max health falls below half its maximum, make a DC 10 wisdom save. On a failure you immediately attack whoever is nearest to you. You receive two levels of fatigue upon exiting this form.</description>
+		</sheet>
+	</element>
+	<element name="Limit of the Cursed" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_CURSED">
+		<description>
+			<p>Starting at level 20, you have descended to a demonic state. You gain immunity to fire damage, and are considered a Fiend. You learn the Demonic Stance.</p>
+		</description>
+		<sheet>
+			<description> You are considered a Fiend.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Emissary" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SOUL_AWOKEN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SHAPE_SOUL" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_PARTIAL_PROJECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_EXTRA_ATTACK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_FULL_PROJECTION" />
+            <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SWORN_ENEMY" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_PERFECT_PROJECTION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_LIMIT_OF_THE_SPIRIT" />
+		</description>
+		<sheet>
+			<description>Your Spellcasting Ability Modifier is Wisdom (+{{hermeticist spellcasting modifier}}).</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SOUL_AWOKEN" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SHAPE_SOUL" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_PARTIAL_PROJECTION" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_EXTRA_ATTACK" level="5"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_FULL_PROJECTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SWORN_ENEMY" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_PERFECT_PROJECTION" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_LIMIT_OF_THE_SPIRIT" level="20"/>
+
+			<stat name="hermeticist spellcasting modifier" value="wisdom:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Soul Awoken" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SOUL_AWOKEN">
+		<description>
+			<p>You have been touched by Stastra, and she has enhanced your awareness of your soul. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. </p>
+			<p class="indent">You are considered a half caster for the purposes of spell level advancement and proficiencies. </p>
+        </description>
+		<sheet display="false">
+		</sheet>
+        <rules>
+
+			<stat name="hp" value="1" level="1" />
+			<stat name="hp" value="1" level="2" />
+			<stat name="hp" value="1" level="3" />
+			<stat name="hp" value="1" level="4" />
+			<stat name="hp" value="1" level="5" />
+			<stat name="hp" value="1" level="6" />
+			<stat name="hp" value="1" level="7" />
+			<stat name="hp" value="1" level="8" />
+			<stat name="hp" value="1" level="9" />
+			<stat name="hp" value="1" level="10" />
+			<stat name="hp" value="1" level="11" />
+			<stat name="hp" value="1" level="12" />
+			<stat name="hp" value="1" level="13" />
+			<stat name="hp" value="1" level="14" />
+			<stat name="hp" value="1" level="15" />
+			<stat name="hp" value="1" level="16" />
+			<stat name="hp" value="1" level="17" />
+			<stat name="hp" value="1" level="18" />
+			<stat name="hp" value="1" level="19" />
+			<stat name="hp" value="1" level="20" />
+
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER" />
+
+		</rules>
+	</element>
+	<element name="Shape Soul" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SHAPE_SOUL">
+		<description>
+			<p>Through this awareness of your soul you have learned to shape it and use it as a tool against others.</p>
+			<p class="indent">You can manifest a soul weapon while channeling. This weapon can take the form of any weapon you are proficient with. You use your wisdom modifier for the attack and damage rolls used for this weapon. </p>
+			<p class="indent">Additionally as a bonus action while you have a manifested soul weapon, you can choose to infuse your attack with the power of your magic. The next time you attack with your soul weapon you can cast a spell from it instead of yourself. Spells cast this way have a casting time of 1 Action and a Range of Self. </p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> You can manifest a soul weapon while channeling. This weapon can take the form of any weapon you are proficient with. You use your wisdom modifier for the attack and damage rolls used for this weapon. 
+						Additionally as a bonus action while you have a manifested soul weapon, you can choose to infuse your attack with the power of your magic. The next time you attack with your soul weapon you can cast a spell from it instead of yourself. Spells cast this way have a casting time of 1 Action and a Range of Self.</description>
+		</sheet>
+	</element>
+	<element name="Partial Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_PARTIAL_PROJECTION">
+		<description>
+			<p>At 3rd level, for one fatigue while channeling you can partially manifest your soul into a protective armor like aura surrounding you for one minute. You gain temp hp equal to your Wisdom Modifier(minimum of 1) at the start of each of your turns. Attacks made with your soul weapon are made from the aura, leaving your hands free. You gain an additional use of your reaction that can only be used to make an opportunity attack, and your reach extends 5ft. </p>
+			<p class="indent">Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1d10 + your Hermeticist level. </p>
+		</description>
+		<sheet usage="1 Fatigue">
+			<description> For one fatigue while channeling you can partially manifest your soul into a protective armor like aura surrounding you for one minute. You gain {{wisdom:modifier}} temp hp at the start of each of your turns. Attacks made with your soul weapon are made from the aura, leaving your hands free. You gain an additional use of your reaction that can only be used to make an opportunity attack, and your reach extends 5ft.
+			Additionally, any ranged attacks against you have disadvantage as the aura automatically moves to deflect the blow. Should it land you can use your reaction to reduce the damage by 1d10 + your Hermeticist level.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Full Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_FULL_PROJECTION">
+		<description>
+			<p>At 6th level, your partial projection features improves into a full projection of your soul encasing you. You gain temp hp equal to your Wisdom Modifier(minimum of 1) + your Hermeticist level at the start of each of your turns. You become Large for 1 minute. While you are Large or larger, you gain advantage on Strength checks and saving throws, your reach for all melee weapons increases by 10 feet instead of 5, and you can reduce the damage you take by an amount equal to 2. </p>
+		</description>
+		<sheet action="Action">
+			<description>At 6th level, your partial projection features improves into a full projection of your soul encasing you. You gain temp hp equal to {{wisdom:modifier}} + your Hermeticist level at the start of each of your turns. You become Large for 1 minute. While you are Large or larger, you gain advantage on Strength checks and saving throws, your reach for all melee weapons increases by 10 feet instead of 5, and you can reduce the damage you take by an amount equal to 2.</description>
+		</sheet>
+	</element>
+	<element name="Sworn Enemy" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SWORN_ENEMY">
+		<description>
+			<p>At 10th level you can turn an enemy against themself. As an action you can cause an enemy within 30ft to manifest their soul. Their soul is only visible to them, and cannot be killed. A creature with a manifested soul will only focus on attacking it, and at the start of each of their turns their soul will deal 1 soul weapon die damage to them. To end the effect, they can either die, or succeed on a wisdom saving throw against your spell save dc at the start of their turn. A creature who succeeds their saving throw cannot be affected by this again for 24 hours.</p>
+		</description>
+		<sheet usage="Action">
+			<description> You can cause an enemy within 30ft to manifest their soul. Their soul is only visible to them, and cannot be killed. A creature with a manifested soul will only focus on attacking it, and at the start of each of their turns their soul will deal 1 soul weapon die damage to them. To end the effect, they can either die, or succeed on a wisdom saving throw against your spell save dc at the start of their turn. A creature who succeeds their saving throw cannot be affected by this again for 24 hours.</description>
+		</sheet>
+	</element>
+	<element name="Perfect Projection" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_PERFECT_PROJECTION">
+		<description>
+			<p>At 14th level, your full projection improves. You can choose to become Huge instead of Large. While you are Huge, your reach for all melee weapons increases by 15 feet instead of 5, and you can reduce the damage you take by an amount equal to 2 + your Wisdom modifier (minimum 3).</p>
+		</description>
+		<sheet usage="Action">
+		<description> Your full projection improves. You can choose to become Huge instead of Large. While you are Huge, your reach for all melee weapons increases by 15 feet instead of 5, and you can reduce the damage you take by an amount equal to 2 + {{wisdom:modifier}} (minimum 3).</description>
+		</sheet>
+	</element>
+	<element name="Limit of the Spirit" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_LIMIT_OF_THE_SPIRIT">
+		<description>
+			<p>Starting at level 20, your perfect projection improves. You can choose to become Gargantuan instead of Huge. While you are Gargantuan, your reach for all melee weapons increases by 20ft instead of 5, and you can reduce the damage you take by an amount equal to 6 + your Wisdom modifier (minimum 7).</p>
+		</description>
+		<sheet>
+			<description> Your perfect projection improves. You can choose to become Gargantuan instead of Huge. While you are Gargantuan, your reach for all melee weapons increases by 20ft instead of 5, and you can reduce the damage you take by an amount equal to 6 + your Wisdom modifier (minimum 7).</description>
+		</sheet>
+	</element>
+	
+	<element name="Architect" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_COMPREHENSION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_DOMAIN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_BY_DESIGN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_EVERLASTING_CREATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_INDESTRUCTIBLE_AMBITION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LABYRINTH" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LIMIT_OF_CREATION" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Intelligence.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_COMPREHENSION" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_DOMAIN" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_BY_DESIGN" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_EVERLASTING_CREATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_INDESTRUCTIBLE_AMBITION" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LABYRINTH" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LIMIT_OF_CREATION" level="20"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Comprehension" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_COMPREHENSION">
+		<description>
+			<p>You have been exposed to ancient technology, and from it you gained the ability to understand the structure of any non living construct. With a profound understanding of the laws of creation, and the ability to analyze the composition of matter, you are second to none when it comes to understanding advanced mechanizations and designs. While channeling, you are immune to your area of effect spells and have advantage on saving throws against other areas of effects. </p>
+			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+		</description>
+		<sheet>
+			<description>While channeling, you are immune to your area of effect spells and have advantage on saving throws against other areas of effects.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+		</rules>
+	</element>
+	<element name="Domain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_DOMAIN">
+		<description>
+			<p>Starting at first level the size of your spell’s AoE is doubled and spherical, as you are adept at creating in the midst of battle. </p>
+			<p class="indent">Additionally, you have a sense for anything that occurs within this terrain during its duration, you can cast spells on anyone within a terrain you have created as if you were touching them, ignoring range requirements.</p>
+		</description>
+		<sheet>
+			<description>The size of your spell’s AoE is doubled and spherical. Additionally, you have a sense for anything that occurs within this terrain during its duration, you can cast spells on anyone within a terrain you have created as if you were touching them, ignoring range requirements.</description>
+		</sheet>
+	</element>
+	<element name="By Design" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_BY_DESIGN">
+		<description>
+			<p>At 3rd level, you can freely manipulate your terrain without having to maintain concentration on it. Manipulating it in this way is not enough to directly cause harm, but it can be used to allow passage ways to shift or other alterations.  </p>
+			<p class="indent">Additionally certain properties of the existing terrain can be adjusted so long as you are proficient in the form used in the process. Ex.( Can cause flame to freeze over with an Aquam requisite).</p>
+		</description>
+		<sheet>
+			<description>You can freely manipulate your terrain without having to maintain concentration on it. Manipulating it in this way is not enough to directly cause harm, but it can be used to allow passage ways to shift or other alterations.
+			Additionally certain properties of the existing terrain can be adjusted so long as you are proficient in the form used in the process. Ex.( Can cause flame to freeze over with an Aquam requisite).</description>
+		</sheet>
+	</element>
+	<element name="Everlasting Creation" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_EVERLASTING_CREATION">
+		<description>
+			<p>At 6th level, terrain you create lasts one level of duration longer, and allows you to continue adjusting it should you fall unconscious.</p>
+		</description>
+		<sheet>
+			<description>Terrain you create lasts one level of duration longer, and allows you to continue adjusting it should you fall unconscious.</description>
+		</sheet>
+	</element>
+	<element name="Indestructible Ambition" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_INDESTRUCTIBLE_AMBITION">
+		<description>
+			<p>At 10th level while channeling, your terrain cannot be damaged.</p>
+		</description>
+		<sheet>
+			<description>While channeling, your terrain cannot be damaged.</description>
+		</sheet>
+	</element>
+	<element name="Labyrinth" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LABYRINTH">
+		<description>
+			<p>Starting at 14th level, if terrain is cast using the range of self, enemies trapped inside are restricted from leaving until they kill you or you end the spell.</p>
+			<p class="indent">Additionally, casting from self renders you and any you choose immune to any negative effects of the terrain, and gives you the benefits of half cover. </p>
+		</description>
+		<sheet>
+			<description>If terrain is cast using the range of self, enemies trapped inside are restricted from leaving until they kill you or you end the spell.
+			Additionally, casting from self renders you and any you choose immune to any negative effects of the terrain, and gives you the benefits of half cover.</description>
+		</sheet>
+	</element>
+	<element name="Limit of Creation" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LIMIT_OF_CREATION">
+		<description>
+			<p>Starting at level 20, you can create an AoE of any size without affecting your spell craft limit, and do not need Vis to create infinite terrain.</p>
+		</description>
+		<sheet>
+			<description>You can create an AoE of any size without affecting your spell craft limit, and do not need Vis to create indefinite terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Heavenbinder" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_HEAVEN_TOUCHED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PURITY" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_BLESS_AND_BANE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PARTIAL_ANGELIFICATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_RESTORATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_ANGELIFICATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_LIMIT_OF_THE_DIVINE" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Charisma.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_HEAVEN_TOUCHED" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PURITY" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_BLESS_AND_BANE" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PARTIAL_ANGELIFICATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_RESTORATION" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_ANGELIFICATION" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_LIMIT_OF_THE_DIVINE" level="20"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Heavenbinder" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_HEAVEN_TOUCHED">
+		<description>
+			<p>While channeling, you can use your charisma modifier for Wisdom (Medicine) checks. </p>
+			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+		</description>
+		<sheet>
+			<description>While channeling, you can use your charisma modifier for Wisdom (Medicine) checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+		</rules>
+	</element>
+	<element name="Purity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PURITY">
+		<description>
+			<p>Starting at first level, while channeling you gain 1 charge of purity at the start of your turn. Your maximum level of purity is equivalent to your charisma modifier (Minimum of 1). Purity can be used in place of fatigue or vis to enhance a spell. </p>
+			<p class="indent">Additionally, you have the option to consume this purity by using it to modify your spells. By empowering spells with purity, you can cast a healing spell.</p>
+		</description>
+		<sheet usage="{{purity:limit}}">
+			<description> While channeling you gain 1 charge of purity at the start of your turn. Your maximum level of purity is {{purity:limit}}. Purity can be used in place of fatigue or vis to enhance a spell.
+			Additionally, you have the option to consume this purity by using it to modify your spells. By empowering spells with purity, you can cast a healing spell.</description>
+		</sheet>
+		<rules>
+			<stat name="purity:limit" value="1" bonus="base" />
+			<stat name="purity:limit" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bless and Bane" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_BLESS_AND_BANE">
+		<description>
+			<p>Starting at third level, you can use your reaction and expend purity to modify the results of a roll. You can increase or decrease the results by 1 for every purity expended.  </p>
+		</description>
+		<sheet usage="Reaction">
+			<description>You can use your reaction and expend purity to modify the results of a roll. You can increase or decrease the results by 1 for every purity expended.</description>
+		</sheet>
+	</element>
+	<element name="Partial Angelification" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PARTIAL_ANGELIFICATION">
+		<description>
+			<p>Starting at level 6, as an action while channeling you can partially manifest your heavenly gift. While in this state, your purity increases by 2 at the start of each of your turns. If you fail to change the result of a roll through Bless and Bane, you do not expend any Purity. You receive one level of fatigue upon exiting this form.</p>
+		</description>
+		<sheet usage="Action">
+			<description>while channeling you can partially manifest your heavenly gift. While in this state, your purity increases by 2 at the start of each of your turns. If you fail to change the result of a roll through Bless and Bane, you do not expend any Purity. You receive one level of fatigue upon exiting this form.</description>
+		</sheet>
+	</element>
+	<element name="Restoration" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_RESTORATION">
+		<description>
+			<p>Starting at level 10, you can spend Vis to undo debilitating effects. You can reduce the target’s exhaustion level by one, or end one of the following effects on the target:</p>
+			<p class="indent">Stacks of Fatigue </p>
+			<p class="indent">One effect that charmed, blinded, deafened, paralyzed, poisoned, or petrified the target. </p>
+			<p class="indent">One curse, including the target’s attunement to a cursed magic item. </p>
+			<p class="indent">Any reduction to one of the target’s ability scores. </p>
+			<p class="indent">One effect reducing the target’s hit point maximum. </p>
+		</description>
+		<sheet usage="Action">
+			<description>You can spend Vis to undo debilitating effects. You can reduce the target’s exhaustion level by one, or end one of the following effects on the target: 
+			Stacks of Fatigue
+			One effect that charmed, blinded, deafened, paralyzed, poisoned, or petrified the target.
+			One curse, including the target’s attunement to a cursed magic item.
+			Any reduction to one of the target’s ability scores.
+			One effect reducing the target’s hit point maximum.</description>
+		</sheet>
+	</element>
+	<element name="Angelification" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_ANGELIFICATION">
+		<description>
+			<p>Starting at level 14, frequent exposure to your angelic nature has enabled you to enter a temporary state of full angelification. Once per long rest you can fully angelificate for 1 minute. In a full angelification state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your purity increases by 3 at the start of every turn, and is no longer capped. Allies are healed by a number of hit points equal to your Charisma modifier (Minimum of 1) when they start their turn within 30ft of you. You suffer two levels of fatigue upon exiting this state.</p>
+		</description>
+		<sheet usage="Action - 2 Fatigue">
+			<description> You can fully angelificate for 1 minute. In a full angelification state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your purity increases by 3 at the start of every turn, and is no longer capped. Allies are healed {{purity:limit}} of hit points when they start their turn within 30ft of you. You suffer two levels of fatigue upon exiting this state.</description>
+		</sheet>
+	</element>
+	<element name="Limit of the Divine" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_LIMIT_OF_THE_DIVINE">
+		<description>
+			<p>Starting at level 20, you are no longer bound by lesser limits, and have ascended to the divine state.</p>
+			<p class="indent">You have successfully halted the process of aging.  </p>
+			<p class="indent">You gain immunity to radiant damage, and are considered a celestial.  </p>
+			<p class="indent">You can use purity instead of Vis for your Restoration feature. </p>
+		</description>
+		<sheet>
+			<description>You have successfully halted the process of aging.
+			You are considered a celestial.
+			You can use purity instead of Vis for your Restoration feature.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+		</rules>
+	</element>
+
+	<element name="Maniac" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_TRAVELING" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_FAINT_MEMORIES" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_ANGUISH" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_MAD_WORLD" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_LIMIT_OF_SANITY" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Blight +{{hermeticist:spellcasting:modifier}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_TRAVELING" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_FAINT_MEMORIES" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_ANGUISH" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_MAD_WORLD" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_LIMIT_OF_SANITY" level="20"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" bonus="base"/>
+			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" bonus="base"/>
+			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Blight" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT">
+		<description>
+			<p>You were gifted with the damning power of blight, a strong maddening magic source represented by tar and blackness. This gift is slowly driving you mad, but infuses you with an unreal power. Do not be consumed by this power, as overuse will surely spell your doom. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. When channeling, the cost of all features on the spell crafting table is reduced by 1. </p>
+			<p class="indent">In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, Hermeticists can detect a sickly aura around you. Most people are hostile to or afraid of those they know with Blight. </p>
+			<p class="indent">Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness, and you add your spellcasting modifier to the roll. Tiers of madness are detailed at the end of the subclass description. </p>
+			<p class="indent">Channeling requires one Madness check for every additional hour it is active. When you stop channeling the blight, your fatigue increases by 1. Fatigue decreases madness and overweave checks by 1 per level.</p>
+			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+		</description>
+		<sheet>
+			<description>In order to channel your gift, you must take an action to wrestle the blight into your control, filling you with a fiendish vigor as you embrace its taint. While you are channeling this blight, Hermeticists can detect a sickly aura around you. Most people are hostile to or afraid of those they know with Blight. 
+			Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness, and you add your spellcasting modifier to the roll. 
+			Channeling requires one Madness check for every additional hour it is active. When you stop channeling the blight, your fatigue increases by 1. Fatigue decreases madness and overweave checks by 1 per level.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+		</rules>
+	</element>
+	<element name="Overchanneling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING">
+		<description>
+			<p>You can push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by up to half your proficiency bonus (rounded down). In order to successfully cast the spell, you must make a Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22.  </p>
+			<p class="indent">If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by greater restoration.</p>
+		</description>
+		<sheet usage="Bonus Action">
+			<description> You push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by {{proficiency:half}}. In order to successfully cast the spell, you must make a Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22.
+			If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by greater restoration.</description>
+		</sheet>
+	</element>
+	<element name="Traveling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_TRAVELING">
+		<description>
+			<p>At 3rd level, you learn how to manifest a gate of spacetime. This gate is represented by a runed lettering, and can only be activated by those you reveal the workings to. A gate has no functionality by itself, but when two gates are present you can open up a rift that allows you to travel between them. In this rift, light is suppressed and you can never truly relax. The road is made of a cold dilapidated concrete connected by bridges suspended over immeasurably deep chasms.   </p>
+			<p class="indent">Traveling through it reduces the magnitude of time between the destinations by 1. A distance that would normally take a year, only takes one month. One month, a week. One week, a day. One day, an hour. One hour, a minute. One minute, one second. Etc. You can only have a number of gates up to your proficiency bonus, and can only disable them by destroying them from the inside or outside of the rift. </p>
+		</description>
+		<sheet usage="Action">
+			<description>You learn how to manifest a gate of spacetime. This gate is represented by a runed lettering, and can only be activated by those you reveal the workings to. A gate has no functionality by itself, but when two gates are present you can open up a rift that allows you to travel between them. In this rift, light is suppressed and you can never truly relax. The road is made of a cold dilapidated concrete connected by bridges suspended over immeasurably deep chasms.
+			Traveling through it reduces the magnitude of time between the destinations by 1. A distance that would normally take a year, only takes one month. One month, a week. One week, a day. One day, an hour. One hour, a minute. One minute, one second. Etc. You can only have a number of gates up to your proficiency bonus, and can only disable them by destroying them from the inside or outside of the rift.</description>
+		</sheet>
+	</element>
+	<element name="Faint Memories" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_FAINT_MEMORIES">
+		<description>
+			<p>At 6th level, when you finish a long rest you can choose another Form and Technique. You gain proficiency in those as if you learned them from your minor feature until you finish your next long rest.</p>
+		</description>
+		<sheet usage="Long Rest">
+			<description>when you finish a long rest you can choose another Form and Technique. You gain proficiency in those as if you learned them from your minor feature until you finish your next long rest.</description>
+		</sheet>
+	</element>
+	<element name="Anguish" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_ANGUISH">
+		<description>
+			<p>At 10th level, the depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity, and you cannot be affected by spells lower than half your spell level rounded up.  </p>
+			<p class="indent">Additionally, any attempts at invading your mind are met with shrieks of anguish and crazed laughter, inflicting Indefinite Madness on the invader.</p>
+		</description>
+		<sheet>
+			<description>The depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity, and you cannot be affected by spells lower than {{spell half:usage}}
+			Additionally, any attempts at invading your mind are met with shrieks of anguish and crazed laughter, inflicting Indefinite Madness on the invader.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Mad World" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_MAD_WORLD">
+		<description>
+			<p>At 14th level, your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight. </p>
+            <p class="indent">Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</p>
+		</description>
+		<sheet action="Action">
+			<description>Your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight.
+            Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</description>
+		</sheet>
+	</element>
+	<element name="Limit of Sanity" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_LIMIT_OF_SANITY">
+		<description>
+			<p>Starting at level 20, if you are sane, you learn to accept the voices in your head. You gain proficiency in all techniques and forms, and no longer adhere to the rules regarding madness.</p>
+		</description>
+		<sheet>
+			<description>You gain proficiency in all techniques and forms, and no longer adhere to the rules regarding madness.</description>
+		</sheet>
+	</element>
+
+	<!--Techniques-->
+	<element name="Creo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_CREO">
+		<supports>Hermetic Studies Techniques</supports>
+		<description>
+			<p>Creo ("I create") brings objects and substances into existence from nothing, or makes an already-existing target a "more perfect" version of itself (e.g. healing magic, as healed bodies are nearer perfection than wounded bodies).</p>
+		</description>
+		<sheet>
+			<description>Creo ("I create") brings objects and substances into existence from nothing, or makes an already-existing target a "more perfect" version of itself</description>
+		</sheet>
+	</element>
+	<element name="Intellego" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_INTELLEGO">
+		<supports>Hermetic Studies Techniques</supports>
+		<description>
+			<p>Intellego ("I perceive") detects or reveals, enhances a target's natural senses or conveys supernatural ones.</p>
+		</description>
+		<sheet>
+			<description>Intellego ("I perceive") detects or reveals, enhances a target's natural senses or conveys supernatural ones.</description>
+		</sheet>
+	</element>
+	<element name="Muto" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MUTO">
+		<supports>Hermetic Studies Techniques</supports>
+		<description>
+			<p>Muto ("I transform") alters the nature of a being, object or substance, adding unnatural traits and/or removing natural ones.</p>
+		</description>
+		<sheet>
+			<description>Muto ("I transform") alters the nature of a being, object or substance, adding unnatural traits and/or removing natural ones.</description>
+		</sheet>
+	</element>
+	<element name="Perdo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_PERDO">
+		<supports>Hermetic Studies Techniques</supports>
+		<description>
+			<p>Perdo ("I destroy") decays, disintegrates or otherwise diminishes the target, making something a worse example of its kind (i.e. the opposite of Creo).</p>
+		</description>
+		<sheet>
+			<description>Perdo ("I destroy") decays, disintegrates or otherwise diminishes the target, making something a worse example of its kind (i.e. the opposite of Creo).</description>
+		</sheet>
+	</element>
+	<element name="Rego" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_REGO">
+		<supports>Hermetic Studies Techniques</supports>
+		<description>
+			<p>Rego ("I control") involves manipulation of the target in any way that does not alter its nature, e.g. direct a target's movement, put a creature to sleep, or force a tree to bear fruit out of season. This is the main Technique used in spells of protection or 'warding'.</p>
+		</description>
+		<sheet>
+			<description>Rego ("I control") involves manipulation of the target in any way that does not alter its nature, e.g. direct a target's movement, put a creature to sleep, or force a tree to bear fruit out of season. This is the main Technique used in spells of protection or 'warding'.</description>
+		</sheet>
+	</element>
+
+	<!--Forms-->
+	<element name="Animal" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_ANIMAL">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Animal affects "all natural living things that are not plants or humans, doing to animals what Mentem and Corpus spells do to people" as well as "things made with animal products" such as leather, wool, cheese, silk, etc. Since bacteria were unknown in medieval times, illness (e.g.) was considered either a form of possession or an imbalance of 'bodily humors'; thus, magic dealing with disease is relegated variously to Creo, Mentem and/or Vim effects.</p>
+		</description>
+		<sheet>
+			<description>Animal affects "all natural living things that are not plants or humans, doing to animals what Mentem and Corpus spells do to people" as well as "things made with animal products" such as leather, wool, cheese, silk, etc.</description>
+		</sheet>
+	</element>
+	<element name="Auram" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AURAM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Auram affects lightning, wind and gaseous substances; other weather effects typically require an Aquam requisite (see below).</p>
+		</description>
+		<sheet>
+			<description>Auram affects lightning, wind and gaseous substances; other weather effects typically require an Aquam requisite</description>
+		</sheet>
+	</element>
+	<element name="Aquam" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AQUAM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Aquam is used for any liquid, with the exception of blood (which requires Animal or Corpus magic to affect); non-liquid forms of water will involve requisites (see below).</p>
+		</description>
+		<sheet>
+			<description>Aquam is used for any liquid, with the exception of blood (which requires Animal or Corpus magic to affect); non-liquid forms of water will involve requisites.</description>
+		</sheet>
+	</element>
+	<element name="Corpus" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_CORPUS">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Corpus applies to the human body, making it crucial to longevity formulas.</p>
+		</description>
+		<sheet>
+			<description>Corpus applies to the human body, making it crucial to longevity formulas.</description>
+		</sheet>
+	</element>
+	<element name="Herbam" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_HERBAM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Herbam primarily involves plants, but applies equally to any organic matter, living or dead, that is not of animal origin.</p>
+		</description>
+		<sheet>
+			<description>Herbam primarily involves plants, but applies equally to any organic matter, living or dead, that is not of animal origin.</description>
+		</sheet>
+	</element>
+	<element name="Ignem" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_IGNEM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Ignem involves light and heat, and is heavily represented in the fire spells.</p>
+		</description>
+		<sheet>
+			<description>Ignem involves light and heat, and is heavily represented in the fire spells.</description>
+		</sheet>
+	</element>
+	<element name="Imaginem" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_IMAGINEM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Imaginem deals with images, sounds, and other sensory stimuli (thus is involved in most illusionary effects).</p>
+		</description>
+		<sheet>
+			<description>Imaginem deals with images, sounds, and other sensory stimuli (thus is involved in most illusionary effects).</description>
+		</sheet>
+	</element>
+	<element name="Mentem" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MENTEM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Mentem deals with emotions, memories, thoughts and spirits.</p>
+		</description>
+		<sheet>
+			<description>Animal affects "all natural living things that are not plants or humans, doing to animals what Mentem and Corpus spells do to people" as well as "things made with animal products" such as leather, wool, cheese, silk, etc.</description>
+		</sheet>
+	</element>
+	<element name="Terram" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_TERRAM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Terram involves earth and minerals: mere soil is the simplest target, while stone, metal and gems require progressively greater investment of spell levels to achieve the same effect.</p>
+		</description>
+		<sheet>
+			<description>Terram involves earth and minerals: mere soil is the simplest target, while stone, metal and gems require progressively greater investment of spell levels to achieve the same effect.</description>
+		</sheet>
+	</element>
+	<element name="Vim" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_VIM">
+		<supports>Hermetic Studies Forms</supports>
+		<description>
+			<p>Vim ("power") involves magic itself, as well as demons.</p>
+		</description>
+		<sheet>
+			<description>Vim ("power") involves magic itself, as well as demons.</description>
+		</sheet>
+	</element>
+
+	<!--Spell Chart-->
+	<element name="Forms" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_FORMS">
+		<description>
+			<p>Animal | Aquam | Auram | Corpus | Herbam | Ignem | Imaginem | Mentem | Terram | Vim</p>
+		</description>
+		<sheet>
+			<description>Animal | Aquam | Auram | Corpus | Herbam | Ignem | Imaginem | Mentem | Terram | Vim</description>
+		</sheet>
+	</element>
+	<element name="Casting Speed" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED">
+		<description>
+			<p>10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+1) | Reaction (+2)</p>
+		</description>
+		<sheet>
+			<description>10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+1) | Reaction (+2)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> 10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+0) | Reaction (+1)</description>
+		</sheet>
+	</element>
+	<element name="Range" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE">
+		<description>
+			<p>Self (+0) | Touch (+0) | 5' (+0) | 30' (+1) | 60' (+2) | 120' (+3) | 300' (+4) | Sight (+5) | Unlimited (+6)</p>
+		</description>
+		<sheet>
+			<description>Self (+0) | Touch (+0) | 5' (+0) | 30' (+1) | 60' (+2) | 120' (+3) | 300' (+4) | Sight (+5) | Unlimited (+6)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> Self (+0) | Touch (+0) | 5' (+0) | 30' (+0) | 60' (+1) | 120' (+2) | 300' (+3) | Sight (+4) | Unlimited (+5)</description>
+		</sheet>
+	</element>
+	<element name="Components" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS">
+		<description>
+			<p>V,S,M (+0) | (V,S,M) Any 2 (+1) | (V,S,M) Any 1 (+2) | (V,S,M) None (+3)</p>
+		</description>
+		<sheet>
+			<description>V,S,M (+0) | (V,S,M) Any 2 (+1) | (V,S,M) Any 1 (+2) | (V,S,M) None (+3)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> V,S,M (+0) | (V,S,M) Any 2 (+0) | (V,S,M) Any 1 (+1) | (V,S,M) None (+2)</description>
+		</sheet>
+	</element>
+	<element name="Duration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION">
+		<description>
+			<p>Instantaneous (+0) | 1 Round/Concentration 1 Minute (+1) | 1 Minute/Concentration 10 Minutes (+2) | 10 Minutes/Concentration 1 Hour (+3) | 1 hour/Concentration 8 Hours (+4) | 8 Hours/Concentration 24 Hours (+5) | 24 hours (+6) | 7 Days (+7) | 30 Days (+8) | Until Dispelled or Triggered (+9) | Permanent (+9)</p>
+		</description>
+		<sheet>
+			<description>Instantaneous (+0) | 1 Round/Concentration 1 Minute (+1) | 1 Minute/Concentration 10 Minutes (+2) | 10 Minutes/Concentration 1 Hour (+3) | 1 hour/Concentration 8 Hours (+4) | 8 Hours/Concentration 24 Hours (+5) | 24 hours (+6) | 7 Days (+7) | 30 Days (+8) | Until Dispelled or Triggered (+9) | Permanent (+9)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> Instantaneous (+0) | 1 Round/Concentration 1 Minute (+0) | 1 Minute/Concentration 10 Minutes (+1) | 10 Minutes/Concentration 1 Hour (+2) | 1 hour/Concentration 8 Hours (+3) | 8 Hours/Concentration 24 Hours (+4) | 24 hours (+5) | 7 Days (+6) | 30 Days (+7) | Until Dispelled or Triggered (+8) | Permanent (+8)</description>
+		</sheet>
+	</element>
+	<element name="Targets" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS">
+		<description>
+			<p>No Target (-1) | 1 Creature (+0) | Spell Level Creatures (+1)</p>
+		</description>
+		<sheet>
+			<description>No Target (-1) | 1 Creature (+0) | {{spell level:usage}} Creatures (+1)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> No Target (-1) | 1 Creature (+0) | {{spell level:usage}} Creatures (+0)</description>
+		</sheet>
+	</element>
+	<element name="AoE" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE">
+		<description>
+			<p>No Aoe(+0) | 5'x5'x5' (+1) | 15'x15'x15' (+2) | 25'x25'x25' (+3) | 35'x35'x35' (+4)</p>
+		</description>
+		<sheet>
+			<description>No Aoe(+0) | 5'x5'x5' (+1) | 15'x15'x15' (+2) | 25'x25'x25' (+3) | 35'x35'x35' (+4)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> No Aoe(+0) | 5'x5'x5' (+0) | 15'x15'x15' (+1) | 25'x25'x25' (+2) | 35'x35'x35' (+3)</description>
+		</sheet>
+	</element>
+	<element name="Magnitude" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE">
+		<description>
+			<p>xd4 (+1) | xd6 (+2) | xd8 (+3) | xd10 (+4) | xd12 (+5)</p>
+			<p class="indent">Magnitude can only be purchased once, and scales with spell level.</p>
+		</description>
+		<sheet>
+			<description>{{spell level:usage}}d4 (+1) | {{spell level:usage}}d6 (+2) | {{spell level:usage}}d8 (+3) | {{spell level:usage}}d10 (+4) | {{spell level:usage}}d12 (+5)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> {{spell level:usage}}d4 (+0) | {{spell level:usage}}d6 (+1) | {{spell level:usage}}d8 (+2) | {{spell level:usage}}d10 (+3) | {{spell level:usage}}d12 (+4)</description>
+		</sheet>
+	</element>
+	<element name="Debuffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS">
+		<description>
+			<p>-x0ft/AC -x (+1) | Deafened (+2) | Charmed/Frightened/Poisoned(+3) | Blinded/Prone (+4) | Incapacitated/Restrained (+5) | Stunned (+6) | Paralyzed/Petrified/Unconscious (+7)</p>
+		</description>
+		<sheet>
+			<description>-{{spell level:half}}0ft/AC -{{spell level:half}} (+1) | Deafened (+2) | Charmed/Frightened/Poisoned(+3) | Blinded/Prone (+4) | Incapacitated/Restrained (+5) | Stunned (+6) | Paralyzed/Petrified/Unconscious (+7)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> -{{spell level:half}}0ft/AC -{{spell level:half}} (+0) | Deafened (+1) | Charmed/Frightened/Poisoned(+2) | Blinded/Prone (+3) | Incapacitated/Restrained (+4) | Stunned (+5) | Paralyzed/Petrified/Unconscious (+6)</description>
+		</sheet>
+	</element>
+	<element name="Buffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS">
+		<description>
+			<p>+x0ft/AC +x (+1) | Flight +x0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+4) | Flight +x0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+7)</p>
+		</description>
+		<sheet>
+			<description>+{{spell level:half}}0ft/AC +{{spell level:half}} (+1) | Flight +{{spell level:half}}0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+4) | Flight +{{spell level:usage}}0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+7)</description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> +{{spell level:half}}0ft/AC +{{spell level:half}} (+0) | Flight +{{spell level:half}}0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+3) | Flight +{{spell level:usage}}0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+6)</description>
+		</sheet>
+	</element>
+	<element name="Conjuration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION">
+		<description>
+			<p>No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+1) | CR 1 (+2) | CR 2 (+3) | CR 3 (+4) | CR 4 (+5) | CR 5 (+6) | CR 6 (+7) </p>
+		</description>
+		<sheet>
+			<description>No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+1) | CR 1 (+2) | CR 2 (+3) | CR 3 (+4) | CR 4 (+5) | CR 5 (+6) | CR 6 (+7) </description>
+			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+0) | CR 1 (+1) | CR 2 (+2) | CR 3 (+3) | CR 4 (+4) | CR 5 (+5) | CR 6 (+6) </description>
+		</sheet>
+	</element>
+</elements>

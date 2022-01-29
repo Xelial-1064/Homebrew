@@ -7,7 +7,7 @@
 	</info>
 	<files>  
             <file name="class-dragonknight-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-dragonknight-variant.xml" />
-            <file name="class-hermeticist.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
+            <file name="class-hermeticist-rework.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist-rework.xml" />
             <file name="class-monk-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-monk-variant.xml" />
             <file name="class-sorcerer-variant.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-sorcerer-variant.xml" />
             <file name="class-weaveshaper-reborn.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-weaveshaper-reborn.xml" />

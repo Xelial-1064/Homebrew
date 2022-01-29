@@ -85,16 +85,27 @@
 			
 			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TECHNIQUE"/>			
 			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_FORMS"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_ANIMAL"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION" requirements="!ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING | ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_ANIMAL"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION_BLIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING | ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_ANIMAL"/>
+		
 		</rules>
 		<multiclass id="ID_MULTICLASS_HERMETICIST_REWORK">
 			<prerequisite>Constitution 13 and Intelligence 13, Wisdom 13,  or Charisma 13 </prerequisite>
@@ -972,6 +983,7 @@
 			<description> You push past your limits to overchannel the blight into your spells. Once per turn, whenever you cast a spell, you can choose to increase its spell level by {{proficiency:half}}. In order to successfully cast the spell, you must make a Overweave check to determine its effects. Increasing by one level has a DC of 15, two levels a DC of 18, three levels a DC of 22.
 			If you fail the check, make a constitution saving throw of equal DC. On a failure, you suffer a side effect determined by how badly the check failed. On a nat 1 on the con save, the severity increases by 1. On a miss of 1-4, you have severe headaches and gain 1 level of fatigue. On a miss of 5-8, you take 1d6 damage and gain 2 levels of fatigue. On a miss of 9-12, you take 2d6 damage and gain 3 levels of fatigue. These levels of fatigue require one day of rest before they disappear. On a miss of 13-15, you take 3d6 damage and gain 4 levels of fatigue. These levels of fatigue require two days of rest before they disappear. On a miss of 16-19, you take 4d6 damage and gain 5 levels of fatigue. You cannot channel the blight for two weeks. On a miss of 20+, you can no longer channel the blight. This can only be cured by greater restoration.</description>
 		</sheet>
+
 	</element>
 	<element name="Traveling" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_TRAVELING">
 		<description>
@@ -1177,7 +1189,6 @@
 		</description>
 		<sheet>
 			<description>10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+1) | Reaction (+2)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> 10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+0) | Reaction (+1)</description>
 		</sheet>
 	</element>
 	<element name="Range" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE">
@@ -1186,7 +1197,6 @@
 		</description>
 		<sheet>
 			<description>Self (+0) | Touch (+0) | 5' (+0) | 30' (+1) | 60' (+2) | 120' (+3) | 300' (+4) | Sight (+5) | Unlimited (+6)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> Self (+0) | Touch (+0) | 5' (+0) | 30' (+0) | 60' (+1) | 120' (+2) | 300' (+3) | Sight (+4) | Unlimited (+5)</description>
 		</sheet>
 	</element>
 	<element name="Components" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS">
@@ -1195,7 +1205,6 @@
 		</description>
 		<sheet>
 			<description>V,S,M (+0) | (V,S,M) Any 2 (+1) | (V,S,M) Any 1 (+2) | (V,S,M) None (+3)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> V,S,M (+0) | (V,S,M) Any 2 (+0) | (V,S,M) Any 1 (+1) | (V,S,M) None (+2)</description>
 		</sheet>
 	</element>
 	<element name="Duration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION">
@@ -1204,7 +1213,6 @@
 		</description>
 		<sheet>
 			<description>Instantaneous (+0) | 1 Round/Concentration 1 Minute (+1) | 1 Minute/Concentration 10 Minutes (+2) | 10 Minutes/Concentration 1 Hour (+3) | 1 hour/Concentration 8 Hours (+4) | 8 Hours/Concentration 24 Hours (+5) | 24 hours (+6) | 7 Days (+7) | 30 Days (+8) | Until Dispelled or Triggered (+9) | Permanent (+9)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> Instantaneous (+0) | 1 Round/Concentration 1 Minute (+0) | 1 Minute/Concentration 10 Minutes (+1) | 10 Minutes/Concentration 1 Hour (+2) | 1 hour/Concentration 8 Hours (+3) | 8 Hours/Concentration 24 Hours (+4) | 24 hours (+5) | 7 Days (+6) | 30 Days (+7) | Until Dispelled or Triggered (+8) | Permanent (+8)</description>
 		</sheet>
 	</element>
 	<element name="Targets" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS">
@@ -1213,7 +1221,6 @@
 		</description>
 		<sheet>
 			<description>No Target (-1) | 1 Creature (+0) | {{spell level:usage}} Creatures (+1)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> No Target (-1) | 1 Creature (+0) | {{spell level:usage}} Creatures (+0)</description>
 		</sheet>
 	</element>
 	<element name="AoE" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE">
@@ -1222,7 +1229,6 @@
 		</description>
 		<sheet>
 			<description>No Aoe(+0) | 5'x5'x5' (+1) | 15'x15'x15' (+2) | 25'x25'x25' (+3) | 35'x35'x35' (+4)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> No Aoe(+0) | 5'x5'x5' (+0) | 15'x15'x15' (+1) | 25'x25'x25' (+2) | 35'x35'x35' (+3)</description>
 		</sheet>
 	</element>
 	<element name="Magnitude" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE">
@@ -1232,7 +1238,6 @@
 		</description>
 		<sheet>
 			<description>{{spell level:usage}}d4 (+1) | {{spell level:usage}}d6 (+2) | {{spell level:usage}}d8 (+3) | {{spell level:usage}}d10 (+4) | {{spell level:usage}}d12 (+5)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> {{spell level:usage}}d4 (+0) | {{spell level:usage}}d6 (+1) | {{spell level:usage}}d8 (+2) | {{spell level:usage}}d10 (+3) | {{spell level:usage}}d12 (+4)</description>
 		</sheet>
 	</element>
 	<element name="Debuffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS">
@@ -1241,7 +1246,6 @@
 		</description>
 		<sheet>
 			<description>-{{spell level:half}}0ft/AC -{{spell level:half}} (+1) | Deafened (+2) | Charmed/Frightened/Poisoned(+3) | Blinded/Prone (+4) | Incapacitated/Restrained (+5) | Stunned (+6) | Paralyzed/Petrified/Unconscious (+7)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> -{{spell level:half}}0ft/AC -{{spell level:half}} (+0) | Deafened (+1) | Charmed/Frightened/Poisoned(+2) | Blinded/Prone (+3) | Incapacitated/Restrained (+4) | Stunned (+5) | Paralyzed/Petrified/Unconscious (+6)</description>
 		</sheet>
 	</element>
 	<element name="Buffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS">
@@ -1250,7 +1254,6 @@
 		</description>
 		<sheet>
 			<description>+{{spell level:half}}0ft/AC +{{spell level:half}} (+1) | Flight +{{spell level:half}}0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+4) | Flight +{{spell level:usage}}0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+7)</description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> +{{spell level:half}}0ft/AC +{{spell level:half}} (+0) | Flight +{{spell level:half}}0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+3) | Flight +{{spell level:usage}}0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+6)</description>
 		</sheet>
 	</element>
 	<element name="Conjuration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION">
@@ -1259,7 +1262,88 @@
 		</description>
 		<sheet>
 			<description>No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+1) | CR 1 (+2) | CR 2 (+3) | CR 3 (+4) | CR 4 (+5) | CR 5 (+6) | CR 6 (+7) </description>
-			<description  requirements="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT"> No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+0) | CR 1 (+1) | CR 2 (+2) | CR 3 (+3) | CR 4 (+4) | CR 5 (+5) | CR 6 (+6) </description>
+		</sheet>
+	</element>
+
+	<element name="Casting Speed" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED_BLIGHT">
+		<description>
+			<p>10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+1) | Reaction (+2)</p>
+		</description>
+		<sheet>
+			<description> 10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+0) | Reaction (+1)</description>
+		</sheet>
+	</element>
+	<element name="Range" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE_BLIGHT">
+		<description>
+			<p>Self (+0) | Touch (+0) | 5' (+0) | 30' (+1) | 60' (+2) | 120' (+3) | 300' (+4) | Sight (+5) | Unlimited (+6)</p>
+		</description>
+		<sheet>
+			<description> Self (+0) | Touch (+0) | 5' (+0) | 30' (+0) | 60' (+1) | 120' (+2) | 300' (+3) | Sight (+4) | Unlimited (+5)</description>
+		</sheet>
+	</element>
+	<element name="Components" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS_BLIGHT">
+		<description>
+			<p>V,S,M (+0) | (V,S,M) Any 2 (+1) | (V,S,M) Any 1 (+2) | (V,S,M) None (+3)</p>
+		</description>
+		<sheet>
+			<description> V,S,M (+0) | (V,S,M) Any 2 (+0) | (V,S,M) Any 1 (+1) | (V,S,M) None (+2)</description>
+		</sheet>
+	</element>
+	<element name="Duration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION_BLIGHT">
+		<description>
+			<p>Instantaneous (+0) | 1 Round/Concentration 1 Minute (+1) | 1 Minute/Concentration 10 Minutes (+2) | 10 Minutes/Concentration 1 Hour (+3) | 1 hour/Concentration 8 Hours (+4) | 8 Hours/Concentration 24 Hours (+5) | 24 hours (+6) | 7 Days (+7) | 30 Days (+8) | Until Dispelled or Triggered (+9) | Permanent (+9)</p>
+		</description>
+		<sheet>
+			<description> Instantaneous (+0) | 1 Round/Concentration 1 Minute (+0) | 1 Minute/Concentration 10 Minutes (+1) | 10 Minutes/Concentration 1 Hour (+2) | 1 hour/Concentration 8 Hours (+3) | 8 Hours/Concentration 24 Hours (+4) | 24 hours (+5) | 7 Days (+6) | 30 Days (+7) | Until Dispelled or Triggered (+8) | Permanent (+8)</description>
+		</sheet>
+	</element>
+	<element name="Targets" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS_BLIGHT">
+		<description>
+			<p>No Target (-1) | 1 Creature (+0) | Spell Level Creatures (+1)</p>
+		</description>
+		<sheet>
+			<description> No Target (-1) | 1 Creature (+0) | {{spell level:usage}} Creatures (+0)</description>
+		</sheet>
+	</element>
+	<element name="AoE" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_AOE_BLIGHT">
+		<description>
+			<p>No Aoe(+0) | 5'x5'x5' (+1) | 15'x15'x15' (+2) | 25'x25'x25' (+3) | 35'x35'x35' (+4)</p>
+		</description>
+		<sheet>
+			<description> No Aoe(+0) | 5'x5'x5' (+0) | 15'x15'x15' (+1) | 25'x25'x25' (+2) | 35'x35'x35' (+3)</description>
+		</sheet>
+	</element>
+	<element name="Magnitude" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE_BLIGHT">
+		<description>
+			<p>xd4 (+1) | xd6 (+2) | xd8 (+3) | xd10 (+4) | xd12 (+5)</p>
+			<p class="indent">Magnitude can only be purchased once, and scales with spell level.</p>
+		</description>
+		<sheet>
+			<description> {{spell level:usage}}d4 (+0) | {{spell level:usage}}d6 (+1) | {{spell level:usage}}d8 (+2) | {{spell level:usage}}d10 (+3) | {{spell level:usage}}d12 (+4)</description>
+		</sheet>
+	</element>
+	<element name="Debuffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS_BLIGHT">
+		<description>
+			<p>-x0ft/AC -x (+1) | Deafened (+2) | Charmed/Frightened/Poisoned(+3) | Blinded/Prone (+4) | Incapacitated/Restrained (+5) | Stunned (+6) | Paralyzed/Petrified/Unconscious (+7)</p>
+		</description>
+		<sheet>
+			<description> -{{spell level:half}}0ft/AC -{{spell level:half}} (+0) | Deafened (+1) | Charmed/Frightened/Poisoned(+2) | Blinded/Prone (+3) | Incapacitated/Restrained (+4) | Stunned (+5) | Paralyzed/Petrified/Unconscious (+6)</description>
+		</sheet>
+	</element>
+	<element name="Buffs" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS_BLIGHT">
+		<description>
+			<p>+x0ft/AC +x (+1) | Flight +x0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+4) | Flight +x0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+7)</p>
+		</description>
+		<sheet>
+			<description> +{{spell level:half}}0ft/AC +{{spell level:half}} (+0) | Flight +{{spell level:half}}0ft/Additional Attack Action/Advantage/Disadvantage on Attack Rolls Against/Invisibility/Non Magical Physical Damage Resistance/Single Elemental Resistance (+3) | Flight +{{spell level:usage}}0ft/Invisibility(Greater)/Non Magical Physical Damage Immunity (+6)</description>
+		</sheet>
+	</element>
+	<element name="Conjuration" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CONJURATION_BLIGHT">
+		<description>
+			<p>No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+1) | CR 1 (+2) | CR 2 (+3) | CR 3 (+4) | CR 4 (+5) | CR 5 (+6) | CR 6 (+7) </p>
+		</description>
+		<sheet>
+			<description> No Beast Summoned (+0) | CR 0 (+0) | CR 1/2 (+0) | CR 1 (+1) | CR 2 (+2) | CR 3 (+3) | CR 4 (+4) | CR 5 (+5) | CR 6 (+6) </description>
 		</sheet>
 	</element>
 </elements>

@@ -836,6 +836,7 @@
 			<description>Your Spellcasting Ability Modifier is Intelligence.</description>
 		</sheet>
 		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_COMPREHENSION" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_DOMAIN" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_BY_DESIGN" level="3"/>
@@ -928,6 +929,7 @@
 			<description>Your Spellcasting Ability Modifier is Charisma.</description>
 		</sheet>
 		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_HEAVEN_TOUCHED" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_PURITY" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_BLESS_AND_BANE" level="3"/>
@@ -1039,6 +1041,7 @@
 			<description>Your Spellcasting Ability Modifier is Blight +{{hermeticist:spellcasting:modifier}}.</description>
 		</sheet>
 		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_OVERCHANNELING" level="1"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_TRAVELING" level="3"/>

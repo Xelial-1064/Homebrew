@@ -471,33 +471,35 @@
 	<element name="Shardbinder" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER">
 		<supports>Hermetic Study</supports>
 		<description>
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_MARKED" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_COMBAT_TRAINING" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_SMITE" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_PARTIAL_DEMONIZATION" />
-            <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DRAIN" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DEMONIZATION" />
-			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_CURSED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_VIM_MARKED" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_COMBAT_TRAINING" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_VIM_SMITE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_EXTRA_ATTACK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_PARTIAL_DEMONIZATION" />
+            <div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DRAIN" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_LIMIT_OF_THE_CURSED" />
 		</description>
 		<sheet>
 			<description>Your Spellcasting Ability Modifier is Charisma (+{{hermeticist spellcasting modifier}}).</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_MARKED" level="1"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_COMBAT_TRAINING" level="1"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_SMITE" level="3"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK" level="5"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_PARTIAL_DEMONIZATION" level="6"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DRAIN" level="10"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DEMONIZATION" level="14"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_CURSED" level="20"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_VIM_MARKED" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_COMBAT_TRAINING" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_VIM_SMITE" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_EXTRA_ATTACK" level="5"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_PARTIAL_DEMONIZATION" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DRAIN" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_LIMIT_OF_THE_CURSED" level="20"/>
 
 			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" bonus="base"/>
 		</rules>
 	</element>
-	<element name="Vim Marked" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_MARKED">
+	<element name="Vim Marked" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_VIM_MARKED">
 		<description>
 			<p>You have chosen to embrace Vim, enhancing your magical core with excess magical energy which threatens your stability. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. While channeling, your weapons can use your charisma modifier in place of its strength or dexterity modifier for the attack and damage rolls. </p>
 			<p class="indent">You are considered a half caster for the purposes of spell level advancement and proficiencies, and use Charisma as your spell casting modifier. </p>
@@ -532,17 +534,100 @@
 
 		</rules>
 	</element>
-	<element name="Combat Training" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_COMBAT_TRAINING">
+	<element name="Combat Training" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_COMBAT_TRAINING">
 		<description>
 			<p>Alongside your magic studies, you have been trained in combat. You learn 1 stance and 1 fighting style. The number of stances learned from this feature increases at 5th level, 9th level, and 13th level. </p>
         </description>
 		<sheet display="false">
 		</sheet>
 		<rules>
-
+			<select type="Class Feature" name="Fighting Style" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
 		</rules>
 	</element>
-	<element name="Vim Smite" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_VIM_SMITE">
+	<element name="Stances" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES">
+		<description>
+			<p>If you meet its requirements, you can enter into a stance as a bonus action, allowing for more unique ways to express your fighting styles. </p>
+        </description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Stance" supports="Stance" />
+			<select type="Archetype Feature" name="Stance" supports="Stance" level="5" />
+			<select type="Archetype Feature" name="Stance" supports="Stance" level="9"/>
+			<select type="Archetype Feature" name="Stance" supports="Stance" level="13"/>
+		</rules>
+	</element>
+	<element name="Cat Crosses the Courtyard" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_CAT_CROSSES">
+		<supports>Stance</supports>
+		<description>
+			<h5>Melee Weapon</h5>
+			<p>You ready yourself into a state of alertness. You can make opportunity attacks against enemies that enter into your reach.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Melee Weapon | You ready yourself into a state of alertness. You can make opportunity attacks against enemies that enter into your reach.</description>
+		</sheet>
+	</element>
+	<element name="Apple Blossoms in the Wind" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_APPLE_BLOSSOMS">
+		<supports>Stance</supports>
+		<description>
+			<h5>Melee Weapon</h5>
+			<p>You focus your defenses on engaging multiple opponents, thriving when outnumbered. When there is more than 1 enemy within your reach, you can take the dodge action as a bonus action.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Melee Weapon | You focus your defenses on engaging multiple opponents, thriving when outnumbered. When there is more than 1 enemy within your reach, you can take the dodge action as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Black Lance’s Last Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_BLACK_LANCE">
+		<supports>Stance</supports>
+		<description>
+			<h5>Melee Weapon with Reach property</h5>
+			<p>You concentrate your blow into a final piercing strike. You can choose to attack with disadvantage; if it hits, the attack does max damage.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Melee Weapon with Reach property | You concentrate your blow into a final piercing strike. You can choose to attack with disadvantage; if it hits, the attack does max damage.</description>
+		</sheet>
+	</element>
+	<element name="The Boar Rushes Down the Mountain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_BOAR_RUSH">
+		<supports>Stance</supports>
+		<description>
+			<h5>Melee Weapon with Heavy property</h5>
+			<p>You cleave the enemy with all of your might, leaving yourself vulnerable. Doing so gives you advantage on melee weapon attack rolls during this turn, but attack rolls against you have advantage until your next turn.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Melee Weapon with Heavy property | You cleave the enemy with all of your might, leaving yourself vulnerable. Doing so gives you advantage on melee weapon attack rolls during this turn, but attack rolls against you have advantage until your next turn.</description>
+		</sheet>
+	</element>
+	<element name="The Swallow Takes Flight" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_SWALLOW_FLIGHT">
+		<supports>Stance</supports>
+		<description>
+			<h5>Melee Weapon with Light property</h5>
+			<p>You blitz your enemy, striking them before they can react. Your movement speed increases by 10ft. You can take the disengage action as a bonus action.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Melee Weapon with Light property | You blitz your enemy, striking them before they can react. Your movement speed increases by 10ft. You can take the disengage action as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Striking the Spark" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_STRIKING_SPARK">
+		<supports>Stance</supports>
+		<description>
+			<h5>Shield</h5>
+			<p>You parry an incoming blow, deflecting it and opening up your enemy. As a reaction when an enemy misses a melee attack against you, you can roll a contested attack roll. On a success, you cause the enemy to drop their weapon.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Shield | You parry an incoming blow, deflecting it and opening up your enemy. As a reaction when an enemy misses a melee attack against you, you can roll a contested attack roll. On a success, you cause the enemy to drop their weapon.</description>
+		</sheet>
+	</element>
+	<element name="The Kingfisher Takes a Silverback" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_KINGFISHER_SILVERBACK">
+		<supports>Stance</supports>
+		<description>
+			<h5>Ranged Weapon</h5>
+			<p>You pick off a distracted enemy from afar. When you make a ranged weapon attack against an enemy that is within 5ft of an ally, you can reroll your damage roll and use either result.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Ranged Weapon | You pick off a distracted enemy from afar. When you make a ranged weapon attack against an enemy that is within 5ft of an ally, you can reroll your damage roll and use either result.</description>
+		</sheet>
+	</element>
+	<element name="Vim Smite" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_VIM_SMITE">
 		<description>
 			<p>Starting at level 3, you learn how to channel your magic through your weaponry, imbuing it with the power of Vim. As an action, you can make a spellstrike with a weapon you are wielding. Make a weapon attack, on hit, the weapon deals extra damage equal to your spell level number of the weapon’s damage die. This counts as casting a magnitude spell for the purposes of Hermetic magic calculations.</p>
 		</description>
@@ -550,7 +635,7 @@
 			<description> You can make a spellstrike with a weapon you are wielding. Make a weapon attack, on hit, the weapon deals extra damage equal to {{spell level:usage}} of the weapon’s damage die. This counts as casting a magnitude spell for the purposes of Hermetic magic calculations.</description>
 		</sheet>
 	</element>
-	<element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_EXTRA_ATTACK">
+	<element name="Extra Attack" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_EXTRA_ATTACK">
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Additionally, if one of these attacks is a spellstrike, you can follow it up with a half magnitude spell cast.</p>
 		</description>
@@ -562,7 +647,7 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Partial Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_PARTIAL_DEMONIZATION">
+	<element name="Partial Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_PARTIAL_DEMONIZATION">
 		<description>
 			<p>Starting at level 6, you can surrender part of your core to the corruption to enter a hyper state, drawing out more power from your curse but putting your life at risk. While in this state, you generate stacks of corruption at the start of your turn. Corruption manifests itself as crystalline cysts on your skin. You can have a number of stacks of corruption equal to your Charisma modifier (minimum of 1). When you reach max stacks of corruption, your next turn you will take damage equal to a number of d6 equal to your corruption stacks. You can use stacks of corruption to increase your spell level for successful spell strikes and Hermetic Spells. You receive one level of fatigue upon exiting this form.  </p>
 		</description>
@@ -570,7 +655,7 @@
 			<description>Starting at level 6, you can surrender part of your core to the corruption to enter a hyper state, drawing out more power from your curse but putting your life at risk. While in this state, you generate stacks of corruption at the start of your turn. Corruption manifests itself as crystalline cysts on your skin. You can have a number of stacks of corruption equal to {{charisma:modifier}}. When you reach max stacks of corruption, your next turn you will take damage equal to a number of d6 equal to your corruption stacks. You can use stacks of corruption to increase your spell level for successful spell strikes and Hermetic Spells. You receive one level of fatigue upon exiting this form.</description>
 		</sheet>
 	</element>
-	<element name="Drain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DRAIN">
+	<element name="Drain" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DRAIN">
 		<description>
 			<p>Starting at level 10, When an enemy dies after receiving a corruption-charged attack from you in the last turn, you siphon a fragment of vis from their essence, restoring 1 level of fatigue and restoring health equal to your proficiency bonus + Charisma Modifier(minimum of 1).</p>
 		</description>
@@ -578,7 +663,7 @@
 			<description> When an enemy dies after receiving a corruption-charged attack from you in the last turn, you siphon a fragment of vis from their essence, restoring 1 level of fatigue and restoring health equal to your {{proficiency}} + {{charisma:modifier}}.</description>
 		</sheet>
 	</element>
-	<element name="Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_DEMONIZATION">
+	<element name="Demonization" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION">
 		<description>
 			<p>Starting at level 14, frequent exposure to your curse has enabled you to enter a temporary state of full demonization. You can fully demonize for 1 minute. In a full demonization state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your corruption increases by 2 at the start of every turn, and is no longer capped. You do not cleanse corruption until you exit this state, and take full damage upon exiting. After killing an enemy, drain removes a number of stacks of corruption equal to your Charisma Modifier. If your max health falls below half its maximum, make a DC 10 wisdom save. On a failure you immediately attack whoever is nearest to you. You receive two levels of fatigue upon exiting this form. </p>
 		</description>
@@ -586,7 +671,7 @@
 		<description> You can fully demonize for 1 minute. In a full demonization state, you are immune to non magical piercing, bludgeoning, and slashing damage. Your corruption increases by 2 at the start of every turn, and is no longer capped. You do not cleanse corruption until you exit this state, and take full damage upon exiting. After killing an enemy, drain removes a number of stacks of corruption equal to your Charisma Modifier. If your max health falls below half its maximum, make a DC 10 wisdom save. On a failure you immediately attack whoever is nearest to you. You receive two levels of fatigue upon exiting this form.</description>
 		</sheet>
 	</element>
-	<element name="Limit of the Cursed" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MONARCH_LIMIT_OF_THE_CURSED">
+	<element name="Limit of the Cursed" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_LIMIT_OF_THE_CURSED">
 		<description>
 			<p>Starting at level 20, you have descended to a demonic state. You gain immunity to fire damage, and are considered a Fiend. You learn the Demonic Stance.</p>
 		</description>
@@ -595,7 +680,17 @@
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_DEMON_STANCE" />
 		</rules>
+	</element>
+	<element name="Demon Stance" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_STANCES_DEMON_STANCE">
+		<description>
+			<h5>Free Hand</h5>
+			<p>You enter a constant state of demonization near death. While under half health, you fully demonize. You do not take damage from corruption bursts while under half health. When you take damage, you can expend any number of stacks of corruption. Reduce the damage by 1d6 per stack. If you reduce the damage to 0, the stacks burst, sending crystal fragments flying into the enemy and damaging them for the damage that was reduced.</p>
+        </description>
+		<sheet usage="Bonus Action">
+			<description> Free Hand | You enter a constant state of demonization near death. While under half health, you fully demonize. You do not take damage from corruption bursts while under half health. When you take damage, you can expend any number of stacks of corruption. Reduce the damage by 1d6 per stack. If you reduce the damage to 0, the stacks burst, sending crystal fragments flying into the enemy and damaging them for the damage that was reduced.</description>
+		</sheet>
 	</element>
 
 	<element name="Emissary" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY">

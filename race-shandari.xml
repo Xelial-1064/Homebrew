@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Shandari" type="Race" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_RACE_THE_SHANDARI">
+        <description>
+            <h4>SHANDARI TRAITS</h4>
+            <p class="indent"><b><i>Age. </i></b>The lifespan of a shandari is unchanged.</p>
+            <p class="indent"><b><i>Size. </i></b>Your size is determined by your origin race.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your speed is determined by your origin race.</p>
+            <p class="indent"><b><i>Celestial Resistance. </i></b>You have resistance to necrotic damage and radiant damage.</p>
+            <p class="indent"><b><i>Magic Resistance. </i></b>You have advantage on saving throws against spells and other magical effects.</p>
+            <p class="indent"><b><i>Weaving. </i></b>You learn a cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race). You do not use spell slots or learn spells from leveling. Learning spells from Feats, Subclass features, or other means aside from leveling allows you to cast that spell an unlimited number of times per day, treating it as if it were a cantrip. </p>
+            <p class="indent"><b><i>Languages. </i></b> Shandari are fluent in Common and in the language of their racial origin.</p>
+		</description>
+        <sheet display="false" />
+        <rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Shandari)" supports="Custom Ability Score Improvement Option" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Racial Trait" id="ID_GFP_COFSA_RACIAL_TRAIT_SHANDARI_CELESTIAL_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_GFP_COFSA_RACIAL_TRAIT_SHANDARI_MAGIC_RESISTANCE" />
+            <grant type="Racial Trait" id="ID_GFP_COFSA_RACIAL_TRAIT_SHANDARI_WEAVING" />
+            <select type="Racial Trait" name="Racial Origin" supports="Shandari Origin Race" />
+		</rules>
+	</element>
+    
+    <element name="Celestial Resistance" type="Racial Trait" source="Dungeon Master’s Guide" id="ID_GFP_COFSA_RACIAL_TRAIT_SHANDARI_CELESTIAL_RESISTANCE">
+		<description>
+			<p>You have resistance to necrotic damage and radiant damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+    <element name="Magic Resistance" type="Racial Trait" source="Monsters of the Multiverse" id="ID_GFP_COFSA_RACIAL_TRAIT_SHANDARI_MAGIC_RESISTANCE">
+		<description>
+			<p>You have advantage on saving throws against spells.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells.</description>
+		</sheet>
+	</element>
+    <element name="Weaving" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_RACIAL_TRAIT_SHANDARI_WEAVING">
+        <description>
+			<p>You learn a cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race). You do not use spell slots or learn spells from leveling. Learning spells from Feats, Subclass features, or other means aside from leveling allows you to cast that spell an unlimited number of times per day, treating it as if it were a cantrip. </p>
+		</description>
+        <sheet>
+            <description>You do not use spell slots or learn spells from leveling. Learning spells from Feats, Subclass features, or other means aside from leveling allows you to cast that spell an unlimited number of times per day, treating it as if it were a cantrip.  </description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Weaving" supports="0" />
+		</rules>
+	</element>
+
+
+
+    <element name="Dragonborn" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_DRAGONBORN">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p>While the dragon blood that flows through your veins remains potent and powerful, it has been greatly changed by the influence of the Shandari upon your bloodline. Your appearance will shift due to your altered bloodline, often leading to strange scale patterns, partial absence of scales, or even a nighhuman appearance rather than a draconic visage, depending on the origin. </p>
+			<p class="indent">You gain the Draconic Ancestry and Breath Weapon racial features, but do not gain the Damage Resistance feature or any other racial features. Your base walking speed is 30 feet, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRACONIC_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BREATH_WEAPON" />
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+		</rules>
+	</element>
+	<element name="Dwarf" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_DWARF">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p>Dwarvish bloodlines are uncommon to see in the ranks of the Shandari, though not quite as rare as one might expect. Most dwarvish Shandari retain their dwarvish stature, though many find themselves without the natural resistances, cultural instruction, and visual acuity that their heritage might grant. </p>
+			<p class="indent">You gain the Dwarven Toughness racial feature. Your base walking speed is 25 feet, your speed is not reduced by wearing heavy armor, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DWARVEN_TOUGHNESS" />
+			<grant type="Language" id="ID_LANGUAGE_DWARVISH" />
+		</rules>
+	</element>
+	<element name="Elf" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_ELF">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p>Elven bloodlines are surprisingly open to the influence of the Shandari, though they retain much of the strange physiological changes brought upon them by the magic of the fey. </p>
+			<p class="indent">You gain the Fey Ancestry and Trance racial features of an elf. Your base walking speed is 30 feet, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_TRANCE" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
+		</rules>
+	</element>
+	<element name="Gnome" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_GNOME">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p>Shandari of Gnomish heritage are surprisingly stable in the quirks of their bloodline, retaining their unusual curiosity and cheerful demeanor, as well as that special resistance to magical influence. </p>
+			<p class="indent">When you would fail a saving throw against a spell effect, you can choose to succeed instead. You can’t do so again until you finish a short or long rest. Your base walking speed is 25 feet, and your size is Small.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Racial Trait" id="ID_GFP_COFSA_RACIAL_TRAIT_MAGICAL_EVASION" />
+			<grant type="Language" id="ID_LANGUAGE_GNOMISH" />
+		</rules>
+	</element>
+	<element name="Magical Evasion" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_RACIAL_TRAIT_MAGICAL_EVASION">
+		<!-- unnamed trait -->
+		<description>
+			<p>When you would fail a saving throw against a spell effect, you can choose to succeed instead. You can’t do so again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you would fail a saving throw against a spell effect, you can choose to succeed instead.</description>
+		</sheet>
+	</element>
+	<element name="Human" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_HUMAN">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p class="indent">You gain proficiency in two skills of your choosing and one language of your choosing. Your base walking speed is 30 feet, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Proficiency" name="Skill Proficiency (Human Racial Origin)" supports="Skill" number="2" />
+			<select type="Language" name="Language (Human Racial Origin)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Half-Elf" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_HALF_ELF">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p>Their appearance is slightly different and they retain the extended lifespans of their elven kin. </p>
+			<p class="indent">You gain proficiency in two skills of your choosing and one language of your choosing. Your base walking speed is 30 feet, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<select type="Proficiency" name="Skill Proficiency (Half-Elf Racial Origin)" supports="Skill" number="2" />
+			<select type="Language" name="Language (Half-Elf Racial Origin)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Halfling" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_HALFLING">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p> They retain their small stature and surprising luck, granting them remarkable success in all of their pursuits. </p>
+			<p class="indent">You gain the Lucky and Halfling Nimbleness racial features. Your base walking speed is 25 feet, and your size is Small.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LUCKY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HALFLING_NIMBLENESS" />
+			<grant type="Language" id="ID_LANGUAGE_HALFLING" />
+		</rules>
+	</element>
+	<element name="Half-Orc" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_HALF_ORC">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p class="indent">You gain the Relentless racial feature. Your speed is 30 feet, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RELENTLESS_ENDURANCE" />
+			<grant type="Language" id="ID_LANGUAGE_ORC" />
+		</rules>
+	</element>
+	<element name="Tiefling" type="Racial Trait" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_ORIGIN_RACE_TIEFLING">
+		<supports>Shandari Origin Race</supports>
+		<description>
+			<p> Many retain the horns, tails, and scarlet skin of a fiend.</p>
+			<p class="indent">You gain the Infernal Legacy racial feature. Your base walking speed is 30 feet, and your size is Medium.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_INFERNAL_LEGACY" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+</elements>

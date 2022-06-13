@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name>Shandari</name>
+        <description>5e homebrew</description>
+        <author url="http://www.dandwiki.com/wiki/5e_Homebrew">D&amp;D Wiki</author>
+        <update version="0.0.5">
+            <file name="race-shandari.xml" url="https://raw.githubusercontent.com/community-elements/elements-dndwiki/master/dndwiki/races/race-homunculus.xml" />
+        </update>
+    </info>
     <element name="Shandari" type="Race" source="The Compendium of Forgotten Secrets" id="ID_GFP_COFSA_RACE_THE_SHANDARI">
         <description>
             <h4>SHANDARI TRAITS</h4>

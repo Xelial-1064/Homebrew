@@ -1452,6 +1452,108 @@
 		</sheet>
 	</element>
 
+	<element name="Voyager" type="Archetype" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER">
+		<supports>Hermetic Study</supports>
+		<description>
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_FORESIGHT" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_CLOCKBLOCK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_OVERCLOCK" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_ENHANCED_REFLEXES" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_ADJUSTABLE_METABOLISM" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_TEMPORAL RESISTANCE" />
+			<div element="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_LIMIT_OF_TIME" />
+		</description>
+		<sheet >
+			<description>Your Spellcasting Ability Modifier is Intelligence.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_FORESIGHT" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_CLOCKBLOCK" level="1"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_OVERCLOCK" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_ENHANCED_REFLEXES" level="6"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_ADJUSTABLE_METABOLISM" level="10"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_TEMPORAL RESISTANCE" level="14"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_LIMIT_OF_TIME" level="20"/>
+
+			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Foresight" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_FORESIGHT">
+		<description>
+			<p>Your existence defies the natural order, allowing you to see futures yet to come. While channeling, whenever you roll a die to determine the outcome of something, you can choose to do something else after seeing the result of the die. </p>
+			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+		</description>
+		<sheet>
+			<description>While channeling, you are immune to your area of effect spells and have advantage on saving throws against other areas of effects.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+		</rules>
+	</element>
+	<element name="Clockblock" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_CLOCKBLOCK">
+		<description>
+			<p>Starting at first level, you can temporarily suspend time with a touch. Creatures and objects suspended cannot be altered in any way, they are frozen in space, time, and cannot be damaged nor moved.  </p>
+			<p class="indent">As an action, you can touch one object or creature and suspend it for an unknown amount of time between 30 seconds and 10 minutes. Unwilling creatures must succeed on a Dexterity saving throw against your spell save DC to avoid being touched. </p>
+		</description>
+		<sheet action="Action" usage="DC {{clockblock:dc}}">
+			<description>You touch one object or creature and suspend it for an unknown amount of time between 30 seconds and 10 minutes. Unwilling creatures must succeed on a DC {{clockblock:dc}} Dexterity saving throw to avoid being touched.</description>
+		</sheet>
+        <rules>
+            <stat name="clockblock:dc" value="intelligence:modifier" />
+            <stat name="clockblock:dc" value="8" />
+            <stat name="clockblock:dc" value="proficiency" />
+        </rules>
+	</element>
+	<element name="Overclock" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_OVERCLOCK">
+		<description>
+			<p>At 3rd level, you can Clockblock yourself with a bonus action. Doing so allows you to temporarily act while you are suspended. Damage accumulated while Overclocking is dealt when the effect wears off, and you have resistance against all damage types except psychic. This is incredibly taxing however, fatiguing you to activate and at the start of each subsequent turn. </p>
+		</description>
+		<sheet action="Bonus Action" usage="1 Fatigue/Turn">
+			<description>You Clockblock yourself, allowing you to temporarily act while you are suspended. Damage accumulated while Overclocking is dealt when the effect wears off, and you have resistance against all damage types except psychic. This is incredibly taxing however, fatiguing you to activate and at the start of each subsequent turn.</description>
+		</sheet>
+	</element>
+	<element name="Enhanced Reflexes" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_ENHANCED_REFLEXES">
+		<description>
+			<p>At 6th level, as a reaction while Overclocking, whenever you take damage from something you can see making contact with you, you can suspend the source preemptively. Freezing weapons, creatures, projectiles, or AoEs in the process.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>While Overclocking, whenever you take damage from something you can see making contact with you, you can suspend the source preemptively. Freezing weapons, creatures, projectiles, or AoEs in the process.</description>
+		</sheet>
+	</element>
+	<element name="Adjustable Metabolism" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_ADJUSTABLE_METABOLISM">
+		<description>
+			<p>At 10th level, you can adjust the rate at which your body functions. At the end of a long rest you can choose to either slow or speed up your bodily functions.</p>
+            <p class="indent"> Slow : You are immune to poison damage and the poisoned condition, paralysis, stuns, and maintain consciousness while making death saving throws. </p>
+            <p class="indent"> Speed : You have advantage on dexterity saving throws, you rest twice as quickly: halving the time needed to reduce fatigue, short or long rest, and allowing you to recover hit die up to your Intelligence modifier whenever you finish a short rest. </p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>At the end of a long rest you can choose to either slow or speed up your bodily functions | 
+			 Slow : You are immune to poison damage and the poisoned condition, paralysis, stuns, and maintain consciousness while making death saving throws.
+			 | Speed : You have advantage on dexterity saving throws, you rest twice as quickly: halving the time needed to reduce fatigue, short or long rest, and allowing you to recover hit die up to your Intelligence modifier whenever you finish a short rest.</description>
+		</sheet>
+	</element>
+	<element name="Temporal Resistance" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_TEMPORAL RESISTANCE">
+		<description>
+			<p>At 14th level, you are increasingly resistant to temporal manipulation. You cannot age magically, and are immune to the effects of slow and haste unless you allow yourself to be affected by them. If time stops, you continue to act as normal. </p>
+			<p class="indent">Additionally, Overclocking is less fatiguing to maintain. You gain a level of fatigue once per minute instead of once per round. </p>
+		</description>
+		<sheet>
+			<description>You cannot age magically, and are immune to the effects of slow and haste unless you allow yourself to be affected by them. If time stops, you continue to act as normal.
+			 Additionally, Overclocking is less fatiguing to maintain. You gain a level of fatigue once per minute instead of once per round. </description>
+		</sheet>
+	</element>
+	<element name="Limit of Creation" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_VOYAGER_LIMIT_OF_TIME">
+		<description>
+			<p>At 20th level, your mere presence is capable of unraveling time. You no longer need to use your reaction for your Enhanced Reflexes feature. When Overclocking you gain a level of fatigue once per hour instead of once per round, and can Overclocking with the same action used to begin channeling. </p>
+            <p class="indent">Additionally, you can Clockblock creatures by chaining the effect through points of contact. You are not limited to Clockblocking one creature, and can perform feats on the level of suspending the world for all but yourself.</p>
+        </description>
+		<sheet>
+			<description>You no longer need to use your reaction for your Enhanced Reflexes feature. When Overclocking you gain a level of fatigue once per hour instead of once per round, and can Overclocking with the same action used to begin channeling.
+             Additionally, you can Clockblock creatures by chaining the effect through points of contact. You are not limited to Clockblocking one creature, and can perform feats on the level of suspending the world for all but yourself.</description>
+		</sheet>
+	</element>
+
 	<!--Techniques-->
 	<element name="Creo" type="Class Feature" source="Player’s Handbook" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_CREO">
 		<supports>Hermetic Studies Techniques</supports>

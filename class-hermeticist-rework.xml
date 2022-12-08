@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	<update version="3.1">
+	<update version="3.11">
 		<file name="class-hermeticist-rework.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
 	</update>
 	</info>
@@ -1377,34 +1377,34 @@
 	</element>
     <element name="Air (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR_FLARE">
 		<description>
-			<p>You cannot be frightened, do not have a range restriction on smoking creatures, have partial cover, and you can’t be detected by Flared Water.</p>
+			<p>You cannot be frightened, do not have a range restriction on smoking creatures, have half cover, and you can’t be detected by Flared Water.</p>
 		</description>
 		<sheet>
-			<description>&#13;You cannot be frightened, do not have a range restriction on smoking creatures, have partial cover, and you can’t be detected by Flared Water.</description>
+			<description>&#13;You cannot be frightened, do not have a range restriction on smoking creatures, have half cover, and you can’t be detected by Flared Water.</description>
 		</sheet>
 	</element>
     <element name="Earth (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_FLARE">
 		<description>
-			<p>Range increases to 120ft, pushing/pulling force is doubled, damage increased to 2d12.</p>
+			<p>Range increases to 60ft, pushing/pulling force is doubled, damage increased to 2d4.</p>
 		</description>
 		<sheet>
-			<description>&#13;Range increases to 120ft, pushing/pulling force is doubled, damage increased to 2d12.</description>
+			<description>&#13;Range increases to 60ft, pushing/pulling force is doubled, damage increased to 2d4.</description>
 		</sheet>
 	</element>
     <element name="Fire (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_FLARE">
 		<description>
-			<p>You gain one use of your reaction per turn, can see through magical darkness, and creatures do not benefit from being invisible against you.</p>
+			<p>You gain an additional use of your reaction, can see through magical darkness, and creatures do not benefit from being invisible against you.</p>
 		</description>
 		<sheet>
-			<description>&#13;You gain one use of your reaction per turn, can see through magical darkness, and creatures do not benefit from being invisible against you.</description>
+			<description>&#13;You gain an additional use of your reaction, can see through magical darkness, and creatures do not benefit from being invisible against you.</description>
 		</sheet>
 	</element>
     <element name="Life (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_FLARE">
 		<description>
-			<p>You gain temp hp at the start of your turn equal to your level. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. </p>
+			<p>You gain temp hp at the start of your turn equal to your level, and you have advantage on Death Saving throws. </p>
 		</description>
 		<sheet>
-			<description>&#13;You gain temp hp at the start of your turn equal to your level. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. </description>
+			<description>&#13;You gain temp hp at the start of your turn equal to your level, and you have advantage on Death Saving throws.</description>
 		</sheet>
 	</element>
     <element name="Mind (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND_FLARE">
@@ -1498,10 +1498,10 @@
 	</element>
 	<element name="Earth (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_BURN">
 		<description>
-			<p>While burning, once per turn you can push and pull metals based on your weight, can affect and sense any metals within 60ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d12 damage of a type determined by the object.</p>
+			<p>While burning, as a bonus action or reaction you can push and pull metals based on your weight, can affect and sense any metals within 30ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d4 damage of a type determined by the object.</p>
 		</description>
 		<sheet>
-			<description>&#13;While burning, once per turn you can push and pull metals based on your weight, can affect and sense any metals within 60ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d12 damage of a type determined by the object.</description>
+			<description>&#13;While burning, as a bonus action or reaction you can push and pull metals based on your weight, can affect and sense any metals within 30ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d4 damage of a type determined by the object.</description>
 		</sheet>
 	</element>
 	<element name="Fire" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE">
@@ -1518,10 +1518,10 @@
 	</element>
 	<element name="Fire (1 hour)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_BURN">
 		<description>
-			<p>While burning you gain advantage on Wisdom (Perception, Insight) checks, Dexterity saving throws, and you gain an additional reaction.</p>
+			<p>While burning you gain advantage on Wisdom (Perception, Insight) checks, and Dexterity saving throws.</p>
 		</description>
 		<sheet>
-			<description>&#13;While burning you gain advantage on Wisdom (Perception, Insight) checks, Dexterity saving throws, and you gain an additional reaction.</description>
+			<description>&#13;While burning you gain advantage on Wisdom (Perception, Insight) checks, and Dexterity saving throws.</description>
 		</sheet>
 	</element>
 	<element name="Life" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE">
@@ -1538,10 +1538,10 @@
 	</element>
 	<element name="Life (1 minute)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_BURN">
 		<description>
-			<p>While burning you can use your Intelligence modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws. You gain advantage on Death Saving throws.</p>
+			<p>While burning you can use your Spellcasting modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws.</p>
 		</description>
 		<sheet>
-			<description>&#13;While burning you can use your Intelligence modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws. You gain advantage on Death Saving throws.</description>
+			<description>&#13;While burning you can use your Spellcasting modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws.</description>
 		</sheet>
 	</element>
 	<element name="Mind" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND">

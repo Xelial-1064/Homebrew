@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	<update version="3.11">
+	<update version="3.12">
 		<file name="class-hermeticist-rework.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
 	</update>
 	</info>
@@ -491,11 +491,6 @@
 		<sheet>
 			<description>At the start of each of your turns you gain {{charisma:modifier}} temporary hit points. Once per turn whenever you deal damage with an attack, you deal {{spell level:usage}}d8 additional damage. Your minor form is considered mastered.</description>
 		</sheet>
-		<rules>
-			
-			<select type="Class Feature" name="Fighting Style" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
-			<select type="Class Feature" name="Stance" supports="Stance" />
-		</rules>
 	</element>
 	<element name="Demonization (Phantom)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION_PHANTOM" >
 		<description>

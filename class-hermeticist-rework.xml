@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	<update version="3.12">
+	<update version="4.0">
 		<file name="class-hermeticist-rework.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
 	</update>
 	</info>
-	<element name="Hermeticist Rework" type="Class" source="The Architect" id="ID_CLASS_HERMETICIST_REWORK">
+	<element name="Hermeticist" type="Class" source="The Architect" id="ID_CLASS_HERMETICIST">
 		<description>
 			<h5>QUICK BUILD</h5>
 			<p>You can make a Hermeticist quickly by following these suggestions. First, make your spellcasting ability your highest ability score. Second, choose the sage background. </p>
@@ -37,33 +37,33 @@
 			<h5 class="caption">THE HERMETICIST</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Spell Level (Half-caster)</td></tr>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Spellcraft (Half-caster)</td></tr>
 				</thead>
 				<tr><td> 1st</td><td class="left">Hermetic Magic, Hermetic Study</td><td>1 (1)</td></tr>
-				<tr><td> 2nd</td><td class="left">Hermetic Bestowal</td><td>1 (1)</td></tr>
-				<tr><td> 3rd</td><td class="left">Hermetic Study Feature</td><td>2 (1)</td></tr>
-				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2 (1)</td></tr>
-				<tr><td> 5th</td><td class="left">—</td><td>3 (2)</td></tr>
-				<tr><td> 6th</td><td class="left">Hermetic Study Feature</td><td>3 (2)</td></tr>
-				<tr><td> 7th</td><td class="left">—</td><td>4 (2)</td></tr>
-				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4 (2)</td></tr>
-				<tr><td> 9th</td><td class="left">—</td><td>5 (3)</td></tr>
-				<tr><td>10th</td><td class="left">Hermetic Study Feature</td><td>5 (3)</td></tr>
-				<tr><td>11th</td><td class="left">—</td><td>6 (3)</td></tr>
-				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6 (3)</td></tr>
-				<tr><td>13th</td><td class="left">—</td><td>7 (4)</td></tr>
-				<tr><td>14th</td><td class="left">Hermetic Study Feature</td><td>7 (4)</td></tr>
-				<tr><td>15th</td><td class="left">—</td><td>8 (4)</td></tr>
-				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>8 (4)</td></tr>
-				<tr><td>17th</td><td class="left">—</td><td>9 (5)</td></tr>
-				<tr><td>18th</td><td class="left">—</td><td>9 (5)</td></tr>
-				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>9 (5)</td></tr>
-				<tr><td>20th</td><td class="left">Hermetic Study Feature</td><td>9 (5)</td></tr>
+				<tr><td> 2nd</td><td class="left">Mana Surge</td><td>2 (1)</td></tr>
+				<tr><td> 3rd</td><td class="left">Hermetic Study Feature</td><td>3 (1)</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>4 (2)</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>5 (2)</td></tr>
+				<tr><td> 6th</td><td class="left">Hermetic Study Feature</td><td>6 (3)</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>7 (3)</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>8 (4)</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>9 (4)</td></tr>
+				<tr><td>10th</td><td class="left">Hermetic Study Feature</td><td>10 (5)</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>11 (5)</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>12 (6)</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>13 (6)</td></tr>
+				<tr><td>14th</td><td class="left">Hermetic Study Feature</td><td>14 (7)</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>15 (7)</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>16 (8)</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>17 (8)</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>18 (9)</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>19 (9)</td></tr>
+				<tr><td>20th</td><td class="left">Hermetic Study Feature</td><td>20 (10)</td></tr>
 			</table>
-			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MAGIC" />
-			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDY" />
-			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_BESTOWAL" />
-			<div element="ID_CLASS_FEATURE_HERMETICIST_REWORK_ABILITYSCOREIMPROVEMENT_HERMETICIST_REWORK" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MAGIC" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDY" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_MANA_SURGE" />
+			<div element="ID_CLASS_FEATURE_HERMETICIST_ABILITYSCOREIMPROVEMENT_HERMETICIST" />
 		</description>
 		<sheet display="false">
 			<description>A magic user who can freely cast magic that don't challenge the established limits of Hermetic Theory.</description>
@@ -73,30 +73,30 @@
 			<set name="hd">d6</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
-			<select type="Proficiency" name="Skill Proficiency (Hermeticist)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION | ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_MULTICLASS_HERMETICIST_REWORK"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MAGIC" level="1"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDY" level="1" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_BESTOWAL" level="2" />
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_ABILITYSCOREIMPROVEMENT_HERMETICIST_REWORK" level="4" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<select type="Proficiency" name="Skill Proficiency (Hermeticist)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION | ID_PROFICIENCY_SKILL_PERCEPTION" number="2" requirements="!ID_MULTICLASS_HERMETICIST"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MAGIC" level="1"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDY" level="1" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_MANA_SURGE" level="2" />
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_ABILITYSCOREIMPROVEMENT_HERMETICIST" level="4" />
 
 			
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TECHNIQUE"/>			
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_FORMS"/>
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS" />
-			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_TECHNIQUE"/>			
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_FORMS"/>
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_CASTING_SPEED" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_RANGE" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_COMPONENTS" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_DURATION" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_TARGETS" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_MAGNITUDE" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_DEBUFFS" />
+			<grant type="Grants" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_BUFFS" />
 		
 		</rules>
-		<multiclass id="ID_MULTICLASS_HERMETICIST_REWORK">
+		<multiclass id="ID_MULTICLASS_HERMETICIST">
 			<prerequisite>Constitution 13 and Intelligence 13, Wisdom 13,  or Charisma 13 </prerequisite>
 			<requirements>[con:13],([int:13]||[wis:13]||[cha:13])</requirements>
 
@@ -107,31 +107,31 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Hermetic Magic" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MAGIC">
+	<element name="Hermetic Magic" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MAGIC">
 		<description>
 			<p>Starting at 1st level, you have attained the ability to manipulate the raw energies of the world, so long as you operate under a set of rules. To create spells you can combine different Techniques and Forms to achieve different effects. Careful preparation is required for all but the most advanced Hermetic Mages.</p>
-			<p>Spellcraft is your power to manipulate and control different aspects of Hermetic Magic. In order to cast a spell you must expend Spellcraft equal to the cost of the spell. Your Spellcraft equals your Spell Level, and you regain all spent Spellcraft at the start of each of your turns. </p>
+			<p>Spellcraft is your power to manipulate and control different aspects of Hermetic Magic. In order to cast a spell you must expend Spellcraft equal to the cost of the spell. You regain all spent Spellcraft at the start of each of your turns. </p>
 			<h5>CHANNELING</h5>
-			<p>Starting at 1st level, you can attune yourself to the weave, channeling its energies into yourself allowing access to magic. As an action you can open yourself up to the weave, filling yourself with its power. While channeling, other Hermeticists will be able to tell if you are holding the weave by an aura that surrounds you. Channeling too much through the weave has the potential to burn yourself out if you’re not careful, however, and caution is advised to ensure you don’t lose yourself to its addictive power. You gain one level of fatigue for every hour you channel. If you have levels of fatigue already, your current fatigue doubles for every hour instead. </p>
+			<p>Starting at 1st level, you can attune yourself to the weave, channeling its energies into yourself allowing access to magic. As an action you can open yourself up to the weave, filling yourself with its power. While channeling, other Hermeticists will be able to tell if you are holding the weave by an aura that surrounds you. Channeling too much through the weave has the potential to burn yourself out if you’re not careful, however, and caution is advised to ensure you don’t lose yourself to its addictive power. You gain two levels of fatigue for every hour you channel.  </p>
 			<h5>FATIGUE</h5>
-			<p>If you attempt to cast a spell that is beyond your safe limit for channeling, you gain one level of fatigue for every level past your Spellcraft limit. The more fatigue you have, the longer you will need to take a break to recover before channeling again. 1 minute at 1 (Winded), 10 minutes at 2 (Weary), 30 minutes at 3 (Tired), and 1 hour at 4 (Dazed). At 5+ levels, you cannot channel again until you finish a long rest. You cannot channel during the recovery period. At 6+ levels of fatigue you are forced to drop channeling. If you somehow accumulate 10 levels of fatigue, you burn out. You lose access to channeling and can only regain the ability to do so with a wish spell. </p>
-			<h5>SPELL LEVEL</h5>
-			<p>The Hermeticism table shows your Spell Level, which increases as you level, allowing you to cast more powerful spells of which you are trained in. You can only cast one spell with a magnitude component, and gain the ability to do so again at the start of each of your turns.  </p>
+			<p>If you attempt to cast a spell that is beyond your safe limit for channeling, you gain one level of fatigue for every level past your Spellcraft limit. The more fatigue you have, the longer you will need to take a break to recover before channeling again. 1 minute at 1 (Winded), 10 minutes at 2 (Weary), 30 minutes at 3 (Tired), and 1 hour at 4 (Dazed). At 5 levels, you are forced to drop channeling, and you cannot channel again until you finish a long rest. If you somehow accumulate 6 levels of fatigue, you burn out. You lose access to channeling and can only regain the ability to do so with a wish spell. </p>
 			<h5>SPELLCASTING ABILITY</h5>
-			<p>Your spellcasting ability is determined by your hermetic study. See the Study feature of your hermetic study for your spellcasting ability.</p>
+			<p>Your spellcasting ability, Spellcraft, and magnitude die are determined by your hermetic study.</p>
 			<h5>RITUAL CASTING</h5>
-			<p>Some spell effects do not remain permanent upon being cast. Using Creo to heal a wound will only suppress the effects until the duration ends, never truly healing it. In order to bypass this limit, a ritual cast must take place, consuming raw magical energy, vis, in the process. Ritual casts take 10 minutes, and can cast spells with a duration of Until Dispelled or Triggered, or Permanent.</p>
+			<p>Some spell effects do not remain permanent upon being cast. In order to bypass this limit, a ritual cast must take place. Ritual casts take 10 minutes, and can cast spells with a duration of Permanent.</p>
 			<h5>LIMITS OF MAGIC</h5>
 			<p>Hermetic magic is imperfect, and there are some things outside of its realm of influence. Spells you cast cannot defy these limitations.</p>
 			<p class="indent"><strong>Limit of Aging. </strong> Cannot halt or reverse aging.</p>
 			<p class="indent"><strong>Limit of Arcane Connections. </strong> Cannot affect an un-sensed target without an arcane connection.</p>
-			<p class="indent"><strong>Limit of Concentration. </strong> While concentrating on a spell with a magnitude, you cannot cast another magnitude spell. You expend 1 Spellcraft at the start of each of your turns to maintain Concentration.</p>
-			<p class="indent"><strong>Limit of Creation. </strong> Cannot create anything permanently without expending vis. Can only maintain one magical beast at a time, and spells to create or control beasts require concentration.</p>
-			<p class="indent"><strong>Limit of Depth. </strong> A creature can only be affected by one buff and debuff, and duration magnitude spell inflicted by Hermeticism at any given time.</p>
+			<p class="indent"><strong>Limit of Concentration. </strong> When concentrating on a spell effect, you can choose to cast a Concentration (Trigger) or Concentration (Sustain) spell. </p>
+			<p class="indent"><strong>Limit of Concentration (Sustain). </strong> A Concentration (Sustain) spell maintains a spell effect until Concentration is broken. You do not recover the Spellcraft used to craft the Concentration (Sustain) spell until the effect ends.</p>
+			<p class="indent"><strong>Limit of Concentration (Trigger). </strong> A Concentration (Trigger) spell has triggers which activate an instant effect. Activating the trigger while concentrating costs Spellcraft equal to the cost of the Trigger spell, but does not include the cost of the Casting Speed.</p>
+			<p class="indent"><strong>Limit of Creation. </strong> Cannot create anything permanently without performing a ritual cast. Can only maintain one magical beast at a time, and spells to create or control beasts requires Concentration (Sustain).</p>
+			<p class="indent"><strong>Limit of Depth. </strong> A creature can only be affected by one buff, debuff, or duration magnitude spell inflicted by any one Hermeticist at a given time.</p>
 			<p class="indent"><strong>Limit of Energy. </strong> Cannot restore one’s own physical energy.</p>
-			<p class="indent"><strong>Limit of Healing. </strong> Without access to ritual magic, Creo spells that attempt to heal a wound instead grant temporary hit points that last until the duration ends. Granting temporary hit points in this way does not scale with spell level increases to magnitude.</p>
+			<p class="indent"><strong>Limit of Healing. </strong> Without access to ritual magic, Creo spells that attempt to heal a wound instead grant temporary hit points that last until the duration ends. </p>
 			<p class="indent"><strong>Limit of the Infernal. </strong> Detection magic is useless against demons(reveals only what that demon wants you to believe).</p>
-			<p class="indent"><strong>Limit of Longevity. </strong> Duration spells with magnitude do not scale with spell level increases to magnitude.</p>
+			<p class="indent"><strong>Limit of Longevity. </strong> Duration spells with magnitude do not scale with spell level increases to magnitude, unless the duration is Concentration (Sustain).</p>
 			<p class="indent"><strong>Limit of Resistance. </strong> A creature under the effects of a debuff or duration magnitude spell can repeat their saving throw to dispel the effect at the start of each of their turns.</p>
 			<p class="indent"><strong>Limit of the Soul. </strong> Cannot create an immortal soul.</p>
 			<p class="indent"><strong>Limit of Time. </strong> Cannot alter passage of time. Cannot affect past or directly affect future.</p>
@@ -139,9 +139,9 @@
 			<h5>VIS</h5>
 			<p>Vis is the raw magical energy of any given Hermetic form, and can be “burned” to enhance or grant new abilities temporarily. Vis is produced at the end of a long rest, provided at least 1 hour is spent on focusing the energy through meditation. You gain one mote of each form you are proficient in at the end of a long rest: small pills that reflect their source form. These motes dissolve at the end of your next long rest. In order to use Vis, these motes must be consumed as an action. As a bonus action or reaction, you can burn any consumed Vis to activate a unique effect depending on the burnt Form. The duration of the effect is dependent on the Form being burnt. You can stop burning any number of active Vis forms as a free action, leaving any of its unused duration still unburnt. If the user finishes a long rest while they have consumed Vis that hasn’t been fully burnt, they are poisoned until the end of their next long rest.</p>
 			<p class="indent"><strong>Air (1 hour) </strong> While burning can’t be charmed, channeling and burning goes unnoticed, spells require no V,S,M components. Can also smoke those you choose within 30ft of you, rendering their channeling and burning unnoticeable as well.</p>
-			<p class="indent"><strong>Earth (10 minutes) </strong> While burning, once per turn you can push and pull metals based on your weight, can affect and sense any metals within 60ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d12 damage of a type determined by the object.</p>
-			<p class="indent"><strong>Fire (1 hour) </strong> While burning you gain advantage on Wisdom (Perception, Insight) checks, Dexterity saving throws, and you gain an additional reaction.</p>
-			<p class="indent"><strong>Life (1 minute) </strong> While burning you can use your Intelligence modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws. You gain advantage on Death Saving throws.</p>
+			<p class="indent"><strong>Earth (10 minutes) </strong> While burning, as a bonus action or reaction you can push and pull metals based on your weight, can affect and sense any metals within 30ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d4 damage of a type determined by the object.</p>
+			<p class="indent"><strong>Fire (1 hour) </strong> While burning you gain advantage on Wisdom (Perception, Insight) checks, and Dexterity saving throws.</p>
+			<p class="indent"><strong>Life (1 minute) </strong> While burning you can use your Spellcasting modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws.</p>
 			<p class="indent"><strong>Mind (10 minutes) </strong> While burning you can detect emotions of creatures you can see, and you gain advantage on Charisma based ability checks as you bend their emotions. As a bonus action you can attempt to soothe a target to get them to drop their guard temporarily. The target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you until the end of your next turn.</p>
 			<p class="indent"><strong>Water (10 minutes) </strong> While burning you can read the weaves of any magic being used by a Hermeticist you can see that isn’t smoked. You know the exact spell being cast, and can use your reaction to dismantle the weave by making a contested Arcana check against them.</p>
 			<h5>SPELLCASTING FOCUS</h5>
@@ -151,36 +151,52 @@
 			<description></description>
 		</sheet>	
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MAJOR"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MINOR"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_MAJOR"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_MINOR"/>
 		</rules>
 	</element>
-	<element name="Technique" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TECHNIQUE">
+	<element name="Technique" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_TECHNIQUE">
 		<description>
 			<p>Change | Create | Destroy | Detect </p>
 		</description>
-		<sheet usage="SL:{{spell level:usage}}">
+		<sheet usage="Spellcraft:{{spell level:usage}}">
 			<description>Change | Create | Destroy | Detect </description>
 		</sheet>
 		<rules>
 			<stat name="spell level:usage" value="1" level="1" />
-			<stat name="spell level:usage" value="1" level="3" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
-			<stat name="spell level:usage" value="1" level="5" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER"/>
-			<stat name="spell level:usage" value="1" level="7" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
-			<stat name="spell level:usage" value="1" level="9" />
-			<stat name="spell level:usage" value="1" level="11" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
-			<stat name="spell level:usage" value="1" level="13" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER"/>
-			<stat name="spell level:usage" value="1" level="15" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER | ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIC_CONTRACT_BRUTE"/>
-			<stat name="spell level:usage" value="1" level="17" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="2" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="3" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="4" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="5" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="6" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="7" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="8" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="9" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIC_CONTRACT_BRUTE"/>
+			<stat name="spell level:usage" value="1" level="10" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="11" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="12" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="13" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="14" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="15" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIC_CONTRACT_BRUTE"/>
+			<stat name="spell level:usage" value="1" level="16" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="17" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="18" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:usage" value="1" level="19" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:usage" value="1" level="20" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
 
-			<stat name="spell level:half" value="1" level="1" />		
-			<stat name="spell level:half" value="1" level="5" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
-			<stat name="spell level:half" value="1" level="9" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER"/>
-			<stat name="spell level:half" value="1" level="13" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER"/>
-			<stat name="spell level:half" value="1" level="17" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER"/>	
+			<stat name="spell level:half" value="1" level="1" />
+			<stat name="spell level:half" value="1" level="4" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="6" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="8" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:half" value="1" level="10" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="12" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:half" value="1" level="14" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="16" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
+			<stat name="spell level:half" value="1" level="18" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER"/>
+			<stat name="spell level:half" value="1" level="20" requirements="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER | ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER"/>
 		</rules>
 	</element>
-	<element name="Hermetic Study" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDY">
+	<element name="Hermetic Study" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDY">
 		<description>
 			<p>Choose a Hermetic Study, which describes how your gift manifests. Your choice grants you features when you choose it at 1st level and again at 3rd, 6th, 10th, 14th, and 20th level.</p>
 		</description>
@@ -189,9 +205,9 @@
 			<select type="Archetype" name="Hermetic Study" supports="Hermetic Study" />
 		</rules>
 	</element>
-	<element name="Major" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MAJOR">
+	<element name="Major" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_MAJOR">
 		<description>
-			<p>You gain proficiency in one Hermetic Techniques and Form. Spells cast using your major can consist of one non proficient Technique or Form at spell level 1.</p>
+			<p>You gain proficiency in one Hermetic Techniques and Form. Spells cast using your major can consist of one non proficient Technique or Form at 1 Spellcraft.</p>
 			<p class="indent">Trained techniques and forms create more efficient spells that utilize them. </p>
 			<p class="indent">Proficiency with a technique and form allows you to use your full spellcraft limit. </p>
 			<p class="indent">Additionally, you can modify existing spells with additional techniques and forms you are trained in to cast a complex spell. Complex spells only retain their proficiency bonuses if all techniques and forms are trained.</p>
@@ -201,7 +217,7 @@
 			<select type="Class Feature" name="Major Form" supports="Hermetic Studies Forms" />
 		</rules>
 	</element>
-	<element name="Minor" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_MINOR">
+	<element name="Minor" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_MINOR">
 		<description>
 			<p>You gain proficiency in one Hermetic Techniques and Form.</p>
 		</description>
@@ -210,35 +226,32 @@
 			<select type="Class Feature" name="Minor Form" supports="Hermetic Studies Forms"/>
 		</rules>
 	</element>
-	<element name="Hermetic Bestowal" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_BESTOWAL">
+	<element name="Mana Surge" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_MANA_SURGE">
 		<description>
-			<p>Starting at 2nd level, you gain the ability to create small fragments of Vis, which can temporarily store magic inside them. When you cast a spell, you can condense the spell’s energy into a fragment of vis embodying the form used to create it.  </p>
-			<p class="indent">A creature holding this fragment can use its action to release the spell within, whereupon the fragment disappears. The spell uses your attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes, but cannot be negated through burning Water.</p>
-			<p class="indent">Additionally, the fragment can be burnt temporarily. Consuming the fragment takes an action, and confers the benefits of one of the forms you are proficient in while burning. This fragment is unusually unstable however, and lasts for its duration regardless of whether or not you are actively burning it.</p>
-			<p class="indent">Once you create a bead with this feature, you can’t do so again until you finish a short or long rest. Attempting to create a second bead will destroy the first, vanishing in a flash of light, losing the spell and removing the capacity to burn it. </p>
+			<p>Starting at 2nd level, you gain the ability to surge your channeling momentarily. On your turn, you can double your Spellcraft until the start of your next turn.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 		</description>
 		<sheet usage="1/Short Rest">
-			<description>  You condense a spell’s energy into a fragment that a creature holding can use its action to release the spell within, whereupon the fragment disappears. The spell uses your attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.
-			 Additionally, the fragment can be burnt temporarily. Consuming the fragment takes an action, and confers the benefits of one of the forms you are proficient in while burning. This fragment is unusually unstable however, and lasts for its duration regardless of whether or not you are actively burning it.
-			 Attempting to create a second bead will destroy the first, vanishing in a flash of light, losing the spell and removing the capacity to burn it.</description>
+			<description>On your turn, you can double your Spellcraft until the start of your next turn.</description>
+			<description usage="2/Short Rest" level="17">On your turn, you can double your Spellcraft until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_ABILITYSCOREIMPROVEMENT_HERMETICIST_REWORK">
+	<element name="Ability Score Improvement" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_ABILITYSCOREIMPROVEMENT_HERMETICIST">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Hermeticist Rework 4)" supports="Improvement Option,Hermeticist Rework,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Hermeticist Rework 8)" supports="Improvement Option,Hermeticist Rework,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Hermeticist Rework 12)" supports="Improvement Option,Hermeticist Rework,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Hermeticist Rework 16)" supports="Improvement Option,Hermeticist Rework,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Hermeticist Rework 19)" supports="Improvement Option,Hermeticist Rework,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 4)" supports="Improvement Option,Hermeticist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 8)" supports="Improvement Option,Hermeticist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 12)" supports="Improvement Option,Hermeticist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 16)" supports="Improvement Option,Hermeticist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Hermeticist 19)" supports="Improvement Option,Hermeticist,19" level="19" />
 		</rules>
 	</element>
 
-	<element name="Half Caster" type="Archetype Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER">
+	<element name="Half Caster" type="Archetype Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER">
 		<description>
 			<p>You gain proficiency in light armor, medium armor, shields, simple weapons, and martial weapons. </p>
         </description>
@@ -275,7 +288,7 @@
 		</rules>
 	</element>
 
-	<element name="Full Caster" type="Archetype Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER">
+	<element name="Full Caster" type="Archetype Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER">
 		<description>
 			<p></p>
         </description>
@@ -318,12 +331,13 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_LIMIT_OF_UNION" level="20"/>
 
 			<stat name="hermeticist spellcasting modifier" value="charisma:modifier" bonus="base"/>
+			<stat name="Magnitude" value="10" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Demon Touched" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMON_TOUCHED">
 		<description>
 			<p>You have made a deal with a demon, altering your magic and physique. </p>
-			<p class="indent">Your casting advancement is determined by your Demonic Contract. </p>
+			<p class="indent">Your magnitude die is a d10. Your casting advancement is determined by your Demonic Contract. </p>
         </description>
 		<sheet>
 			<description>Your casting advancement is determined by your Demonic Contract.</description>
@@ -342,17 +356,16 @@
 	<element name="Brute (Earth/Fire)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIC_CONTRACT_BRUTE" >
 		<supports>Demonic Contract</supports>
 		<description>
-			<p>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Constitution modifier + your Charisma modifier + your spell level. You gain proficiency in all weapons. Your spell level is equal to your Hermeticist level divided by 6 (minimum of 1). You gain additional hit points whenever you level up equal to 1 + your spell level. You add your spell level to your attack and damage rolls while channeling.</p>
+			<p>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Constitution modifier + your Charisma modifier + your spell level. You gain proficiency in all weapons. Your Spellcraft is equal to your Hermeticist level divided by 6 (minimum of 1). You gain additional hit points whenever you level up equal to 1 + your Spellcraft.</p>
 		</description>
-		<sheet>
-			<description>You add your spell level to your attack and damage rolls while channeling.</description>
+		<sheet display="false">
+			<description></description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 			<stat name="ac:unarmored defense brute:base" value="10" />
 			<stat name="ac:unarmored defense brute:constitution" value="constitution:modifier" />
 			<stat name="ac:unarmored defense brute:charisma" value="charisma:modifier" />
-			<stat name="ac:unarmored defense brute:spell" value="spell level:usage" />
 			<stat name="ac:unarmored defense brute" value="ac:unarmored defense brute:base" />
 			<stat name="ac:unarmored defense brute" value="ac:unarmored defense brute:constitution" />
 			<stat name="ac:unarmored defense brute" value="ac:unarmored defense brute:charisma" />
@@ -388,13 +401,13 @@
 	<element name="Feral (Air/Water)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIC_CONTRACT_FERAL" >
 		<supports>Demonic Contract</supports>
 		<description>
-			<p>You are considered a half caster for the purposes of spell level advancement and proficiencies. Your major form is mastered, all spells cast using your major form are cast at full strength. You learn one stance and one fighting style.</p>
+			<p>You are considered a half caster for the purposes of Spellcraft and proficiencies. Your major form is mastered, all spells cast using your major form are cast at full strength. You learn one stance and one fighting style.</p>
 		</description>
 		<sheet>
 			<description>Your major form is mastered, all spells cast using your major form are cast at full strength.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER" />
 			<select type="Class Feature" name="Fighting Style" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING" />
 			<select type="Archetype Feature" name="Stance" supports="Stance" />
 		</rules>
@@ -402,24 +415,21 @@
 	<element name="Phantom (Life/Mind)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIC_CONTRACT_PHANTOM" >
 		<supports>Demonic Contract</supports>
 		<description>
-			<p>You are considered a full caster for the purposes of spell level advancement and proficiencies. Your major form and technique are mastered, all spells cast using your major form or technique are cast at full strength. You gain access to Signature Spells, spells crafted using only your majors and minors. Signature Spells have their spell level increased by your Hermeticist level divided by 6 (minimum of 1).</p>
+			<p>You are considered a full caster for the purposes of Spellcraft and proficiencies. Your major form and technique are mastered, all spells cast using your major form or technique are cast at full strength. You gain access to Signature Spells, spells crafted using only your majors and minors. Signature Spells have their spell level increased by your proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>Your major form and technique are mastered, all spells cast using your major form or technique are cast at full strength. You gain access to Signature Spells, spells crafted using only your majors and minors. Signature Spells have their spell level increased by {{spell level:signature}}.</description>
+			<description>Your major form and technique are mastered, all spells cast using your major form or technique are cast at full strength. You gain access to Signature Spells, spells crafted using only your majors and minors. Signature Spells have their spell level increased by {{proficiency}}.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
-			<stat name="spell level:signature" value="1" level="1" />
-			<stat name="spell level:signature" value="1" level="9" />
-			<stat name="spell level:signature" value="1" level="15" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER" />
 		</rules>
 	</element>
 	<element name="Mana Zone" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_MANA_ZONE">
 		<description>
-			<p>Starting at level 3, you develop a minor control of the mana space around you. As a reaction for 1 fatigue, whenever a spell is cast within 15ft of you, you can increase or reduce its spell level by 1.</p>
+			<p>Starting at level 3, you develop a minor control of the mana space around you. As a reaction for 1 fatigue, whenever a spell with a magnitude component is cast within 15ft of you, you can increase or reduce the number of dice by 1. </p>
 		</description>
 		<sheet usage="Reaction | 1 fatigue">
-			<description> Whenever a spell is cast within {{mana:zone}}ft of you, you can increase or reduce its spell level by 1.</description>
+			<description> Whenever a spell with a magnitude component is cast within {{mana:zone}}ft of you, you can increase or reduce the number of dice by 1. </description>
 		</sheet>
 		<rules>
 			<stat name="mana:zone" value="15" level="3"/>
@@ -474,10 +484,10 @@
 	</element>
 	<element name="Demonization (Brute)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION_BRUTE" >
 		<description>
-			<p>You gain resistance to all damage. At the start of each of your turns you gain temporary hit points equal to your Constitution + Charisma modifier. Whenever you deal damage with a melee attack, you deal additional necrotic damage equal to your Hermeticist level. Your unarmed strikes deal 1d12 slashing damage, and are considered magical.</p>
+			<p>At the start of each of your turns you gain temporary hit points equal to your Constitution + Charisma modifier. Whenever you deal damage with a melee attack, you deal additional necrotic damage equal to your Proficiency Bonus. Your unarmed strikes deal 1d10 slashing damage, and are considered magical.</p>
 		</description>
 		<sheet>
-			<description>You gain resistance to all damage. At the start of each of your turns you gain {{brute:temp}} temporary hit points. Whenever you deal damage with a melee attack, you deal {{level:hermeticist rework}} additional necrotic damage. Your unarmed strikes deal 1d12 slashing damage, and are considered magical.</description>
+			<description>At the start of each of your turns you gain {{brute:temp}} temporary hit points. Whenever you deal damage with a melee attack, you deal {{proficiency}} additional necrotic damage. Your unarmed strikes deal 1d10 slashing damage, and are considered magical.</description>
 		</sheet>
 		<rules>
 			<stat name="brute:temp" value="constitution:modifier" />
@@ -486,19 +496,23 @@
 	</element>
 	<element name="Demonization (Feral)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION_FERAL" >
 		<description>
-			<p>At the start of each of your turns you gain temporary hit points equal to your Charisma modifier. Once per turn whenever you deal damage with an attack, you deal additional damage equal to your Spell Level d8. Your minor form is considered mastered.</p>
+			<p>At the start of each of your turns you gain temporary hit points equal to your Charisma modifier. Once per turn whenever you deal damage with an attack, you deal additional damage equal to half your Spellcraft d8. Your minor form is considered mastered.</p>
 		</description>
 		<sheet>
-			<description>At the start of each of your turns you gain {{charisma:modifier}} temporary hit points. Once per turn whenever you deal damage with an attack, you deal {{spell level:usage}}d8 additional damage. Your minor form is considered mastered.</description>
+			<description>At the start of each of your turns you gain {{charisma:modifier}} temporary hit points. Once per turn whenever you deal damage with an attack, you deal {{spell level:half}}d8 additional damage. Your minor form is considered mastered.</description>
 		</sheet>
 	</element>
 	<element name="Demonization (Phantom)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEMONIZATION_PHANTOM" >
 		<description>
-			<p>Your minor form and technique are considered mastered. You add your charisma modifier to the damage dealt by your spells. You have advantage on attack rolls with your signature spells, and creatures and objects have disadvantage on saving throws against them.</p>
+			<p>Your minor form and technique are considered mastered. You add your charisma modifier to the damage dealt by your spells. Signature spells that deal damage cannot deal less damage than your Hermeticist level + your Charisma modifier. .</p>
 		</description>
 		<sheet>
-			<description>Your minor form and technique are considered mastered. You add your charisma modifier to the damage dealt by your spells. You have advantage on attack rolls with your signature spells, and creatures and objects have disadvantage on saving throws against them.</description>
+			<description>Your minor form and technique are considered mastered. You add your charisma modifier to the damage dealt by your spells. Signature spells that deal damage cannot deal less than {{phantom:floor}} damage.</description>
 		</sheet>
+		<rules>
+			<stat name="phantom:floor" value="level:hermeticist" />
+			<stat name="phantom:floor" value="charisma:modifier" />
+		</rules>
 	</element>
 	<element name="Mana Displacement" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_MANA_DISPLACEMENT">
 		<description>
@@ -527,37 +541,42 @@
 	</element>
 	<element name="Devil Union (Brute)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEVIL_UNION_BRUTE" >
 		<description>
-			<p>You can attack three times whenever you take the attack action. Damage you take is reduced by your proficiency bonus.</p>
+			<p>You gain resistance to all damage. You are considered proficient in death saving throws.</p>
 		</description>
 		<sheet>
-			<description>Damage you take is reduced by {{proficiency}}.</description>
+			<description>You gain resistance to all damage. You are considered proficient in death saving throws.</description>
 		</sheet>
 		<rules>
-			<stat name="extra attack:count" value="3" bonus="extra attack" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
 		</rules>
 	</element>
 	<element name="Devil Union (Feral)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEVIL_UNION_FERAL" >
 		<description>
-			<p>You can attack three times whenever you take the attack action. You have advantage on saving throws against spells cast within your mana zone. You are always under the effects of your stance.</p>
+			<p>You have advantage on saving throws against spells cast within your mana zone. You are always under the effects of your stance.</p>
 		</description>
 		<sheet>
 			<description>You have advantage on saving throws against spells cast within your mana zone. You are always under the effects of your stance.</description>
 		</sheet>
-		<rules>
-			<stat name="extra attack:count" value="3" bonus="extra attack" />
-		</rules>
 	</element>
 	<element name="Devil Union (Phantom)" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_DEVIL_UNION_PHANTOM" >
 		<description>
-			<p>You have advantage on saving throws against spells cast within your mana zone. Signature spells that deal damage cannot deal less damage than your Hermeticist level + your Charisma modifier.</p>
+			<p>You have advantage on saving throws against spells cast within your mana zone. Creatures and objects have disadvantage on saving throws against your spells within your Mana Zone. </p>
 		</description>
 		<sheet>
-			<description>You have advantage on saving throws against spells cast within your mana zone. Signature spells that deal damage cannot deal less than {{phantom:floor}} damage.</description>
+			<description>You have advantage on saving throws against spells cast within your mana zone. Creatures and objects have disadvantage on saving throws against your spells within your Mana Zone. </description>
 		</sheet>
-		<rules>
-			<stat name="phantom:floor" value="level:hermeticist rework" />
-			<stat name="phantom:floor" value="charisma:modifier" />
-		</rules>
 	</element>
 	<element name="Limit of Union" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBINDER_LIMIT_OF_UNION">
 		<description>
@@ -668,30 +687,27 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_LIMIT_OF_THE_STARS" level="20"/>
 
 			<stat name="hermeticist spellcasting modifier" value="wisdom:modifier" bonus="base"/>
+			<stat name="Magnitude" value="8" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Soul Awoken" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SOUL_AWOKEN">
 		<description>
 			<p>You have been touched by Stastra, and she has enhanced your awareness of your soul. While channeling, as an action on your turn and next turn you can ritual cast a spell by concentrating on its casting until the end of your next turn. </p>
-			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+			<p class="indent">Your magnitude die is a d8. You are considered a full caster for the purposes of Spellcraft and proficiencies.</p>
         </description>
 		<sheet display="false">
 		</sheet>
         <rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER" />
 		</rules>
 	</element>
 	<element name="Constellations" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_CONSTELLATIONS">
 		<description>
-			<p>Starting at first level, you learn how to imbue a fragment of your soul into a constellation that contains a magical effect. Whenever you ritual cast a spell you can choose to instead create a constellation. A constellation inherits the effects of the spell, but remains dormant. You can activate a dormant constellation for 1 fatigue as an action which can be used as part of the action to begin channeling. Constellations can be inscribed onto different objects or onto your skin as an action. Constellations cannot have a duration of Concentration unless you inscribe it on your skin, and you must abide by the standard rules of Concentration for it. You can create a number of Constellations up to your Wisdom modifier(minimum of 1), and attempting to create one past this limit automatically destroys the oldest Constellation.</p>
+			<p>Starting at first level, you learn how to imbue a fragment of your soul into a constellation that contains a magical effect. Whenever you ritual cast a spell you can choose to instead create a constellation. A constellation inherits the effects of the spell, but remains dormant. You can activate a dormant constellation for 1 fatigue as an action which can be used as part of the action to begin channeling. Constellations can be inscribed onto different objects or onto your skin as an action. Constellations cannot have a duration of Concentration unless you inscribe it on your skin, and you must abide by the standard rules of Concentration for it. You can create a number of Constellations up to your Wisdom modifier, and attempting to create one past this limit automatically destroys the oldest Constellation. </p>
         </description>
 		<sheet usage="Action | 1 Fatigue">
-			<description> Whenever you ritual cast a spell you can choose to instead create a constellation. A constellation inherits the effects of the spell, but remains dormant. You can activate a dormant constellation for 1 fatigue as an action which can be used as part of the action to begin channeling. Constellations can be inscribed onto different objects or onto your skin as an action. Constellations cannot have a duration of Concentration unless you inscribe it on your skin, and it abides by the standard rules of Concentration. You can create {{wisdom:modifier}} Constellations, and attempting to create one past this limit automatically destroys the oldest Constellation.</description>
+			<description> Whenever you ritual cast a spell you can choose to instead create a constellation. A constellation inherits the effects of the spell, but remains dormant. You can activate a dormant constellation for 1 fatigue as an action which can be used as part of the action to begin channeling. Constellations can be inscribed onto different objects or onto your skin as an action. Constellations cannot have a duration of Concentration unless you inscribe it on your skin, and you must abide by the standard rules of Concentration for it. You can create a number of Constellations up to your Wisdom modifier, and attempting to create one past this limit automatically destroys the oldest Constellation.</description>
 		</sheet>
-		<rules>
-			<stat name="purity:limit" value="1" bonus="base" />
-			<stat name="purity:limit" value="wisdom:modifier" bonus="base" />
-		</rules>
 	</element>
 	<element name="Eater of Worlds" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_EATER_OF_WORLDS">
 		<description>
@@ -703,10 +719,10 @@
 	</element>
 	<element name="Soul Flare" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_SOUL_FLARE">
 		<description>
-			<p>At 6th level, as an action or as part of the action to begin channeling, you flare your soul for 1 minute, granting you greater influence over your Constellations. As a bonus action on each of your turns you can ignite any number of your Constellations without incurring fatigue. At the end of the duration, you gain fatigue equal to the number of unique Constellations activated. </p>
+			<p>At 6th level, as an action for one fatigue you flare your soul for 1 minute, granting you greater influence over your Constellations. For the duration, activating Constellations does not incur fatigue, and you can do so as a Bonus Action. </p>
 		</description>
-		<sheet action="Action">
-			<description>While, or as part of the action used to begin channeling, you flare your soul for 1 minute. As a bonus action on each of your turns you can ignite any number of your Constellations without incurring fatigue. At the end of the duration, you gain fatigue equal to the number of unique Constellations activated.</description>
+		<sheet action="Action | 1 Fatigue">
+			<description>You flare your soul for 1 minute, granting you greater influence over your Constellations. For the duration, activating Constellations does not incur fatigue, and you can do so as a Bonus Action.</description>
 		</sheet>
 	</element>
 	<element name="Starlink" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_EMISSARY_STARLINK">
@@ -764,27 +780,28 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_LIMIT_OF_CREATION" level="20"/>
 
 			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" />
+			<stat name="Magnitude" value="8" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Comprehension" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_COMPREHENSION">
 		<description>
 			<p>You have been exposed to ancient technology, and from it you gained the ability to understand the structure of any non living construct. With a profound understanding of the laws of creation, and the ability to analyze the composition of matter, you are second to none when it comes to understanding advanced mechanizations and designs. While channeling, you can finely tune your Area of Effect spells, rendering those you wish immune to its effects. </p>
-			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+			<p class="indent">Your magnitude die is a d8. You are considered a full caster for the purposes of Spellcraft and proficiencies.</p>
 		</description>
 		<sheet>
 			<description>While channeling, you can finely tune your Area of Effect spells, rendering those you wish immune to its effects.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER" />
 		</rules>
 	</element>
 	<element name="Domain" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_DOMAIN">
 		<description>
-			<p>Starting at first level, you gain a 30 ft realm of influence. Within this range, you are acutely aware of the presence of the Hermetic forms you are proficient in. While channeling, spells cast targeting these forms have a range of touch and do not require sight. </p>
+			<p>Starting at first level, you gain a 30 ft realm of influence. Within this range, you are acutely aware of the presence of the Hermetic forms you are proficient in. While channeling, you have an arcane connection with these forms within your Domain, and omit the range requirement for spells targeting them. </p>
 			<p class="indent">Additionally, whenever you cast a spell with an AoE component, you can choose to use your Domain as the Area of Effect instead.</p>
 		</description>
 		<sheet>
-			<description>You gain a {{domain:range}} ft realm of influence. Within this range, you are acutely aware of the presence of the Hermetic forms you are proficient in. While channeling, spells cast targeting these forms have a range of touch and do not require sight.
+			<description>You gain a {{domain:range}} ft realm of influence. Within this range, you are acutely aware of the presence of the Hermetic forms you are proficient in. While channeling, you have an arcane connection with these forms within your Domain, and omit the range requirement for spells targeting them.
 			 Additionally, whenever you cast a spell with an AoE component, you can choose to use your Domain as the Area of Effect instead.</description>
 		</sheet>
 		<rules>
@@ -807,12 +824,12 @@
 			<description >At 6th level, as an action while channeling, or as part of the action used to begin channeling you can surround yourself in a thin magical barrier for 1 minute.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_AIR"   requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_EARTH" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_FIRE"  requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_LIFE"  requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_MIND"  requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_WATER" requirements="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_AIR"   requirements="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_EARTH" requirements="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_FIRE"  requirements="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_LIFE"  requirements="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_MIND"  requirements="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_WATER" requirements="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER"/>
 		</rules>
 	</element>
 	<element name="Air (Hermetic Shell)" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_ARCHITECT_HERMETIC_SHELL_AIR">
@@ -918,18 +935,19 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_LIMIT_OF_THE_DIVINE" level="20"/>
 
 			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" />
+			<stat name="Magnitude" value="8" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Heaven Touched" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_HEAVEN_TOUCHED">
 		<description>
 			<p>While channeling, you can use your charisma modifier for Wisdom (Medicine) checks, and whenever you use a spell to grant temporary hit points to a creature, the creature gains additional temporary hit points equal to your charisma modifier. </p>
-			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+			<p class="indent">Your magnitude die is a d8. You are considered a full caster for the purposes of Spellcraft and proficiencies.</p>
 		</description>
 		<sheet>
 			<description>While channeling, you can use your charisma modifier for Wisdom (Medicine) checks, and whenever you use a spell to grant temporary hit points to a creature, the creature gains additional temporary hit points equal to your charisma modifier.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER" />
 		</rules>
 	</element>
 	<element name="Mend" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_MEND">
@@ -965,7 +983,6 @@
 	<element name="Restoration" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_HEAVENBINDER_RESTORATION">
 		<description>
 			<p>Starting at level 10, you can spend Vis to undo debilitating effects. You can reduce the target’s exhaustion level by one, or end one of the following effects on the target:</p>
-			<p class="indent">Stacks of Fatigue </p>
 			<p class="indent">One effect that charmed, blinded, deafened, paralyzed, poisoned, or petrified the target. </p>
 			<p class="indent">One curse, including the target’s attunement to a cursed magic item. </p>
 			<p class="indent">Any reduction to one of the target’s ability scores. </p>
@@ -1032,6 +1049,7 @@
 			<stat name="hermeticist:spellcasting:modifier" value="charisma:modifier" bonus="base"/>
 			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" bonus="base"/>
 			<stat name="hermeticist:spellcasting:modifier" value="intelligence:modifier" bonus="base"/>
+			<stat name="Magnitude" value="12" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Blight" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_BLIGHT">
@@ -1039,15 +1057,15 @@
 			<p>You were gifted with the damning power of blight, a strong maddening magic source represented by tar and blackness. This gift is slowly driving you mad, but infuses you with an unreal power. Do not be consumed by this power, as overuse will surely spell your doom. Your spell level increases by 1. While channeling, other Hermeticists can detect a sickly aura around you. Most people are hostile to or afraid of those they know with Blight. </p>
 			<p class="indent">Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness + your fatigue, and you add your spellcasting modifier to the roll. Tiers of madness are detailed at the end of the subclass description. </p>
 			<p class="indent">Channeling requires one Madness check for every additional hour it is active. When you stop channeling the blight, your fatigue increases by 1. </p>
-			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+			<p class="indent">Your magnitude die is a d12. You are considered a full caster for the purposes of Spellcraft and proficiencies.</p>
 		</description>
 		<sheet>
 			<description>Once you connect to the blight, make a madness check. The DC is equal to 8 + your tier of madness + your fatigue, and you add your spellcasting modifier to the roll. 
 			 Channeling requires one Madness check for every additional hour it is active. When you stop channeling the blight, your fatigue increases by 1.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
-			<stat name="spell level:usage" value="1" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER" />
+			<stat name="spell level:usage" value="proficiency" />
 		</rules>
 	</element>
 	<element name="Faint Memories" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_FAINT_MEMORIES">
@@ -1069,19 +1087,17 @@
 		<sheet display="false">
 		</sheet>
 		<rules>
-
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER" />
 			<select type="Archetype Feature" name="Stance" supports="Stance" />
-
 		</rules>
 	</element>
 	<element name="Anguish" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_ANGUISH">
 		<description>
-			<p>At 10th level, the depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity, and you cannot be affected by spells lower than half your spell level rounded up.  </p>
+			<p>At 10th level, the depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity.  </p>
 			<p class="indent">Additionally, any attempts at invading your mind are met with shrieks of anguish and crazed laughter, inflicting Indefinite Madness on the invader.</p>
 		</description>
 		<sheet>
-			<description>The depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity, and you cannot be affected by spells lower than {{spell half:usage}}
+			<description>The depths of your mind are impossibly deep and treacherous. You gain resistance to psychic damage, and you have advantage on saving throws against spells and other magical effects. If you would gain resistance to psychic damage through another feature, instead you gain immunity.
 			Additionally, any attempts at invading your mind are met with shrieks of anguish and crazed laughter, inflicting Indefinite Madness on the invader.</description>
 		</sheet>
         <rules>
@@ -1091,11 +1107,11 @@
 	<element name="Mad World" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_MAD_WORLD">
 		<description>
 			<p>At 14th level, your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight. </p>
-            <p class="indent">Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</p>
+            <p class="indent">Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. </p>
 		</description>
 		<sheet action="Action">
 			<description>Your connection to the blight enables you to see through the fabric of reality. You gain 60ft of Truesight.
-            Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. This feature can also be used to enter your Rift from anywhere else besides a gate, although you cannot take others with you as you normally would.</description>
+            Additionally, you can use an action to step into or out of the Ethereal Plane, as if casting Etherealness. </description>
 		</sheet>
 	</element>
 	<element name="Limit of Sanity" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_MANIAC_LIMIT_OF_SANITY">
@@ -1150,18 +1166,19 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_LIMIT_OF_SUCCESSION" level="20"/>
 
 			<stat name="hermeticist:spellcasting:modifier" value="wisdom:modifier" />
+			<stat name="Magnitude" value="8" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Unbeweavable" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_UNBEWEAVABLE">
 		<description>
 			<p>While channeling, you are immune to any spell or effect other than your own that would alter your form. </p>
-			<p class="indent">You are considered a full caster for the purposes of spell level advancement and proficiencies.</p>
+			<p class="indent">Your magnitude die is a d8. You are considered a full caster for the purposes of Spellcraft and proficiencies.</p>
 		</description>
 		<sheet>
 			<description>While channeling, you are immune to any spell or effect other than your own that would alter your form.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_FULL_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_FULL_CASTER" />
 		</rules>
 	</element>
 	<element name="Weave Shaping" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_WEAVE_SHAPING">
@@ -1181,31 +1198,39 @@
 	</element>
 	<element name="Combat Weaves" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_COMBAT_WEAVES">
 		<description>
-			<p>At 3rd level, you can weave your form into stronger creatures. You can transform into any beast that has a challenge rating equal to or lower than half your spell level (rounded down).</p>
+			<p>At 3rd level, you can weave your form into stronger creatures. You can transform into any beast that has a challenge rating equal to or lower than your level divided by 3 (rounded down).</p>
             <p class="indent">Additionally, you can use your spellcasting modifier in place of the primary stat for attack and damage rolls.</p>
         </description>
-		<sheet usage="Max CR: {{spell level:half:down}}">
-			<description>You can transform into any beast that has a challenge rating equal to or lower than {{spell level:half:down}}.
+		<sheet usage="Max CR: {{weave forms:cr}}">
+			<description>You can transform into any beast that has a challenge rating equal to or lower than {{weave forms:cr}}.
              Additionally, you can use your spellcasting modifier in place of the primary stat for attack and damage rolls.</description>
 		</sheet>
+		<rules>
+			<stat name="weave forms:cr" value="1" bonus="base" />
+			<stat name="weave forms:cr" value="2" level="6" bonus="base" />
+			<stat name="weave forms:cr" value="3" level="9" bonus="base" />
+			<stat name="weave forms:cr" value="4" level="12" bonus="base" />
+			<stat name="weave forms:cr" value="5" level="15" bonus="base" />
+			<stat name="weave forms:cr" value="6" level="18" bonus="base" />
+		</rules>
 	</element>
 	<element name="Origin Weaves" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_ORIGIN_WEAVES">
 		<description>
-			<p>At 6th level, you can weave your form into more advanced creature types. You can transform into any dragon that has a challenge rating equal to or lower than half your spell level (rounded down) for 2 fatigue.. </p>
+			<p>At 6th level, you can weave your form into more advanced creature types. You can transform into any dragon that has a challenge rating equal to or lower than your level divided by 3 (rounded down) for 2 fatigue. </p>
 			<p class="indent">Additionally, your attacks in transformed form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 		</description>
 		<sheet action="Action | 2 Fatigue">
-			<description>While, or as part of the action used to begin channeling, you can transform into any dragon that has a challenge rating equal to or lower than {{spell level:half}}.
+			<description>While, or as part of the action used to begin channeling, you can transform into any dragon that has a challenge rating equal to or lower than {{weave forms:cr}}.
 			 Additionally, your attacks in transformed form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
 		</sheet>
 	</element>
 	<element name="Durable Weave" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_DURABLE_WEAVE">
 		<description>
-			<p>At 10th level, you have mastered the physical forms of your transformations. Transformations gain more hit points than normal: Spell level hit points per Hit Die it has. </p>
+			<p>At 10th level, you have mastered the physical forms of your transformations. Transformations gain more hit points than normal: Proficiency bonus hit points per Hit Die it has. </p>
 			<p class="indent">Additionally, you have advantage on constitution saving throws made to preserve the effects of a transformation. </p>
 		</description>
 		<sheet>
-			<description>Transformations gain more hit points than normal: Spell level hit points per Hit Die it has.
+			<description>Transformations gain more hit points than normal: Proficiency bonus hit points per Hit Die it has.
 			 Additionally, you have advantage on constitution saving throws made to preserve the effects of a transformation.</description>
 		</sheet>
 	</element>
@@ -1221,10 +1246,10 @@
 	</element>
 	<element name="Limit of Succession" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SUCCESSOR_LIMIT_OF_SUCCESSION">
 		<description>
-			<p>At 20th level, your mastery over form manipulation is unrivaled. You can transform into any beast or dragon that has a challenge rating equal to your spell level. Transforming into a dragon no longer costs fatigue.</p>
+			<p>At 20th level, your mastery over form manipulation is unrivaled. You can transform into any beast or dragon that has a challenge rating equal to half your Spellcraft. Transforming into a dragon no longer costs fatigue.</p>
 		</description>
 		<sheet>
-			<description>You can transform into any beast or dragon that has a challenge rating equal to {{spell level:usage}}. Transforming into a dragon no longer costs fatigue.</description>
+			<description>You can transform into any beast or dragon that has a challenge rating equal to {{spell level:half}}. Transforming into a dragon no longer costs fatigue.</description>
 		</sheet>
 	</element>
 
@@ -1252,33 +1277,34 @@
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBORN_DRAGGING" level="10"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBORN_EXPERT_TOUCH" level="14"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBORN_LIMIT_OF_VIM" level="20"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR_BURN"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_BURN"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_BURN"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_BURN"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND_BURN"/>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER_BURN"/>
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR_FLARE" level="6"/>
-            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_FLARE" level="6"/>
-            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_FLARE" level="6"/>
-            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_FLARE" level="6"/>
-            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND_FLARE" level="6"/>
-            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER_FLARE" level="6"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER_BURN"/>
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR_FLARE" level="6"/>
+            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH_FLARE" level="6"/>
+            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE_FLARE" level="6"/>
+            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE_FLARE" level="6"/>
+            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND_FLARE" level="6"/>
+            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER_FLARE" level="6"/>
 
 			<stat name="hermeticist spellcasting modifier" value="intelligence:modifier" bonus="base"/>
+			<stat name="Magnitude" value="8" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Born of the Shards" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBORN_BORN_OF_THE_SHARDS">
 		<description>
 			<p>You can begin burning as part of the action used to start channeling. </p>
-			<p class="indent">You are considered a half caster for the purposes of spell level advancement and proficiencies, and use Intelligence as your spell casting modifier. </p>
+			<p class="indent">Your magnitude die is a d6. You are considered a half caster for the purposes of Spellcraft and proficiencies, and use Intelligence as your spell casting modifier. </p>
         </description>
 		<sheet>
 			<description>&#13;You can begin burning as part of the action used to start channeling.</description>
 		</sheet>
         <rules>
 
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HALF_CASTER" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HALF_CASTER" />
 
 		</rules>
 	</element>
@@ -1300,7 +1326,7 @@
 	</element>
 	<element name="Extra Attack" type="Archetype Feature" source="The Architect" id="ID_WOTC_PHB_ARCHETYPE_HERMETIC_STUDY_SHARDBORN_EXTRA_ATTACK">
 		<description>
-			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Additionally, one of these attacks can be a spellstrike.</p>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
 			<description>&#13;You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
@@ -1350,11 +1376,11 @@
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
-			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_VIM_BURN" />
-            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_VIM_FLARE" />
+			<grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_VIM_BURN" />
+            <grant type="Archetype Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_VIM_FLARE" />
 		</rules>
 	</element>
-    <element name="Vim (1 hour)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_VIM_BURN">
+    <element name="Vim (1 hour)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_VIM_BURN">
 		<description>
 			<p>You see shadows of a future yet to come, letting you react with ease to any threats, and slip past your enemies’ defenses. You have advantage on all ability checks, saving throws, and attack rolls. Attack rolls against you have disadvantage.</p>
 		</description>
@@ -1362,7 +1388,7 @@
 			<description>&#13;You see shadows of a future yet to come, letting you react with ease to any threats, and slip past your enemies’ defenses. You have advantage on all ability checks, saving throws, and attack rolls. Attack rolls against you have disadvantage.</description>
 		</sheet>
 	</element>
-    <element name="Vim (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_VIM_FLARE">
+    <element name="Vim (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_VIM_FLARE">
 		<description>
 			<p>You temporarily act faster than is capable of being perceived. Time stops on your turn, and you gain an additional Action.</p>
 		</description>
@@ -1370,7 +1396,7 @@
 			<description>&#13;You temporarily act faster than is capable of being perceived. Time stops on your turn, and you gain an additional Action.</description>
 		</sheet>
 	</element>
-    <element name="Air (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR_FLARE">
+    <element name="Air (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR_FLARE">
 		<description>
 			<p>You cannot be frightened, do not have a range restriction on smoking creatures, have half cover, and you can’t be detected by Flared Water.</p>
 		</description>
@@ -1378,7 +1404,7 @@
 			<description>&#13;You cannot be frightened, do not have a range restriction on smoking creatures, have half cover, and you can’t be detected by Flared Water.</description>
 		</sheet>
 	</element>
-    <element name="Earth (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_FLARE">
+    <element name="Earth (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH_FLARE">
 		<description>
 			<p>Range increases to 60ft, pushing/pulling force is doubled, damage increased to 2d4.</p>
 		</description>
@@ -1386,7 +1412,7 @@
 			<description>&#13;Range increases to 60ft, pushing/pulling force is doubled, damage increased to 2d4.</description>
 		</sheet>
 	</element>
-    <element name="Fire (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_FLARE">
+    <element name="Fire (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE_FLARE">
 		<description>
 			<p>You gain an additional use of your reaction, can see through magical darkness, and creatures do not benefit from being invisible against you.</p>
 		</description>
@@ -1394,7 +1420,7 @@
 			<description>&#13;You gain an additional use of your reaction, can see through magical darkness, and creatures do not benefit from being invisible against you.</description>
 		</sheet>
 	</element>
-    <element name="Life (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_FLARE">
+    <element name="Life (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE_FLARE">
 		<description>
 			<p>You gain temp hp at the start of your turn equal to your level, and you have advantage on Death Saving throws. </p>
 		</description>
@@ -1402,7 +1428,7 @@
 			<description>&#13;You gain temp hp at the start of your turn equal to your level, and you have advantage on Death Saving throws.</description>
 		</sheet>
 	</element>
-    <element name="Mind (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND_FLARE">
+    <element name="Mind (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND_FLARE">
 		<description>
 			<p>Whenever you roll a Charisma ability check, you can treat a roll of 9 or lower on the d20 as a 10. As a bonus action you can attempt to enrage a target, fueling any hostilities to the point of mindless violence. The target must succeed on a Wisdom saving throw against your spell save DC or it becomes incapable of distinguishing creatures apart from its most hated enemy until the end of your next turn.</p>
 		</description>
@@ -1410,7 +1436,7 @@
 			<description>&#13;Whenever you roll a Charisma ability check, you can treat a roll of 9 or lower on the d20 as a 10. As a bonus action you can attempt to enrage a target, fueling any hostilities to the point of mindless violence. The target must succeed on a Wisdom saving throw against your spell save DC or it becomes incapable of distinguishing creatures apart from its most hated enemy until the end of your next turn.</description>
 		</sheet>
 	</element>
-    <element name="Water (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER_FLARE">
+    <element name="Water (Flared)" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER_FLARE">
 		<description>
 			<p> Can detect and affect creatures being masked by Air, destroyed weaves lash out at the casters mind dealing 1d4 Psychic damage for each spell level of the destroyed spell.</p>
 		</description>
@@ -1421,7 +1447,7 @@
 	
 
 	<!--Techniques-->
-	<element name="Create" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_CREATE">
+	<element name="Create" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_CREATE">
 		<supports>Hermetic Studies Techniques</supports>
 		<description>
 			<p>Brings objects and substances into existence from nothing, or makes an already-existing target a "more perfect" version of itself (e.g. healing magic, as healed bodies are nearer perfection than wounded bodies).</p>
@@ -1430,7 +1456,7 @@
 			<description>Brings objects and substances into existence from nothing, or makes an already-existing target a "more perfect" version of itself</description>
 		</sheet>
 	</element>
-	<element name="Detect" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_DETECT">
+	<element name="Detect" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_DETECT">
 		<supports>Hermetic Studies Techniques</supports>
 		<description>
 			<p>Detects or reveals, enhances a target's natural senses or conveys supernatural ones.</p>
@@ -1439,7 +1465,7 @@
 			<description>Detects or reveals, enhances a target's natural senses or conveys supernatural ones.</description>
 		</sheet>
 	</element>
-	<element name="Change" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_CHANGE">
+	<element name="Change" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_CHANGE">
 		<supports>Hermetic Studies Techniques</supports>
 		<description>
 			<p>Alters the nature of a being, object or substance, adding unnatural traits and/or removing natural ones. Also includes manipulation of the target in any way that does not alter its nature, e.g. direct a target's movement, put a creature to sleep, or force a tree to bear fruit out of season. This is the main Technique used in spells of protection or 'warding'.</p>
@@ -1448,7 +1474,7 @@
 			<description>Alters the nature of a being, object or substance, adding unnatural traits and/or removing natural ones. Also includes manipulation of the target in any way that does not alter its nature, e.g. direct a target's movement, put a creature to sleep, or force a tree to bear fruit out of season. This is the main Technique used in spells of protection or 'warding'.</description>
 		</sheet>
 	</element>
-	<element name="Destroy" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_DESTROY">
+	<element name="Destroy" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_DESTROY">
 		<supports>Hermetic Studies Techniques</supports>
 		<description>
 			<p>Decays, disintegrates or otherwise diminishes the target, making something a worse example of its kind (i.e. the opposite of Create).</p>
@@ -1459,7 +1485,7 @@
 	</element>
 
 	<!--Forms-->
-	<element name="Air" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR">
+	<element name="Air" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR">
 		<supports>Hermetic Studies Forms</supports>
 		<description>
 			<p>Air affects lightning, wind and gaseous substances, and other weather effects.</p>
@@ -1468,10 +1494,10 @@
 			<description>Air affects lightning, wind and gaseous substances, and other weather effects.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR_BURN"/>
 		</rules>
 	</element>
-	<element name="Air (1 hour)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_AIR_BURN">
+	<element name="Air (1 hour)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_AIR_BURN">
 		<description>
 			<p>While burning can’t be charmed, channeling and burning goes unnoticed, spells require no V,S,M components. Can also smoke those you choose within 30ft of you, rendering their channeling and burning unnoticeable as well.</p>
 		</description>
@@ -1479,7 +1505,7 @@
 			<description>&#13;While burning can’t be charmed, channeling and burning goes unnoticed, spells require no V,S,M components. Can also smoke those you choose within 30ft of you, rendering their channeling and burning unnoticeable as well.</description>
 		</sheet>
 	</element>
-	<element name="Earth" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH">
+	<element name="Earth" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH">
 		<supports>Hermetic Studies Forms</supports>
 		<description>
 			<p>Earth affects soil, minerals and plants (any organic matter, living or dead, that is not of animal origin): mere soil is the simplest target, while stone, metal and gems require progressively greater investment. </p>
@@ -1488,10 +1514,10 @@
 			<description>Earth affects soil, minerals and plants (any organic matter, living or dead, that is not of animal origin): mere soil is the simplest target, while stone, metal and gems require progressively greater investment.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH_BURN"/>
 		</rules>
 	</element>
-	<element name="Earth (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_EARTH_BURN">
+	<element name="Earth (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_EARTH_BURN">
 		<description>
 			<p>While burning, as a bonus action or reaction you can push and pull metals based on your weight, can affect and sense any metals within 30ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d4 damage of a type determined by the object.</p>
 		</description>
@@ -1499,7 +1525,7 @@
 			<description>&#13;While burning, as a bonus action or reaction you can push and pull metals based on your weight, can affect and sense any metals within 30ft of you by pushing and pulling on thin blue lines that allow you to sense nearby metal. The metal objects can collide with creatures. Make an attack roll using your Spell Attack modifier when necessary. If it hits, the creature takes 1d4 damage of a type determined by the object.</description>
 		</sheet>
 	</element>
-	<element name="Fire" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE">
+	<element name="Fire" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE">
 		<supports>Hermetic Studies Forms</supports>
 		<description>
 			<p>Fire involves light and heat, and is heavily represented in the fire spells.</p>
@@ -1508,10 +1534,10 @@
 			<description>Fire involves light and heat, and is heavily represented in the fire spells.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE_BURN"/>
 		</rules>
 	</element>
-	<element name="Fire (1 hour)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_FIRE_BURN">
+	<element name="Fire (1 hour)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_FIRE_BURN">
 		<description>
 			<p>While burning you gain advantage on Wisdom (Perception, Insight) checks, and Dexterity saving throws.</p>
 		</description>
@@ -1519,7 +1545,7 @@
 			<description>&#13;While burning you gain advantage on Wisdom (Perception, Insight) checks, and Dexterity saving throws.</description>
 		</sheet>
 	</element>
-	<element name="Life" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE">
+	<element name="Life" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE">
 		<supports>Hermetic Studies Forms</supports>
 		<description>
 			<p>Life affects all organic, living creatures.</p>
@@ -1528,10 +1554,10 @@
 			<description>Life affects all organic, living creatures.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE_BURN"/>
 		</rules>
 	</element>
-	<element name="Life (1 minute)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_LIFE_BURN">
+	<element name="Life (1 minute)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_LIFE_BURN">
 		<description>
 			<p>While burning you can use your Spellcasting modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws.</p>
 		</description>
@@ -1539,7 +1565,7 @@
 			<description>&#13;While burning you can use your Spellcasting modifier instead of your Strength/Dexterity modifier for Strength/Dexterity based ability checks, weapons, and saving throws.</description>
 		</sheet>
 	</element>
-	<element name="Mind" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND">
+	<element name="Mind" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND">
 		<supports>Hermetic Studies Forms</supports>
 		<description>
 			<p>Mind deals with emotions, memories, thoughts, spirits, images, sounds, and other sensory stimuli (thus is involved in most illusionary effects). </p>
@@ -1548,10 +1574,10 @@
 			<description>Mind deals with emotions, memories, thoughts, spirits, images, sounds, and other sensory stimuli (thus is involved in most illusionary effects). </description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND_BURN"/>
 		</rules>
 	</element>
-	<element name="Mind (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_MIND_BURN">
+	<element name="Mind (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_MIND_BURN">
 		<description>
 			<p>While burning you can detect emotions of creatures you can see, and you gain advantage on Charisma based ability checks as you bend their emotions. As a bonus action you can attempt to soothe a target to get them to drop their guard temporarily. The target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you until the end of your next turn.</p>
 		</description>
@@ -1559,7 +1585,7 @@
 			<description>&#13;While burning you can detect emotions of creatures you can see, and you gain advantage on Charisma based ability checks as you bend their emotions. As a bonus action you can attempt to soothe a target to get them to drop their guard temporarily. The target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Water" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER">
+	<element name="Water" type="Class Feature" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER">
 		<supports>Hermetic Studies Forms</supports>
 		<description>
 			<p>Water is used for any liquid, with the exception of blood (which requires Life magic to affect).</p>
@@ -1568,10 +1594,10 @@
 			<description>Water is used for any liquid, with the exception of blood (which requires Life magic to affect).</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER_BURN"/>
+			<grant type="Class Feature" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER_BURN"/>
 		</rules>
 	</element>
-	<element name="Water (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_STUDIES_WATER_BURN">
+	<element name="Water (10 minutes)" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_STUDIES_WATER_BURN">
 		<description>
 			<p>While burning you can read the weaves of any magic being used by a Hermeticist you can see that isn’t smoked. You know the exact spell being cast, and can use your reaction to dismantle the weave by making a contested Arcana check against them.</p>
 		</description>
@@ -1581,7 +1607,7 @@
 	</element>
 
 	<!--Spell Chart-->
-	<element name="Forms" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_FORMS">
+	<element name="Forms" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_FORMS">
 		<description>
 			<p>Air | Earth | Fire | Life | Mind | Water</p>
 		</description>
@@ -1589,69 +1615,68 @@
 			<description>Air | Earth | Fire | Life | Mind | Water</description>
 		</sheet>
 	</element>
-	<element name="Casting" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_CASTING_SPEED">
+	<element name="Casting" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_CASTING_SPEED">
 		<description>
-			<p>10 minutes (-2) | 1 minute (-1) | Action (+0) | Bonus Action (+1) | Reaction (+2)</p>
+			<p>10 minutes (-4) | 1 minute (-2) | Action (+0) | Bonus Action (+2) | Reaction (+4)</p>
 		</description>
 		<sheet>
-			<description>10m (-2)| 1m (-1)| Action (+0)| Bonus Action (+1)| Reaction (+2)</description>
+			<description>10m (-4)| 1m (-2)| Action (+0)| Bonus Action (+2)| Reaction (+4)</description>
 		</sheet>
 	</element>
-	<element name="Range" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_RANGE">
+	<element name="Range" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_RANGE">
 		<description>
-			<p>Self/Touch/5' (+0) | 30x' (+X) | Sight' (+5)</p>
+			<p>Self/Touch/5' (+0) | 30x' (+2X) | Sight' (+10)</p>
 		</description>
 		<sheet>
-			<description>Self/Touch/5' (+0)| 30x' (+X)| Sight' (+5)</description>
+			<description>Self/Touch/5' (+0)| 30x' (+2X)| Sight' (+10)</description>
 		</sheet>
 	</element>
-	<element name="V,S,M" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_COMPONENTS">
+	<element name="V,S,M" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_COMPONENTS">
 		<description>
 			<p>All 3 (+0) | Any 2 (+1) | Any 1 (+2) | None (+3)</p>
 		</description>
 		<sheet>
-			<description>All 3 (+0)| Any 2 (+1)| Any 1 (+2)| None (+3)</description>
+			<description>All 3 (+0)| Any 2 (+2)| Any 1 (+4)| None (+6)</description>
 		</sheet>
 	</element>
-	<element name="Duration" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DURATION">
+	<element name="Duration" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_DURATION">
 		<description>
-			<p>Instant (+0) | 1 Round/Concentration (+1) | 1 Minute (+2) | 10 Minutes (+3) | 1 hour (+4) | 8 Hours (+5) | 24 hours (+6) | 7 Days (+7) | 30 Days (+8) | Permanent (+9)</p>
+			<p>Instant (+0) | Concentration (+1) | 1 Round (+2) | 1 Minute (+3) | 10 Minutes (+5) | 1 hour (+7) | 8 Hours (+9) | 24 hours (+11) | 7 Days (+13) | 30 Days (+15) | Permanent (+17)</p>
 		</description>
 		<sheet>
-			<description>Instant (+0)| 1 Round/Concentration (+1)| 1m (+2)| 10m (+3)| 1h (+4)| 8h (+5)| 24h (+6)| 7d (+7)| 30d (+8)| Perm (+9)</description>
+			<description>Instant (+0)| Concentration (+1)| 1 round (+2)| 1m (+3)| 10m (+5)| 1h (+7)| 8h (+9)| 24h (+11)| 7d (+13)| 30d (+15)| Perm (+17)</description>
 		</sheet>
 	</element>
-	<element name="Targeting" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_TARGETS">
+	<element name="Targeting" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_TARGETS">
 		<description>
 			<p>X Creatures (+X-1)</p>
 		</description>
 		<sheet>
-			<description>X Creatures(+X-1)| (10X-5)'x(10X-5)'x(10X-5)'AoE(+X)</description>
+			<description>X Creatures(+X-1)| (10X-5)'x(10X-5)'x(10X-5)'AoE(+2X)</description>
 		</sheet>
 	</element>
-	<element name="Magnitude" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_MAGNITUDE">
+	<element name="Magnitude" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_MAGNITUDE">
 		<description>
-			<p>xd4 (+1) | xd6 (+2) | xd8 (+3) | xd10 (+4) | xd12 (+5)</p>
-			<p class="indent">Magnitude can only be purchased once, and scales with spell level.</p>
+			<p>X+1dY (+4X+1) | X+1dY Weapon Buff (+7x+2)</p>
 		</description>
 		<sheet>
-			<description>{{spell level:usage}}d4(+1)| {{spell level:usage}}d6(+2)| {{spell level:usage}}d8(+3)| {{spell level:usage}}d10(+4)| {{spell level:usage}}d12(+5)</description>
+			<description>X+1d{{Magnitude}} (+4X+1) | X+1d{{Magnitude}} Weapon Buff (+7x+2)</description>
 		</sheet>
 	</element>
-	<element name="Debuff" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_DEBUFFS">
+	<element name="Debuff" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_DEBUFFS">
 		<description>
-			<p>-10Xft/-AC(X/2) (+X) | Blinded/Charmed/Deafened/Frightened/Poisoned/Prone(+2) | Restrained/Other (+6)</p>
+			<p>-5Xft/-AC(X/4) (+X) | Blind/Charm/Deaf/Frighten/Poison/Prone (+4) | Restrain/Other (+12)</p>
 		</description>
 		<sheet>
-			<description>-10Xft/-AC(X/2)(+X)|Blind/Charm/Deaf/ Frighten/Poison/Prone&#13;(+2)&#13;|&#13;Restrain/&#13;Other&#13;(+6)&#13;</description>
+			<description>-5Xft/-AC(X/4)(+X)|Blind/Charm/Deaf/ Frighten/Poison/Prone&#13;(+4)&#13;|&#13;Restrain/&#13;Other&#13;(+12)&#13;</description>
 		</sheet>
 	</element>
-	<element name="Buff" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_REWORK_HERMETIC_MATH_BUFFS">
+	<element name="Buff" type="Racial Trait" source="The Architect" id="ID_CLASS_FEATURE_HERMETICIST_HERMETIC_MATH_BUFFS">
 		<description>
-			<p>Form Detection/Speed+10Xft/TP+5Xft/+AC(X/2)/CR(X/2)Beast/Resistance(X/4)/Extra Attacks(X/4)/Size Change(X/6)/Immunity(X/8) (+X) | Advantage/Disadvantage Against/Invisibility (+4)</p>
+			<p>Form Detection/Speed+5Xft/TP+10(X/2)ft/+AC(X/2)/CR(X/2)Beast/Resistance(X/4)/Extra Attacks(X/4)/Size Change(X/6)/Immunity(X/8) (+X) | Advantage/Disadvantage Against/Invisibility (+4)</p>
 		</description>
 		<sheet>
-			<description>Form Detection/&#13;Speed+10Xft/&#13;TP+5Xft/&#13;+AC(X/2)/&#13;CR(X/2)Beast/ &#13;+Attacks(X/4)/&#13;Resist(X/4)/&#13;+-Size(X/6)/&#13;Immunity(X/8)&#13;(+X)&#13;|&#13;Adv/&#13;Disadv Against/&#13;Invis(+4)</description>
+			<description>Form Detection/&#13;Speed+5Xft/&#13;TP+10(X/2)ft/&#13;+AC(X/4)/&#13;CR(X/4)Beast/ &#13;+Attacks(X/9)/&#13;Resist(X/9)/&#13;+-Size(X/12)/&#13;Immunity(X/15)&#13;(+X)&#13;|&#13;Adv/&#13;Disadv Against/&#13;Invis(+8)</description>
 		</sheet>
 	</element>
 </elements>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-	<update version="4.0">
+	<update version="4.1">
 		<file name="class-hermeticist-rework.xml" url="https://raw.githubusercontent.com/Xelial-1064/Homebrew/main/class-hermeticist.xml" />
 	</update>
 	</info>
@@ -3905,4 +3905,22 @@
 			<description>Form Detection/&#13;Speed+5Xft/&#13;TP+10(X/2)ft/&#13;+AC(X/4)/&#13;CR(X/4)Beast/ &#13;+Attacks(X/9)/&#13;Resist(X/9)/&#13;+-Size(X/12)/&#13;Immunity(X/15)&#13;(+X)&#13;|&#13;Adv/&#13;Disadv Against/&#13;Invis(+8)</description>
 		</sheet>
 	</element>
+
+	<element name="Soul Crystal" type="Magic Item" source="The Architect" id="ID_CLASS_FEATURE_SOULMARK_CRYSTAL">
+		<description>
+			<p> You have consumed a soul crystal, adding its strength to your own...  </p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Soulmark</set>
+			<set name="slot">gift</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+            <select type="Class Feature" name="Skill Selection" supports="SP" number="1" />
+		</rules>
+	</element>
+
+
 </elements>
